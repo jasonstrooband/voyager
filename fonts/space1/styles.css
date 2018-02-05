@@ -1,0 +1,190 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "space1";
+  src:url("fonts/space1.eot");
+  src:url("fonts/space1.eot?#iefix") format("embedded-opentype"),
+    url("fonts/space1.woff") format("woff"),
+    url("fonts/space1.ttf") format("truetype"),
+    url("fonts/space1.svg#space1") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "space1" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="spacon-"]:before,
+[class*=" spacon-"]:before {
+  font-family: "space1" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.spacon-1-venus:before {
+  content: "\61";
+}
+.spacon-2-earth:before {
+  content: "\62";
+}
+.spacon-3-neptune:before {
+  content: "\63";
+}
+.spacon-4-mars:before {
+  content: "\64";
+}
+.spacon-5-jupiter:before {
+  content: "\65";
+}
+.spacon-6-moon:before {
+  content: "\66";
+}
+.spacon-7-sun:before {
+  content: "\67";
+}
+.spacon-8-saturn:before {
+  content: "\68";
+}
+.spacon-9-uranus:before {
+  content: "\69";
+}
+.spacon-10-death-star:before {
+  content: "\6a";
+}
+.spacon-11-black-hole:before {
+  content: "\6b";
+}
+.spacon-12-meteorite:before {
+  content: "\6c";
+}
+.spacon-13-planetary:before {
+  content: "\6d";
+}
+.spacon-14-galaxy:before {
+  content: "\6e";
+}
+.spacon-15-footprints-on-the-moon:before {
+  content: "\6f";
+}
+.spacon-16-sputnik:before {
+  content: "\70";
+}
+.spacon-17-astronaut:before {
+  content: "\71";
+}
+.spacon-18-star:before {
+  content: "\72";
+}
+.spacon-19-extraterrestrial-head:before {
+  content: "\73";
+}
+.spacon-20-ufo-picture:before {
+  content: "\74";
+}
+.spacon-21-spaceport:before {
+  content: "\75";
+}
+.spacon-22-iss:before {
+  content: "\76";
+}
+.spacon-23-sputnik:before {
+  content: "\77";
+}
+.spacon-24-sputnik:before {
+  content: "\78";
+}
+.spacon-25-module:before {
+  content: "\79";
+}
+.spacon-26-sputnik:before {
+  content: "\7a";
+}
+.spacon-27-mars-rover:before {
+  content: "\41";
+}
+.spacon-28-shuttle:before {
+  content: "\42";
+}
+.spacon-29-moonwalker:before {
+  content: "\43";
+}
+.spacon-30-rocket:before {
+  content: "\44";
+}
+.spacon-31-shuttle:before {
+  content: "\45";
+}
+.spacon-32-ufo:before {
+  content: "\46";
+}
+.spacon-33-rocket-start:before {
+  content: "\47";
+}
+.spacon-34-capsule:before {
+  content: "\48";
+}
+.spacon-35-capsule:before {
+  content: "\49";
+}
+.spacon-36-lander:before {
+  content: "\4a";
+}
+.spacon-37-capsule-parachute:before {
+  content: "\4b";
+}
+.spacon-38-lander:before {
+  content: "\4c";
+}
+.spacon-39-telescope:before {
+  content: "\4d";
+}
+.spacon-40-telescope:before {
+  content: "\4e";
+}
+.spacon-41-radar:before {
+  content: "\4f";
+}
+.spacon-42-radar:before {
+  content: "\50";
+}
+.spacon-43-astronaut-and-flag:before {
+  content: "\51";
+}
+.spacon-44-extraterrestrial:before {
+  content: "\52";
+}
+.spacon-45-astronaut:before {
+  content: "\53";
+}
+.spacon-46-blaster:before {
+  content: "\54";
+}
+.spacon-47-rocket:before {
+  content: "\55";
+}
+.spacon-48-ufo:before {
+  content: "\56";
+}
+.spacon-49-blaster:before {
+  content: "\57";
+}
+.spacon-50-ufo-and-cow:before {
+  content: "\58";
+}
