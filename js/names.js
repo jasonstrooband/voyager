@@ -4,7 +4,7 @@ class Names {
   static getStarName(){
     this.starNames = $.ajax({
       type: 'GET',
-      url: "http://localhost/stargen/data/starNames.txt",
+      url: "http://localhost/voyager/data/starNames.txt",
       async: false
     }).responseText;
     this.starNames = this.starNames.split('\n');
