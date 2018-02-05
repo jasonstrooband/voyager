@@ -1,4 +1,8 @@
-$( document ).ready(function() {
+var galaxy;
+var hexMap;
+var sector;
+var system;
+$(document).ready(function() {
 
   config();
 
@@ -7,16 +11,13 @@ $( document ).ready(function() {
     height: 10
   };
 
-  let galaxy = new Galaxy(true);
-
-  $('#generate').click(function() {
-    galaxy.generate();
-    galaxy.render();
-  });
-
-  let hexMap = new HexMap(board, 'hexmap');
-
-  let sector = new Sector(hexMap.Hexes);
+  galaxy = new Galaxy(true);
+  hexMap = new HexMap(board, 'hexmap');
+  sector = new Sector();
+  hexMap.addSystems();
+  
+  //System.setPrimary(galaxy);
+  //console.log(galaxy.debug_flag);
 });
 
 function config(){

@@ -1,13 +1,14 @@
 class HexMap {
   constructor(board, canvasId, orientation = 'vertical') {
+    console.log('type: ' + typeof galaxy.debug_flag);
     var self = this; // Used for passing the class reference to handlers
 
-    var LAYER1 = {};
-    LAYER1.canvas = document.getElementById(canvasId + '_LAYER1');
-    LAYER1.ctx = LAYER1.canvas.getContext('2d');
-    var LAYER2 = {};
-    LAYER2.canvas = document.getElementById(canvasId + '_LAYER2');
-    LAYER2.ctx = LAYER2.canvas.getContext('2d');
+    this.LAYER1 = {};
+    this.LAYER1.canvas = document.getElementById(canvasId + '_LAYER1');
+    this.LAYER1.ctx = this.LAYER1.canvas.getContext('2d');
+    this.LAYER2 = {};
+    this.LAYER2.canvas = document.getElementById(canvasId + '_LAYER2');
+    this.LAYER2.ctx = this.LAYER2.canvas.getContext('2d');
 
     this.Hexes = [];
     this.Grid = {};
@@ -18,8 +19,8 @@ class HexMap {
 
     if(this.Grid.orientation != 'horizontal' && this.Grid.orientation != 'vertical') this.Grid.orientation = 'vertical';
 
-    this.layer1_render(LAYER1.canvas, LAYER1.ctx);
-    this.layer2_render(LAYER2.canvas, LAYER2.ctx);
+    this.layer1_render(this.LAYER1.canvas, this.LAYER1.ctx);
+    this.layer2_render(this.LAYER2.canvas, this.LAYER2.ctx);
   }
 
   layer1_render(canvas, ctx){
@@ -205,6 +206,21 @@ class HexMap {
     }
   }
 
+  addSystems(){
+    this.setLayer(1);
+
+    this.ctx.fillStyle = "blue";
+
+    for(var x = 0; x < this.Hexes.length; x++){
+      if(this.Hexes[x].hasStar){
+        this.ctx.beginPath();
+        this.ctx.arc(this.Hexes[x].x, this.Hexes[x].y, 5, 0, 360);
+        this.ctx.fill();
+        this.ctx.closePath();
+      }
+    }
+  }
+
   idToString(x, y){
     var idX = x+1;
     var idY = y+1;
@@ -232,6 +248,8 @@ class HexMap {
   };
 
   getHoverHex(event){
+    this.setLayer(2);
+
     var rect = this.canvas.getBoundingClientRect();
     var x = event.clientX - rect.left;
     var y = event.clientY - rect.top;
@@ -251,11 +269,15 @@ class HexMap {
   }
 
   mouseLeft(event){
+    this.setLayer(2);
+
     this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
     if(this.Grid.selected) this.selectHex(this.Grid.selected);
   }
 
   getClickedHex(event){
+    this.setLayer(2);
+
     var rect = this.canvas.getBoundingClientRect();
     var x = event.clientX - rect.left;
     var y = event.clientY - rect.top;
@@ -296,4 +318,17 @@ class HexMap {
     // squaring so don't need to worry about square-rooting a negative number
     return Math.sqrt( (deltaX * deltaX) + (deltaY * deltaY) );
   };
+
+  setLayer(layer){
+    switch(layer){
+      case 2:
+        this.canvas = this.LAYER2.canvas;
+        this.ctx = this.LAYER2.ctx;
+        break;
+      default:
+        this.canvas = this.LAYER1.canvas;
+        this.ctx = this.LAYER1.ctx;
+        break;
+    }
+  }
 }

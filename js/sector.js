@@ -1,7 +1,9 @@
 class Sector {
-  constructor(hexes, debug = false) {
+  constructor(density = 20, debug = false) {
     this.debug_flag = debug;
-    this.Hexes = hexes;
+
+    this.density = density < 5 ? 5 : density;
+    this.density = density > 95 ? 95 : density;
 
     this.generate();
     this.render();
@@ -22,22 +24,22 @@ class Sector {
   }
 
   create_sector(){
-    for(var x = 0; x < this.Hexes.length; x++){
+    for(var x = 0; x < hexMap.Hexes.length; x++){
       var starRand = Math.floor(Math.random() * 100);
 
-      if(starRand > 80){
-        this.Hexes[x].hasStar = false;
-      } else {
+      if(starRand < this.density){
         this.starCount++;
-        this.Hexes[x].hasStar = true;
-        this.Hexes[x].star = {};
+        hexMap.Hexes[x].hasStar = true;
+        hexMap.Hexes[x].system = {};
         this.create_star(x);
+      } else {
+        hexMap.Hexes[x].hasStar = false;
       }
     }
   }
 
   create_star(hex){
-    this.Hexes[hex].star.name = Names.getStarName();
+    hexMap.Hexes[hex].system.name = Names.getStarName();
   }
 
   debug(){
@@ -48,7 +50,7 @@ class Sector {
 
     this.sectorlist_html.push("<table class='table table-condensed'>");
     this.sectorlist_html.push("<tbody>");
-    this.sectorlist_html.push(`<tr><th>Star Count</th><td>${this.starCount} / ${this.Hexes.length} - ${Math.floor(this.starCount / this.Hexes.length * 100)}%</td></tr>`);
+    this.sectorlist_html.push(`<tr><th>Star Count</th><td>${this.starCount} / ${hexMap.Hexes.length} - ${Math.floor(this.starCount / hexMap.Hexes.length * 100)}%</td></tr>`);
     this.sectorlist_html.push("</tbody>");
     this.sectorlist_html.push("</table>");
 
@@ -59,9 +61,9 @@ class Sector {
     this.sectorlist_html.push("</thead>");
     this.sectorlist_html.push("<tbody>");
 
-    for(var x = 0; x < this.Hexes.length; x++){
-      if(this.Hexes[x].hasStar){
-        this.sectorlist_html.push(`<tr><th>${this.Hexes[x].star.name}</th><td>${this.Hexes[x].id}</td></tr>`);
+    for(var x = 0; x < hexMap.Hexes.length; x++){
+      if(hexMap.Hexes[x].hasStar){
+        this.sectorlist_html.push(`<tr><th>${hexMap.Hexes[x].system.name}</th><td>${hexMap.Hexes[x].id}</td></tr>`);
       }
     }
 
