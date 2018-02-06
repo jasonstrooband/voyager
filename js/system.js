@@ -1,6 +1,10 @@
 class System {
   constructor(debug = false) {
+    this.debug_flag = debug;
   }
 
-  static setPrimary(galaxy){}
+  getPrimary(){
+    this.primary = new Body('star');
+    return this.primary;
+  }
 }

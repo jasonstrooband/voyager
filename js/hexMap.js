@@ -209,16 +209,48 @@ class HexMap {
   addSystems(){
     this.setLayer(1);
 
-    this.ctx.fillStyle = "blue";
+    this.ctx.fillStyle = "purple";
 
-    for(var x = 0; x < this.Hexes.length; x++){
-      if(this.Hexes[x].hasStar){
-        this.ctx.beginPath();
-        this.ctx.arc(this.Hexes[x].x, this.Hexes[x].y, 5, 0, 360);
-        this.ctx.fill();
-        this.ctx.closePath();
+    var currentHex;
+    var radius;
+
+    for(var x = 0; x < sector.systems.length; x++){
+      currentHex = this.getHexById(sector.systems[x].hexId);
+      this.ctx.fillStyle = sector.systems[x].primary.base_colour;
+
+      switch(sector.systems[x].primary.class){
+        case 'Ia':
+        case 'Ib':
+        case 'II':
+          radius = 15;
+          break;
+        case 'III':
+          radius = 10;
+          break;
+        case 'IV':
+        case 'V':
+        case 'VI':
+          radius = 6;
+          break;
+        default:
+          radius = 3;
+          break;
       }
+
+      this.ctx.beginPath();
+      this.ctx.arc(currentHex.x, currentHex.y, radius, 0, 360);
+      this.ctx.fill();
+      this.ctx.closePath();
     }
+
+    //for(var x = 0; x < this.Hexes.length; x++){
+    //  if(this.Hexes[x].hasStar){
+    //    this.ctx.beginPath();
+    //    this.ctx.arc(this.Hexes[x].x, this.Hexes[x].y, 5, 0, 360);
+    //    this.ctx.fill();
+    //    this.ctx.closePath();
+    //  }
+    //}
   }
 
   idToString(x, y){

@@ -13,6 +13,7 @@ $(document).ready(function() {
 
   galaxy = new Galaxy(true);
   hexMap = new HexMap(board, 'hexmap');
+  system = new System(); // Must be before sector for static methods
   sector = new Sector();
   hexMap.addSystems();
   

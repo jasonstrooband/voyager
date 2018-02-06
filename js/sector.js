@@ -4,6 +4,7 @@ class Sector {
 
     this.density = density < 5 ? 5 : density;
     this.density = density > 95 ? 95 : density;
+    this.systems = [];
 
     this.generate();
     this.render();
@@ -30,7 +31,6 @@ class Sector {
       if(starRand < this.density){
         this.starCount++;
         hexMap.Hexes[x].hasStar = true;
-        hexMap.Hexes[x].system = {};
         this.create_star(x);
       } else {
         hexMap.Hexes[x].hasStar = false;
@@ -39,7 +39,11 @@ class Sector {
   }
 
   create_star(hex){
-    hexMap.Hexes[hex].system.name = Names.getStarName();
+    this.systems.push({
+      hexId: hexMap.Hexes[hex].id,
+      name: Names.getStarName(),
+      primary: system.getPrimary()
+    })
   }
 
   debug(){
@@ -61,10 +65,8 @@ class Sector {
     this.sectorlist_html.push("</thead>");
     this.sectorlist_html.push("<tbody>");
 
-    for(var x = 0; x < hexMap.Hexes.length; x++){
-      if(hexMap.Hexes[x].hasStar){
-        this.sectorlist_html.push(`<tr><th>${hexMap.Hexes[x].system.name}</th><td>${hexMap.Hexes[x].id}</td></tr>`);
-      }
+    for(var x = 0; x < this.systems.length; x++){
+      this.sectorlist_html.push(`<tr><th>${this.systems[x].name}</th><td>${this.systems[x].hexId}</td><td>${this.systems[x].primary.classification}</td></tr>`);
     }
 
     this.sectorlist_html.push("</tbody>");
