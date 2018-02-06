@@ -1,7 +1,6 @@
 var galaxy;
 var hexMap;
 var sector;
-var system;
 $(document).ready(function() {
 
   config();
@@ -13,7 +12,6 @@ $(document).ready(function() {
 
   galaxy = new Galaxy(true);
   hexMap = new HexMap(board, 'hexmap');
-  system = new System(); // Must be before sector for static methods
   sector = new Sector();
   hexMap.addSystems();
 
@@ -42,11 +40,5 @@ function config(){
 
 function removeLoader(){
   $('#loader').fadeOut('slow', 'linear', function(){
-    //this.remove();
   });
-  //$('#loader').fadeTo( "slow" , 0.5, function() {
-  //  this.remove();
-  //});
-  //loader.addClass('loaded');
-  //loader.remove();
 }

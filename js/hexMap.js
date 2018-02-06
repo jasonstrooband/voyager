@@ -44,7 +44,8 @@ class HexMap {
 
     this.canvas.addEventListener('mousemove', this.getHoverHex.bind(this), false);
     this.canvas.addEventListener('mouseleave', this.mouseLeft.bind(this), false);
-    this.canvas.addEventListener('click', this.getClickedHex.bind(this), false);
+    //this.canvas.addEventListener('click', this.getClickedHex.bind(this), false);
+    $(this.canvas).on('click', this.getClickedHex.bind(this));
   }
 
   drawStarryBG(canvas, ctx) {
@@ -216,9 +217,9 @@ class HexMap {
 
     for(var x = 0; x < sector.systems.length; x++){
       currentHex = this.getHexById(sector.systems[x].hexId);
-      this.ctx.fillStyle = sector.systems[x].primary.base_colour;
+      this.ctx.fillStyle = sector.systems[x].base_colour;
 
-      switch(sector.systems[x].primary.class){
+      switch(sector.systems[x].primary_class){
         case 'Ia':
         case 'Ib':
         case 'II':
@@ -242,15 +243,6 @@ class HexMap {
       this.ctx.fill();
       this.ctx.closePath();
     }
-
-    //for(var x = 0; x < this.Hexes.length; x++){
-    //  if(this.Hexes[x].hasStar){
-    //    this.ctx.beginPath();
-    //    this.ctx.arc(this.Hexes[x].x, this.Hexes[x].y, 5, 0, 360);
-    //    this.ctx.fill();
-    //    this.ctx.closePath();
-    //  }
-    //}
   }
 
   idToString(x, y){
@@ -315,6 +307,8 @@ class HexMap {
     var y = event.clientY - rect.top;
     var currentHex = this.getNearestHex(x, y);
     this.selectHex(currentHex.id);
+
+    if(currentHex.hasStar) sector.renderSystem(currentHex.id)
   }
 
   selectHex(id){

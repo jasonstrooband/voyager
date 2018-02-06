@@ -16,8 +16,6 @@ class Galaxy {
   }
 
   reset_galaxy(){
-    this.galaxy_html = [];
-
     this.modifiers = {
       age_modifier: 0
     };
@@ -279,26 +277,27 @@ class Galaxy {
   }
 
   render(){
-    this.galaxy_html.push("<table class='table table-condensed'>");
-    this.galaxy_html.push("<tbody>");
+    var galaxy_html = [];
+    galaxy_html.push("<table class='table table-condensed'>");
+    galaxy_html.push("<tbody>");
 
-    this.galaxy_html.push(`<tr><th>Galaxy Type</th><td>${this.galaxyType.capitalize()} Galaxy</td></tr>`);
-    if(this.galaxyClass && this.galaxyType == 'spiral') this.galaxy_html.push(`<tr><th>Galaxy Classification</th><td>${this.galaxyClass.capitalize()} - ${this.galaxyArms}</td></tr>`);
-    if(this.galaxyClass && this.galaxyType != 'spiral') this.galaxy_html.push(`<tr><th>Galaxy Classification</th><td>${this.galaxyClass.capitalize()}</td></tr>`);
-    if(this.galaxyLocation) this.galaxy_html.push(`<tr><th>Galaxy Location</th><td>Galactic ${this.galaxyLocation.capitalize()}</td></tr>`);
-    if(this.galaxyCluster) this.galaxy_html.push(`<tr><th>Galaxy CLuster</th><td>${this.galaxyCluster.capitalize()} Cluster</td></tr>`);
+    galaxy_html.push(`<tr><th>Galaxy Type</th><td>${this.galaxyType.capitalize()} Galaxy</td></tr>`);
+    if(this.galaxyClass && this.galaxyType == 'spiral') galaxy_html.push(`<tr><th>Galaxy Classification</th><td>${this.galaxyClass.capitalize()} - ${this.galaxyArms}</td></tr>`);
+    if(this.galaxyClass && this.galaxyType != 'spiral') galaxy_html.push(`<tr><th>Galaxy Classification</th><td>${this.galaxyClass.capitalize()}</td></tr>`);
+    if(this.galaxyLocation) galaxy_html.push(`<tr><th>Galaxy Location</th><td>Galactic ${this.galaxyLocation.capitalize()}</td></tr>`);
+    if(this.galaxyCluster) galaxy_html.push(`<tr><th>Galaxy CLuster</th><td>${this.galaxyCluster.capitalize()} Cluster</td></tr>`);
 
-    this.galaxy_html.push("</tbody>");
-    this.galaxy_html.push("</table>");
+    galaxy_html.push("</tbody>");
+    galaxy_html.push("</table>");
 
     var anyMods = arrayNot(this.modifiers, 0);
     if(anyMods){
-      this.galaxy_html.push('<h3>Modifiers:</h3>');
-      this.galaxy_html.push('<ul class="list-group">');
-      this.galaxy_html.push(`<li class="list-group-item bg-dark">Age Modifier <span class="badge badge-primary float-right">${this.modifiers.age_modifier}</span></li>`);
-      this.galaxy_html.push('</ul');
+      galaxy_html.push('<h3>Modifiers:</h3>');
+      galaxy_html.push('<ul class="list-group">');
+      galaxy_html.push(`<li class="list-group-item bg-dark">Age Modifier <span class="badge badge-primary float-right">${this.modifiers.age_modifier}</span></li>`);
+      galaxy_html.push('</ul');
     }
 
-    $('#galaxy_details').html(this.galaxy_html.join("\n"));
+    $('#galaxy_details').html(galaxy_html.join("\n"));
   }
 }

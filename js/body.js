@@ -1,23 +1,35 @@
 class Body {
-  constructor(bodyType) {
+  constructor(bodyType, designation) {
+    this.bodyType = bodyType;
+    this.designation = designation;
+
     switch(bodyType){
       case 'star':
         this.makeStar();
+        this.getStarDesignation();
         break;
     }
   }
 
-  makeStar(){
+  makeStar(forceBD = false){
     this.type = '';
     this.position = '';
     this.class = '';
 
-    this.getStarType();
+    if(forceBD){
+      this.type = 'BD';
+    } else {
+      this.getStarType();
+    }
     this.getStarPosition();
     this.getStarClass();
-    this.getStarColor();
 
     this.classification = this.type + this.position + ((this.class) ? '-' + this.class : '');
+  }
+
+  convertToBD(){
+    this.group = 'other';
+    this.makeStar(true);
   }
 
   getStarType(){
@@ -75,38 +87,8 @@ class Body {
     }
   }
 
-  getStarColor(){
-    switch(this.type){
-      case 'O':
-        this.base_colour = 'darkblue';
-        break;
-      case 'B':
-        this.base_colour = 'blue';
-        break;
-      case 'A':
-        this.base_colour = 'lightblue';
-        break;
-      case 'F':
-        this.base_colour = 'white';
-        break;
-      case 'G':
-        this.base_colour = 'yellow';
-        break;
-      case 'K':
-        this.base_colour = 'orange';
-        break;
-      case 'M':
-        this.base_colour = 'red';
-        break;
-      case 'WD':
-        this.base_colour = 'white';
-        break;
-      case 'BD':
-        this.base_colour = 'brown';
-        break;
-      default:
-        this.base_colour = 'purple';
-        break;
-    }
+  getStarDesignation(){
+    var alphabet = 'ABCDEFGHIJKLMNOPQRXTUVWXYZ';
+    this.designation = alphabet[this.designation-1];
   }
 }

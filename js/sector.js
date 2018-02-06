@@ -31,19 +31,20 @@ class Sector {
       if(starRand < this.density){
         this.starCount++;
         hexMap.Hexes[x].hasStar = true;
-        this.create_star(x);
+        this.systems.push(new System(hexMap.Hexes[x].id, Names.getStarName()));
       } else {
         hexMap.Hexes[x].hasStar = false;
       }
     }
   }
 
-  create_star(hex){
-    this.systems.push({
-      hexId: hexMap.Hexes[hex].id,
-      name: Names.getStarName(),
-      primary: system.getPrimary()
-    })
+  getSystemByHexId(hexId){
+    for(var x = 0; x < this.systems.length; x++){
+      if(this.systems[x].hexId == hexId){
+        return x;
+      }
+    }
+    return false;
   }
 
   debug(){
@@ -61,17 +62,21 @@ class Sector {
 
     this.sectorlist_html.push("<table class='table table-condensed'>");
     this.sectorlist_html.push("<thead>");
-    this.sectorlist_html.push(`<tr><th>Star Name</th><th>Hex ID</th></tr>`);
+    this.sectorlist_html.push(`<tr><th>Star Name</th><th>Hex ID</th><th>Primary Classification</th><th>Star Count</th></tr>`);
     this.sectorlist_html.push("</thead>");
     this.sectorlist_html.push("<tbody>");
 
     for(var x = 0; x < this.systems.length; x++){
-      this.sectorlist_html.push(`<tr><th>${this.systems[x].name}</th><td>${this.systems[x].hexId}</td><td>${this.systems[x].primary.classification}</td></tr>`);
+      this.sectorlist_html.push(`<tr><th>${this.systems[x].name}</th><td>${this.systems[x].hexId}</td><td>${this.systems[x].primary}</td><td>${this.systems[x].starCount}</td></tr>`);
     }
 
     this.sectorlist_html.push("</tbody>");
     this.sectorlist_html.push("</table>");
 
     $('#sector_details').html(this.sectorlist_html.join("\n"));
+  }
+
+  renderSystem(hexId){
+    this.systems[this.getSystemByHexId(hexId)].render();
   }
 }
