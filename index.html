@@ -11,13 +11,15 @@
   <meta name="author" content="">
 
   <!-- Third Party Styles -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="https://bootswatch.com/4/slate/bootstrap.css">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
   <!-- Page Styles -->
   <link rel="stylesheet" href="fonts/space1/styles.css">
-  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="css/main.css">
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
@@ -27,8 +29,73 @@
 </head>
 <body>
 
+  <div id="loader" class="loaded">
+    <div class='container-container'>
+      <div class='container'>
+        <circle class='center-bg'></circle>
+        <circle class='top-bg'>
+          <circle></circle>
+        </circle>
+        <circle class='middle bg-1'></circle>
+        <circle class='middle bg-2'>
+          <circle></circle>
+        </circle>
+        <circle class='middle bg-3'>
+          <circle></circle>
+        </circle>
+        <circle class='middle bg-4'></circle>
+        <div class='bottom-container-1'>
+          <div class='bottom-container-2'>
+            <div class='bottom-bg'>
+              <circle></circle>
+            </div>
+          </div>
+        </div>
+        <circle class='corner-overlay-1 corner'></circle>
+        <circle class='corner-overlay-2 corner'></circle>
+        <circle class='overlay-1'></circle>
+        <circle class='overlay-2'></circle>
+        <div class='shuttle'>
+          <circle class='shaft'></circle>
+          <div class='cross'></div>
+          <div class='wing-1'>
+            <circle class='wing'></circle>
+          </div>
+          <div class='wing-2'>
+            <circle class='wing'></circle>
+          </div>
+          <div class='tail-wing-1'></div>
+          <div class='tail-wing-2'></div>
+        </div>
+        <div class='sparkle one'>
+          <div class='section one'></div>
+          <div class='section two'></div>
+          <div class='section three'></div>
+          <div class='section four'></div>
+        </div>
+        <div class='sparkle two'>
+          <div class='section one'></div>
+          <div class='section two'></div>
+          <div class='section three'></div>
+          <div class='section four'></div>
+        </div>
+        <div class='sparkle rocket one'>
+          <div class='section one'></div>
+          <div class='section two'></div>
+        </div>
+        <div class='sparkle rocket two'>
+          <div class='section one'></div>
+          <div class='section two'></div>
+        </div>
+        <div class='trail one'></div>
+        <div class='trail two'></div>
+      </div>
+    </div>
+
+  </div>
+
   <div id="stars_wrapper">
-    <div id="overlay"></div>
+    <div id="stars_overlay"></div>
     <div id='stars_l1'></div>
     <div id='stars_l2'></div>
     <div id='stars_l3'></div>
@@ -139,9 +206,14 @@
   </div>
 
   <!-- Third Party Scripts -->
-  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+          integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+          integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+          crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+          integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+          crossorigin="anonymous"></script>
 
   <!-- Page Scripts -->
   <script type="text/javascript" src="js/utils.js"></script>

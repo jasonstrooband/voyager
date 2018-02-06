@@ -1,0 +1,125 @@
+.config-trigger {
+  display: block;
+  position: absolute;
+  top: 30px;
+  left: -36px;
+  width: 36px;
+  height: 36px;
+  background: #494d55;
+  color: #fff;
+  text-align: center;
+  -webkit-border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 4px;
+  -webkit-border-top-left-radius: 4px;
+  -moz-border-radius-topright: 0;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 4px;
+  -moz-border-radius-topleft: 4px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  background-clip: padding-box;
+  text-decoration: none;
+}
+.config-trigger:hover {
+  background: #000;
+  text-decoration: none;
+}
+.config-trigger .fa {
+  font-size: 22px;
+  padding-top: 7px;
+  display: block;
+  color: #fff;
+}
+.config-panel {
+  position: absolute;
+  top: 80px;
+  right: -330px;
+  z-index: 10;
+  width: 330px;
+  will-change: transform;
+  transition: transform 500ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.config-panel.config-panel-open {
+  transform: translateX(-330px);
+}
+.config-panel .panel-inner {
+  position: relative;
+  background: #494d55;
+  color: #fff;
+  padding: 30px;
+  -webkit-border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 4px;
+  -webkit-border-top-left-radius: 4px;
+  -moz-border-radius-topright: 0;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 4px;
+  -moz-border-radius-topleft: 4px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  background-clip: padding-box;
+}
+.config-panel .panel-title {
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+.config-panel label {
+  color: #fff;
+}
+.config-panel #color-options {
+  margin-bottom: 0px;
+}
+.config-panel #color-options li {
+  margin-bottom: 10px;
+}
+.config-panel #color-options li a {
+  display: block;
+  width: 100%;
+  height: 25px;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+.config-panel #color-options li a:hover {
+  -webkit-opacity: 0.9;
+  -moz-opacity: 0.9;
+  opacity: 0.9;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+}
+.config-panel #color-options li.active a {
+  border: 2px solid #fff;
+}
+.config-panel #color-options li.theme-1 a {
+  background: #40babd;
+}
+.config-panel #color-options li.theme-2 a {
+  background-color: #6dbd63;
+}
+.config-panel #color-options li.theme-3 a {
+  background-color: #497cb1;
+}
+.config-panel #color-options li.theme-4 a {
+  background-color: #ec6952;
+}
+.config-panel a.close {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  color: #fff;
+  -webkit-opacity: 0.75;
+  -moz-opacity: 0.75;
+  opacity: 0.75;
+}
+.config-panel a.close:hover {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+}
+.config-panel a.close .fa {
+  color: #fff;
+}

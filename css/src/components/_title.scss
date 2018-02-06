@@ -1,0 +1,19 @@
+#title {
+  margin: 35px 0;
+}
+#title > * {
+  font-size: 60px;
+  font-weight: 300;
+  color: #FFF;
+  text-align: center;
+  font-family: "lato", sans-serif;
+  letter-spacing: 10px;
+  background: -webkit-linear-gradient(white, #38495a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#title .fa-rocket:before {
+  background: -webkit-linear-gradient(white, #38495a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

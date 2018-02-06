@@ -4,9 +4,9 @@ Voyager is a web program that will allow the creation of a galaxy full of data f
 ## Table of Contents
 
 1. [Implementation](#implementation)
-1. [Contributing](#contributing)
-1. [License](#license)
-
+2. [Contributing](#contributing)
+3. [Acknowledgements](#acknowledgements)
+4. [License](#license)
 
 ## Implementation
 
@@ -36,6 +36,16 @@ TODO
 ## Contributing
 
 Open an issue first to discuss potential changes/additions.
+
+**[Back to top](#table-of-contents)**
+
+## Acknowledgements
+I would like to acknowledgement the below people and groups for things that helped this project come together
+
+* Vitaliy Rynskiy [Codepen](https://codepen.io/brettclanton001/pen/Gaxgv) [Dribble](https://dribbble.com/tal)
+** For the wonderful rocket scene I used for my preloader
+* Saransh Sinha [Codepen](https://codepen.io/saransh/pen/BKJun) [LindeIn](linkedin.com/in/saranshsinha)
+** For the awesome parallax starry background
 
 **[Back to top](#table-of-contents)**
 

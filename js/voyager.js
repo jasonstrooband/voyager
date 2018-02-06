@@ -16,9 +16,8 @@ $(document).ready(function() {
   system = new System(); // Must be before sector for static methods
   sector = new Sector();
   hexMap.addSystems();
-  
-  //System.setPrimary(galaxy);
-  //console.log(galaxy.debug_flag);
+
+  removeLoader();
 });
 
 function config(){
@@ -39,4 +38,15 @@ function config(){
     // No Web Storage support..
     $('#storage_warn').html('Sorry! Settings are not being saved, no storage available.');
   }
+}
+
+function removeLoader(){
+  $('#loader').fadeOut('slow', 'linear', function(){
+    //this.remove();
+  });
+  //$('#loader').fadeTo( "slow" , 0.5, function() {
+  //  this.remove();
+  //});
+  //loader.addClass('loaded');
+  //loader.remove();
 }
