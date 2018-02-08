@@ -1,11 +1,12 @@
 function makeDie(sides) {
   var die = function() {
-    return 1 + Math.random() * sides | 0;
+    return 1 + Math.random() * sides || 0;
   };
 
   die.times = function(count) {
     var rolls = [];
-    for (var i = 0; i < count; i++) {
+    var i; // Loop var
+    for (i = 0; i < count; i++) {
       rolls.push(this());
     }
     return rolls;
@@ -45,15 +46,13 @@ var dice = {
   }
 };
 
-//console.log(dice.d6());
-//console.log(dice.d8.times(3));
-//console.log(dice.roll("2d6 + 2d10 + 2"));
+function returnFromRange(rand, ranges, values){
+  var x; // Loop var
 
-function return_from_range(rand, ranges, values){
   if(!Array.isArray(ranges) || !Array.isArray(values)) console.log('is not array');
   if(ranges.length != values.length) console.log('wrong length');
 
-  for(var x = 0; x < ranges.length; x++) {
+  for(x = 0; x < ranges.length; x++) {
     if(rand >= ranges[x][0] && rand <= ranges[x][1]) return values[x];
   }
   alert('Out of range!');

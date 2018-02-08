@@ -1,8 +1,5 @@
 class HexMap {
   constructor(board, canvasId, orientation = 'vertical') {
-    console.log('type: ' + typeof galaxy.debug_flag);
-    var self = this; // Used for passing the class reference to handlers
-
     this.LAYER1 = {};
     this.LAYER1.canvas = document.getElementById(canvasId + '_LAYER1');
     this.LAYER1.ctx = this.LAYER1.canvas.getContext('2d');
@@ -19,11 +16,11 @@ class HexMap {
 
     if(this.Grid.orientation != 'horizontal' && this.Grid.orientation != 'vertical') this.Grid.orientation = 'vertical';
 
-    this.layer1_render(this.LAYER1.canvas, this.LAYER1.ctx);
-    this.layer2_render(this.LAYER2.canvas, this.LAYER2.ctx);
+    this.layer1Render(this.LAYER1.canvas, this.LAYER1.ctx);
+    this.layer2Render(this.LAYER2.canvas, this.LAYER2.ctx);
   }
 
-  layer1_render(canvas, ctx){
+  layer1Render(canvas, ctx){
     this.canvas = canvas;
     this.ctx = ctx;
 
@@ -38,7 +35,7 @@ class HexMap {
     this.drawGrid();
   }
 
-  layer2_render(canvas, ctx){
+  layer2Render(canvas, ctx){
     this.canvas = canvas;
     this.ctx = ctx;
 
@@ -48,16 +45,22 @@ class HexMap {
     $(this.canvas).on('click', this.getClickedHex.bind(this));
   }
 
-  drawStarryBG(canvas, ctx) {
+  drawStarryBG() {
     var stars = 200;
     var colourRange = [0, 60, 240];
+    var i; // Loop var
+    var x = 0;
+    var y = 0;
+    var radius = 0;
+    var hue = 0;
+    var sat = 0;
 
-    for (var i = 0; i < stars; i++) {
-      var x = Math.random() * this.canvas.offsetWidth;
-      var y = Math.random() * this.canvas.offsetHeight;
-      var radius = Math.random() * 1.2;
-      var hue = colourRange[getRandom(0, colourRange.length - 1)];
-      var sat = getRandom(50, 100);
+    for (i = 0; i < stars; i++) {
+      x = Math.random() * this.canvas.offsetWidth;
+      y = Math.random() * this.canvas.offsetHeight;
+      radius = Math.random() * 1.2;
+      hue = colourRange[getRandom(0, colourRange.length - 1)];
+      sat = getRandom(50, 100);
       this.ctx.beginPath();
       this.ctx.arc(x, y, radius, 0, 360);
       this.ctx.fillStyle = "hsl(" + hue + ", " + sat + "%, 88%)";
@@ -65,14 +68,16 @@ class HexMap {
     }
   }
 
-  drawDirections(canvas, ctx){
+  drawDirections(){
+    var heightDiff;
+
     this.ctx.font = "16px Ariel";
     this.ctx.fillStyle = "white";
     this.ctx.textAlign = "center";
     this.ctx.fillText("Coreward", this.canvas.width / 2, 18);
     this.ctx.fillText("Rimward", this.canvas.width / 2, this.canvas.height - 7);
     this.ctx.save();
-    var heightDiff = this.canvas.height - this.canvas.width;
+    heightDiff = this.canvas.height - this.canvas.width;
     this.ctx.translate(this.canvas.width, heightDiff / 2);
     this.ctx.rotate(90*Math.PI/180);
     this.ctx.fillText("Spinward", this.canvas.width / 2, 18);
@@ -91,6 +96,10 @@ class HexMap {
   }
 
   getGrid(){
+    var x; // Loop width var
+    var y; // Loop height var
+    var centerX;
+    var centerY;
     this.Grid.gridWidth = (this.canvas.width - 50) / this.Grid.boardWidth;
     this.Grid.gridHeight = (this.canvas.height - 50) / this.Grid.boardHeight;
 
@@ -108,10 +117,10 @@ class HexMap {
     this.Grid.gridOffsetX = this.Grid.gridWidth / 2;
     this.Grid.gridOffsetY = this.Grid.gridHeight / 2;
 
-    for(var x = 0; x < this.Grid.boardWidth; x++) {
-      for(var y = 0; y < this.Grid.boardHeight; y++) {
-        var centerX = 0;
-        var centerY = 0;
+    for(x = 0; x < this.Grid.boardWidth; x++) {
+      for(y = 0; y < this.Grid.boardHeight; y++) {
+        centerX = 0;
+        centerY = 0;
         if(this.Grid.orientation == 'horizontal'){
           centerX = 25 + this.Grid.gridOffsetX + (x * this.Grid.gridWidth);
           centerY = 25 + this.Grid.gridOffsetY + (y * this.Grid.gridHeight) - (y * this.Grid.tipHeight);
@@ -139,11 +148,12 @@ class HexMap {
   }
 
   drawGrid(drawCoord = false) {
+    var x; // Loop var
     this.ctx.font = "10px Ariel";
     this.ctx.textAlign = "center";
     this.ctx.fillStyle = "white";
     this.ctx.strokeStyle = "white";
-    for(var x = 0; x < this.Hexes.length; x++){
+    for(x = 0; x < this.Hexes.length; x++){
       if(drawCoord){
         this.ctx.beginPath();
         this.ctx.fillRect(this.Hexes[x].x - 2, this.Hexes[x].y - 2, 4, 4);
@@ -155,10 +165,10 @@ class HexMap {
     }
   }
 
-  drawHexagon(centerX, centerY, id = false, fill = false){
-
+  drawHexagon(centerX, centerY, id = '', fill = false){
+    var idc;
     if(id){
-      var idc = this.idStringToCoord(id);
+      idc = this.idStringToCoord(id);
       this.ctx.fillText(id, centerX, centerY - this.Grid.tipHeight);
     }
 
@@ -208,14 +218,15 @@ class HexMap {
   }
 
   addSystems(){
+    var x; // Loop var
+    var currentHex;
+    var radius;
+
     this.setLayer(1);
 
     this.ctx.fillStyle = "purple";
 
-    var currentHex;
-    var radius;
-
-    for(var x = 0; x < sector.systems.length; x++){
+    for(x = 0; x < sector.systems.length; x++){
       currentHex = this.getHexById(sector.systems[x].hexId);
       this.ctx.fillStyle = sector.systems[x].base_colour;
 
@@ -245,7 +256,7 @@ class HexMap {
     }
   }
 
-  idToString(x, y){
+  static idToString(x, y){
     var idX = x+1;
     var idY = y+1;
     var id = idX + 1 < 10 ? '0' + idX : idX;
@@ -253,7 +264,7 @@ class HexMap {
     return id;
   }
 
-  idStringToCoord(id){
+  static idStringToCoord(id){
     return {
       x: parseInt(id.substring(0, 2)),
       y: parseInt(id.substring(2, 4))
@@ -261,8 +272,9 @@ class HexMap {
   }
 
   getHexById(id) {
+    var x; // Loop var
     // Find the hex with the given coordinate id
-    for(var x = 0; x < this.Hexes.length; x++){
+    for(x = 0; x < this.Hexes.length; x++){
       if(this.Hexes[x].id == id){
         return this.Hexes[x];
       }
@@ -272,13 +284,15 @@ class HexMap {
   };
 
   getHoverHex(event){
-    this.setLayer(2);
-
+    var currentHex;
     var rect = this.canvas.getBoundingClientRect();
     var x = event.clientX - rect.left;
     var y = event.clientY - rect.top;
+
+    this.setLayer(2);
+
     if(x > 25 && x < this.canvas.width - 25 && y > 25 && y < this.canvas.height - 25){
-      var currentHex = this.getNearestHex(x, y);
+      currentHex = this.getNearestHex(x, y);
 
       this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
 
@@ -292,7 +306,7 @@ class HexMap {
     }
   }
 
-  mouseLeft(event){
+  mouseLeft(){
     this.setLayer(2);
 
     this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
@@ -300,32 +314,33 @@ class HexMap {
   }
 
   getClickedHex(event){
-    this.setLayer(2);
-
     var rect = this.canvas.getBoundingClientRect();
     var x = event.clientX - rect.left;
     var y = event.clientY - rect.top;
     var currentHex = this.getNearestHex(x, y);
+
+    this.setLayer(2);
     this.selectHex(currentHex.id);
 
     if(currentHex.hasStar) sector.renderSystem(currentHex.id)
   }
 
   selectHex(id){
+    var currentHex = this.getHexById(id);
     this.ctx.fillStyle = 'rgba(255, 0, 0, 0.2)';
     this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
-    var currentHex = this.getHexById(id);
     this.Grid.selected = id;
     this.drawHexagon(currentHex.x, currentHex.y, false, true);
   }
 
   getNearestHex(x, y) {
+    var i; // Loop var
     var distance;
     var minDistance = Number.MAX_VALUE;
     var hx = null;
 
     // iterate through each hex in the grid
-    for(var i = 0; i < this.Hexes.length; i++){
+    for(i = 0; i < this.Hexes.length; i++){
       distance = this.distanceFromMidPoint(this.Hexes[i].x, this.Hexes[i].y, x, y);
 
       if (distance < minDistance){ // if this is the nearest thus far
@@ -336,7 +351,7 @@ class HexMap {
     return hx;
   };
 
-  distanceFromMidPoint(hexX, hexY, x, y) {
+  static distanceFromMidPoint(hexX, hexY, x, y) {
     // Pythagoras' Theorem: Square of hypotenuse = sum of squares of other two sides
     var deltaX = hexX - x;
     var deltaY = hexY - y;

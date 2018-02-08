@@ -11,7 +11,7 @@ class System {
   createPrimary(){
     this.starCount++;
     this.last_star = new Body('star', this.starCount);
-    this.data = { A:{...this.last_star} };
+    this.data = [ {...this.last_star} ];
     this.primary = this.last_star.classification;
     this.primary_class = this.last_star.class;
     this.base_colour = this.getBaseColor();
@@ -19,6 +19,8 @@ class System {
 
   getStarMultiples(){
     var x = 0;
+    var roll;
+
     switch(galaxy.galaxyCluster){
       case 'globular':
         x = 5;
@@ -26,10 +28,13 @@ class System {
       case 'open':
         x = 8;
         break;
+      default:
+        // TODO: Add default
+        break;
     }
 
     while(true){
-      var roll = dice.roll('3d10+'+x);
+      roll = dice.roll('3d10+'+x);
 
       if(this.starCount < 2){
         if(roll > 17){
@@ -49,27 +54,31 @@ class System {
   }
 
   createNewStar(){
+    var oldPosition = 0;
+    var newPosition = 0;
+    var newStar = 0;
+
     var roll = dice.d10();
     if(roll <= 2){
       this.last_star.designation = 'B';
-      var old_position = this.last_star.position;
-      var new_position = dice.roll('1d9');
-      this.last_star.position = (new_position >= old_position) ? new_position : old_position;
-      this.data.B = {...this.last_star};
+      oldPosition = this.last_star.position;
+      newPosition = dice.roll('1d9');
+      this.last_star.position = (newPosition >= oldPosition) ? newPosition : oldPosition;
+      this.data.push({...this.last_star});
     } else {
-      var newStar = new Body('star', this.starCount);
+      newStar = new Body('star', this.starCount);
       //console.log(newStar.type + '-' + this.last_star.type);
       if(this.starTypeHigher(newStar.type))newStar.convertToBD();
       //console.log(newStar.class + '-' + this.last_star.class);
       if(newStar.class && !this.last_star.class) newStar.convertToBD();
       if(newStar.class && this.starClassHigher(newStar.class)) newStar.convertToBD();
       if(newStar.type == this.last_star.type && newStar.position < this.last_star.position) newStar.position = this.last_star.position;
-      this.data.B = newStar;
+      this.data.push(newStar);
     }
   }
 
   getBaseColor(){
-    switch(this.data.A.type){
+    switch(this.data[0].type){
       case 'O':
         return 'darkblue';
         break;
@@ -104,40 +113,92 @@ class System {
   }
 
   starTypeHigher(type){
-    var type_seq = ['BH','NS','O','B','A','F','G','K','M','WD','BD'];
-    var last_type_x = false;
-    var type_x = false;
-    for(var x = 0; x < type_seq.length; x++){
-      if(type_seq[x] == this.last_star.type) last_type_x = x;
-      if(type_seq[x] == type) type_x = x;
+    var x; // Loop var
+    var typeSeq = ['BH','NS','O','B','A','F','G','K','M','WD','BD'];
+    var lastTypeX = false;
+    var typeX = false;
+
+    for(x = 0; x < typeSeq.length; x++){
+      if(typeSeq[x] == this.last_star.type) lastTypeX = x;
+      if(typeSeq[x] == type) typeX = x;
     }
-    return type_x < last_type_x;
+    return typeX < lastTypeX;
   }
 
   starClassHigher(classf){
-    var class_seq = ['Ia', 'Ib', 'II', 'III', 'IV', 'V', 'VI', 'VII'];
-    var last_class_x = false;
-    var class_x = false;
-    for(var x = 0; x < class_seq.length; x++){
-      if(class_seq[x] == this.last_star.class) last_class_x = x;
-      if(class_seq[x] == classf) class_x = x;
+    var x; // Loop var
+    var classSeq = ['Ia', 'Ib', 'II', 'III', 'IV', 'V', 'VI', 'VII'];
+    var lastClassX = false;
+    var classX = false;
+    for(x = 0; x < classSeq.length; x++){
+      if(classSeq[x] == this.last_star.class) lastClassX = x;
+      if(classSeq[x] == classf) classX = x;
     }
-    return class_x < last_class_x;
+    return classX < lastClassX;
   }
 
   render(){
-    var system_html = [];
-    system_html.push("<table class='table table-condensed'>");
-    system_html.push("<tbody>");
+    var system = $('#system');
+    var systemTree = $('#systemTree');
+    var x; // Loop variable
+    var systemHTML = [];
 
-    system_html.push(`<tr><th>Stars in System</th><td>${this.starCount}</td></tr>`);
-    system_html.push(`<tr><th>Primary Star Classification</th><td>${this.primary}</td></tr>`);
+    var systemNodes = [
+      { "id": "system", "parent": "#", "text": this.name, 'state': { 'opened': true, 'selected': true}, 'li_attr': {'data-tab': 'des-system'} }
+    ];
 
-    system_html.push("</tbody>");
-    system_html.push("</table>");
+    for(x = 0; x < this.data.length; x++){
+      systemNodes.push({
+        "id": this.data[x].designation,
+        "parent": "system",
+        "text": this.name + ' ' + this.data[x].designation + ' - ' + this.data[x].classification,
+        "li_attr": { "data-tab": 'des-' + this.data[x].designation }
+      });
+    }
+    systemTree.jstree('destroy'); // Destroy before building to re-init after changing systems
+    systemTree.jstree({
+      'core' : {
+        "multiple": false,
+        'check_callback': true,
+        'data': systemNodes
+      },
+      "plugins" : [ "wholerow" ]
+    }).on("select_node.jstree", function(event, node) {
+      var tabId = $(node.event.currentTarget).parent().attr('data-tab');
+      $('#system').find('.tab-pane').removeClass('show active');
+      $("#"+tabId).addClass('show active');
+    });
+
+    //***************************************
+    // System
+    //***************************************
+    systemHTML.push("<div id='des-system' class='tab-pane fade show active'>");
+    systemHTML.push(`<h3>${this.name}</h3>`);
+    systemHTML.push("<table class='table table-condensed'>");
+    systemHTML.push("<tbody>");
+
+    systemHTML.push(`<tr><th>Stars in System</th><td>${this.starCount}</td></tr>`);
+    systemHTML.push(`<tr><th>Primary Star Classification</th><td>${this.primary}</td></tr>`);
+
+    systemHTML.push("</tbody>");
+    systemHTML.push("</table>");
+    systemHTML.push("</div>");
 
     $('#system_name').html(this.name + ' (' + this.hexId + ')');
-    $('#system_details').html(system_html.join("\n"));
+    systemHTML = systemHTML.join("\n");
+    system.empty().append(systemHTML);
+
+    //***************************************
+    // First Orbits
+    //***************************************
+    for(x = 0; x < this.data.length; x++){
+      systemHTML = [];
+      systemHTML.push(`<div id='des-${this.data[x].designation}' class='tab-pane fade'>`);
+      systemHTML.push(`<h3>${this.name + ' ' + this.data[x].designation}</h3>`);
+      systemHTML.push("</div>");
+      systemHTML = systemHTML.join("\n");
+      system.append(systemHTML);
+    }
     console.log(this);
   }
 }

@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="https://bootswatch.com/4/slate/bootstrap.css">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/themes/default/style.min.css"/>
 
   <!-- Page Styles -->
   <link rel="stylesheet" href="fonts/space1/styles.css">
@@ -29,69 +30,8 @@
 </head>
 <body>
 
-  <div id="loader" class="loaded">
-    <div class='container-container'>
-      <div class='container'>
-        <circle class='center-bg'></circle>
-        <circle class='top-bg'>
-          <circle></circle>
-        </circle>
-        <circle class='middle bg-1'></circle>
-        <circle class='middle bg-2'>
-          <circle></circle>
-        </circle>
-        <circle class='middle bg-3'>
-          <circle></circle>
-        </circle>
-        <circle class='middle bg-4'></circle>
-        <div class='bottom-container-1'>
-          <div class='bottom-container-2'>
-            <div class='bottom-bg'>
-              <circle></circle>
-            </div>
-          </div>
-        </div>
-        <circle class='corner-overlay-1 corner'></circle>
-        <circle class='corner-overlay-2 corner'></circle>
-        <circle class='overlay-1'></circle>
-        <circle class='overlay-2'></circle>
-        <div class='shuttle'>
-          <circle class='shaft'></circle>
-          <div class='cross'></div>
-          <div class='wing-1'>
-            <circle class='wing'></circle>
-          </div>
-          <div class='wing-2'>
-            <circle class='wing'></circle>
-          </div>
-          <div class='tail-wing-1'></div>
-          <div class='tail-wing-2'></div>
-        </div>
-        <div class='sparkle one'>
-          <div class='section one'></div>
-          <div class='section two'></div>
-          <div class='section three'></div>
-          <div class='section four'></div>
-        </div>
-        <div class='sparkle two'>
-          <div class='section one'></div>
-          <div class='section two'></div>
-          <div class='section three'></div>
-          <div class='section four'></div>
-        </div>
-        <div class='sparkle rocket one'>
-          <div class='section one'></div>
-          <div class='section two'></div>
-        </div>
-        <div class='sparkle rocket two'>
-          <div class='section one'></div>
-          <div class='section two'></div>
-        </div>
-        <div class='trail one'></div>
-        <div class='trail two'></div>
-      </div>
-    </div>
-
+  <div id="loader">
+    <!-- TODO: Replace the loader with a more traditional loader -->
   </div>
 
   <div id="stars_wrapper">
@@ -168,31 +108,37 @@
             </div>
 
             <div class="card-body">
-              <div id="system_details">Please select a system from the map</div>
+              <div class="row">
+                <div class="col-lg-3"><span id="system_tree"></span></div>
+                <div class="col-lg-9">
+                  <div id="system" class="tab-content">Please select a system from the map</div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+
       </div>
 
+      <footer class="bg-dark">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 ">
+              <span class="copyright-text">Copyright © 2017 Jason Strooband - All Rights Reserved</span>
+            </div>
+            <div class="col-sm-6">
+              <!--<ul class="social-link pull-right">
+                <li><a href=""><span class="glyphicon glyphicon-heart-empty"></span></a></li>
+                <li><a href=""><span class="glyphicon glyphicon-heart-empty"></span></a></li>
+                <li><a href=""><span class="glyphicon glyphicon-heart-empty"></span></a></li>
+                <li><a href=""><span class="glyphicon glyphicon-heart-empty"></span></a></li>
+                <li><a href=""><span class="glyphicon glyphicon-heart-empty"></span></a></li>
+              </ul>-->
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
-
-    <footer class="bg-dark">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6 ">
-            <span class="copyright-text">Copyright © 2017 Jason Strooband - All Rights Reserved</span>
-          </div>
-          <div class="col-sm-6">
-            <!--<ul class="social-link pull-right">
-              <li><a href=""><span class="glyphicon glyphicon-heart-empty"></span></a></li>
-              <li><a href=""><span class="glyphicon glyphicon-heart-empty"></span></a></li>
-              <li><a href=""><span class="glyphicon glyphicon-heart-empty"></span></a></li>
-              <li><a href=""><span class="glyphicon glyphicon-heart-empty"></span></a></li>
-              <li><a href=""><span class="glyphicon glyphicon-heart-empty"></span></a></li>
-            </ul>-->
-          </div>
-        </div>
-      </div>
-    </footer>
   </div>
 
   <div id="config-panel" class="config-panel hidden-xs">
@@ -200,8 +146,8 @@
       <a id="config-trigger" class="config-trigger config-panel-hide" href="#"><i class="fa fa-cog"></i></a>
       <div class="panel-section margin-bottom-md">
         <h5 class="panel-title">Options</h5>
-        <p id="storage_warn" style="color:#f89406"></p>
-        <p style="color:#ff0000">Not working</p>
+        <p id="storage_warn" style="color:#f89406;"></p>
+        <p style="color:#ff0000;">Not working</p>
 
         <div class="row">
           <div class="col-lg-10">Display stars background</div>
@@ -227,11 +173,12 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
           integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
           crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/jstree.min.js"></script>
 
   <!-- Page Scripts -->
   <script type="text/javascript" src="js/utils.js"></script>
   <script type="text/javascript" src="js/names.js"></script>
-  <script type="text/javascript" src="js/hexmap.js"></script>
+  <script type="text/javascript" src="js/hexMap.js"></script>
   <script type="text/javascript" src="js/galaxy.js"></script>
   <script type="text/javascript" src="js/sector.js"></script>
   <script type="text/javascript" src="js/system.js"></script>

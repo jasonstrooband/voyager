@@ -1,14 +1,14 @@
 var galaxy;
 var hexMap;
 var sector;
+
 $(document).ready(function() {
-
-  config();
-
   var board = {
     width: 8,
     height: 10
   };
+
+  config();
 
   galaxy = new Galaxy(true);
   hexMap = new HexMap(board, 'hexmap');

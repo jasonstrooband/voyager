@@ -11,22 +11,25 @@ class Sector {
   }
 
   generate(){
-    this.reset_sector();
+    this.resetSector();
 
-    this.create_sector();
+    this.createSector();
 
     if(this.debug_flag) this.debug();
   }
 
-  reset_sector(){
+  resetSector(){
     this.sectorlist_html = [];
 
     this.starCount = 0;
   }
 
-  create_sector(){
-    for(var x = 0; x < hexMap.Hexes.length; x++){
-      var starRand = Math.floor(Math.random() * 100);
+  createSector(){
+    var x; // Loop var
+    var starRand = '';
+
+    for(x = 0; x < hexMap.Hexes.length; x++){
+      starRand = Math.floor(Math.random() * 100);
 
       if(starRand < this.density){
         this.starCount++;
@@ -39,7 +42,8 @@ class Sector {
   }
 
   getSystemByHexId(hexId){
-    for(var x = 0; x < this.systems.length; x++){
+    var x; // Loop var
+    for(x = 0; x < this.systems.length; x++){
       if(this.systems[x].hexId == hexId){
         return x;
       }
@@ -51,6 +55,7 @@ class Sector {
   }
 
   render(){
+    var x; // Loop var
     Names.getStarName();
 
     this.sectorlist_html.push("<table class='table table-condensed'>");
@@ -66,7 +71,7 @@ class Sector {
     this.sectorlist_html.push("</thead>");
     this.sectorlist_html.push("<tbody>");
 
-    for(var x = 0; x < this.systems.length; x++){
+    for(x = 0; x < this.systems.length; x++){
       this.sectorlist_html.push(`<tr><th>${this.systems[x].name}</th><td>${this.systems[x].hexId}</td><td>${this.systems[x].primary}</td><td>${this.systems[x].starCount}</td></tr>`);
     }
 
