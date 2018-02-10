@@ -1,3 +1,4 @@
+// TODO: Add comments
 class Sector {
   constructor(density = 20, debug = false) {
     this.debug_flag = debug;

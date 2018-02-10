@@ -1,3 +1,4 @@
+// TODO: Add comments
 class HexMap {
   constructor(board, canvasId, orientation = 'vertical') {
     this.LAYER1 = {};
@@ -138,7 +139,7 @@ class HexMap {
         }
 
         this.Hexes[this.Hexes.length] = {
-          id: this.idToString(x, y),
+          id: HexMap.idToString(x, y),
           x: centerX,
           y: centerY
         }
@@ -168,7 +169,7 @@ class HexMap {
   drawHexagon(centerX, centerY, id = '', fill = false){
     var idc;
     if(id){
-      idc = this.idStringToCoord(id);
+      idc = HexMap.idStringToCoord(id);
       this.ctx.fillText(id, centerX, centerY - this.Grid.tipHeight);
     }
 
@@ -320,6 +321,7 @@ class HexMap {
     var currentHex = this.getNearestHex(x, y);
 
     this.setLayer(2);
+    // TODO: Can only select hex that has a star on it
     this.selectHex(currentHex.id);
 
     if(currentHex.hasStar) sector.renderSystem(currentHex.id)
@@ -341,7 +343,7 @@ class HexMap {
 
     // iterate through each hex in the grid
     for(i = 0; i < this.Hexes.length; i++){
-      distance = this.distanceFromMidPoint(this.Hexes[i].x, this.Hexes[i].y, x, y);
+      distance = HexMap.distanceFromMidPoint(this.Hexes[i].x, this.Hexes[i].y, x, y);
 
       if (distance < minDistance){ // if this is the nearest thus far
         minDistance = distance;

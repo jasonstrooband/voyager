@@ -1,3 +1,4 @@
+// TODO: Add comments
 class Galaxy {
   constructor(debug = false) {
     this.debug_flag = debug;
@@ -8,9 +9,9 @@ class Galaxy {
 
   generate(){
     this.resetGalaxy();
-    this.galaxyType();
-    this.galaxyLocation();
-    this.clusterLocation();
+    this.genGalaxyType();
+    this.genGalaxyLocation();
+    this.genClusterLocation();
 
     if(this.debug_flag) this.debug();
   }
@@ -27,7 +28,7 @@ class Galaxy {
     this.galaxyCluster = '';
   }
 
-  galaxyType(){
+  genGalaxyType(){
     // Set vars
     var ranges = [[1,12], [13,28], [29,39], [40,94], [95,100]];
     var values = ['irregular', 'elliptical', 'lenticular', 'spiral', 'none'];
@@ -39,17 +40,17 @@ class Galaxy {
     switch(this.galaxyType){
       case 'irregular':
         this.modifiers.age_modifier--;
-        this.galaxyClassIrregular();
+        this.genGalaxyClassIrregular();
         break;
       case 'elliptical':
         this.modifiers.age_modifier += 5;
-        this.galaxyClassElliptical();
+        this.genGalaxyClassElliptical();
         break;
       case 'lenticular':
-        this.galaxyClassLenticular();
+        this.genGalaxyClassLenticular();
         break;
       case 'spiral':
-        this.galaxyClassSpiral();
+        this.genGalaxyClassSpiral();
         break;
       default:
         // TODO: Add default
@@ -57,7 +58,7 @@ class Galaxy {
     }
   }
 
-  galaxyClassIrregular(){
+  genGalaxyClassIrregular(){
     // Set vars
     var ranges = [[1,2], [2,4]];
     var values = ['irr-1', 'irr-2'];
@@ -66,11 +67,12 @@ class Galaxy {
     this.galaxyClass = returnFromRange(dice.d4(), ranges, values);
   }
 
-  galaxyClassElliptical(){
+  genGalaxyClassElliptical(){
+    console.log(dice.roll("1d7"));
     this.galaxyClass = 'E' + dice.roll("1d7");
   }
 
-  galaxyClassLenticular(){
+  genGalaxyClassLenticular(){
     // Set vars
     var ranges = [[1,2], [2,4]];
     var values = ['S', 'SB'];
@@ -79,7 +81,7 @@ class Galaxy {
     this.galaxyClass = returnFromRange(dice.d4(), ranges, values);
   }
 
-  galaxyClassSpiral(){
+  genGalaxyClassSpiral(){
     var design;
     var ranges1 = [[1,2], [2,4]];
     var values1 = ['S', 'SB'];
@@ -94,16 +96,16 @@ class Galaxy {
     this.galaxyArms = design;
   }
 
-  galaxyLocation(){
+  genGalaxyLocation(){
     // Go to sub functions
     switch(this.galaxyType){
       case 'irregular':
       case 'elliptical':
-        this.galaxyLocationIrregularElliptical();
+        this.genGalaxyLocationIrregularElliptical();
         break;
       case 'lenticular':
       case 'spiral':
-        this.galaxyLocationLenticularSpiral();
+        this.genGalaxyLocationLenticularSpiral();
         break;
       default:
         // TODO: Add default
@@ -111,7 +113,7 @@ class Galaxy {
     }
   }
 
-  galaxyLocationIrregularElliptical(){
+  genGalaxyLocationIrregularElliptical(){
     var ranges = [[1,3], [4,10]];
     var values = ['bulge', 'halo'];
     this.galaxyLocation = returnFromRange(dice.d10(), ranges, values);
@@ -130,7 +132,7 @@ class Galaxy {
     }
   }
 
-  galaxyLocationLenticularSpiral(){
+  genGalaxyLocationLenticularSpiral(){
     var ranges = [[1,18], [19,86], [87,100]];
     var values = ['bulge', 'disk', 'halo'];
     this.galaxyLocation = returnFromRange(dice.d100(), ranges, values);
@@ -168,22 +170,22 @@ class Galaxy {
     }
   }
 
-  clusterLocation(){
+  genClusterLocation(){
     switch(this.galaxyType){
       case 'irregular':
-        this.clusterLocationIrregular();
+        this.genClusterLocationIrregular();
         break;
       case 'elliptical':
-        this.clusterLocationElliptical();
+        this.genClusterLocationElliptical();
         break;
       case 'spiral':
-        this.clusterLocationSpiral();
+        this.genClusterLocationSpiral();
         break;
       case 'lenticular':
-        this.clusterLocationLenticular();
+        this.genClusterLocationLenticular();
         break;
       case 'none':
-        this.clusterLocationNone();
+        this.genClusterLocationNone();
         break;
       default:
         // TODO: Add default
@@ -204,19 +206,19 @@ class Galaxy {
     }
   }
 
-  clusterLocationIrregular(){
+  genClusterLocationIrregular(){
     var ranges = [[1,30], [31,50], [51,100]];
     var values = ['open', 'globular', 'no'];
     this.galaxyCluster = returnFromRange(dice.d100(), ranges, values);
   }
 
-  clusterLocationElliptical(){
+  genClusterLocationElliptical(){
     var ranges = [[1,4], [5,10]];
     var values = ['globular', 'no'];
     this.galaxyCluster = returnFromRange(dice.d10(), ranges, values);
   }
 
-  clusterLocationSpiral(){
+  genClusterLocationSpiral(){
     var ranges;
     var values;
 
@@ -259,7 +261,7 @@ class Galaxy {
     }
   }
 
-  clusterLocationLenticular(){
+  genClusterLocationLenticular(){
     // Set vars
     var ranges;
     var values;
@@ -286,7 +288,7 @@ class Galaxy {
     }
   }
 
-  clusterLocationNone(){
+  genClusterLocationNone(){
     // Set vars
     var ranges = [[1,3], [4,6], [7,10]];
     var values = ['globular', 'open', 'no'];
@@ -311,6 +313,8 @@ class Galaxy {
     var anyMods = arrayNot(this.modifiers, 0);
     galaxyHTML.push("<table class='table table-condensed'>");
     galaxyHTML.push("<tbody>");
+
+    console.log(typeof this.galaxyType);
 
     galaxyHTML.push(`<tr><th>Galaxy Type</th><td>${this.galaxyType.capitalize()} Galaxy</td></tr>`);
     if(this.galaxyClass && this.galaxyType == 'spiral') galaxyHTML.push(`<tr><th>Galaxy Classification</th><td>${this.galaxyClass.capitalize()} - ${this.galaxyArms}</td></tr>`);

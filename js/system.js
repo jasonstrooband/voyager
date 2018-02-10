@@ -1,23 +1,24 @@
+// TODO: Add comments
 class System {
   constructor(hexId, name) {
     this.hexId = hexId;
     this.name = name;
     this.starCount = 0;
 
-    this.createPrimary();
-    this.getStarMultiples();
+    this.genPrimaryStar();
+    this.genStarMultiples();
   }
 
-  createPrimary(){
+  genPrimaryStar(){
     this.starCount++;
-    this.last_star = new Body('star', this.starCount);
-    this.data = [ {...this.last_star} ];
-    this.primary = this.last_star.classification;
-    this.primary_class = this.last_star.class;
+    this.lastStar = new Body('star', this.starCount);
+    this.data = [ {...this.lastStar} ];
+    this.primary = this.lastStar.classification;
+    this.primary_class = this.lastStar.class;
     this.base_colour = this.getBaseColor();
   }
 
-  getStarMultiples(){
+  genStarMultiples(){
     var x = 0;
     var roll;
 
@@ -39,7 +40,7 @@ class System {
       if(this.starCount < 2){
         if(roll > 17){
           this.starCount++;
-          this.createNewStar();
+          this.genNewStar();
         } else {
           break;
         }
@@ -53,26 +54,26 @@ class System {
     }
   }
 
-  createNewStar(){
+  genNewStar(){
     var oldPosition = 0;
     var newPosition = 0;
     var newStar = 0;
 
     var roll = dice.d10();
     if(roll <= 2){
-      this.last_star.designation = 'B';
-      oldPosition = this.last_star.position;
+      this.lastStar.designation = 'B';
+      oldPosition = this.lastStar.position;
       newPosition = dice.roll('1d9');
-      this.last_star.position = (newPosition >= oldPosition) ? newPosition : oldPosition;
-      this.data.push({...this.last_star});
+      this.lastStar.position = (newPosition >= oldPosition) ? newPosition : oldPosition;
+      this.data.push({...this.lastStar});
     } else {
       newStar = new Body('star', this.starCount);
-      //console.log(newStar.type + '-' + this.last_star.type);
+      //console.log(newStar.type + '-' + this.lastStar.type);
       if(this.starTypeHigher(newStar.type))newStar.convertToBD();
-      //console.log(newStar.class + '-' + this.last_star.class);
-      if(newStar.class && !this.last_star.class) newStar.convertToBD();
+      //console.log(newStar.class + '-' + this.lastStar.class);
+      if(newStar.class && !this.lastStar.class) newStar.convertToBD();
       if(newStar.class && this.starClassHigher(newStar.class)) newStar.convertToBD();
-      if(newStar.type == this.last_star.type && newStar.position < this.last_star.position) newStar.position = this.last_star.position;
+      if(newStar.type == this.lastStar.type && newStar.position < this.lastStar.position) newStar.position = this.lastStar.position;
       this.data.push(newStar);
     }
   }
@@ -119,7 +120,7 @@ class System {
     var typeX = false;
 
     for(x = 0; x < typeSeq.length; x++){
-      if(typeSeq[x] == this.last_star.type) lastTypeX = x;
+      if(typeSeq[x] == this.lastStar.type) lastTypeX = x;
       if(typeSeq[x] == type) typeX = x;
     }
     return typeX < lastTypeX;
@@ -131,15 +132,15 @@ class System {
     var lastClassX = false;
     var classX = false;
     for(x = 0; x < classSeq.length; x++){
-      if(classSeq[x] == this.last_star.class) lastClassX = x;
+      if(classSeq[x] == this.lastStar.class) lastClassX = x;
       if(classSeq[x] == classf) classX = x;
     }
     return classX < lastClassX;
   }
 
   render(){
-    var system = $('#system');
-    var systemTree = $('#systemTree');
+    var systemTree = $('#system_tree');
+    var systemDetails = $('#system_details');
     var x; // Loop variable
     var systemHTML = [];
 
@@ -165,7 +166,7 @@ class System {
       "plugins" : [ "wholerow" ]
     }).on("select_node.jstree", function(event, node) {
       var tabId = $(node.event.currentTarget).parent().attr('data-tab');
-      $('#system').find('.tab-pane').removeClass('show active');
+      systemDetails.find('.tab-pane').removeClass('show active');
       $("#"+tabId).addClass('show active');
     });
 
@@ -186,7 +187,7 @@ class System {
 
     $('#system_name').html(this.name + ' (' + this.hexId + ')');
     systemHTML = systemHTML.join("\n");
-    system.empty().append(systemHTML);
+    systemDetails.html(systemHTML);
 
     //***************************************
     // First Orbits
@@ -197,9 +198,8 @@ class System {
       systemHTML.push(`<h3>${this.name + ' ' + this.data[x].designation}</h3>`);
       systemHTML.push("</div>");
       systemHTML = systemHTML.join("\n");
-      system.append(systemHTML);
+      systemDetails.append(systemHTML);
     }
-    console.log(this);
   }
 }
 

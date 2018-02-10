@@ -1,3 +1,4 @@
+// TODO: Add comments
 class Body {
   constructor(bodyType, designation) {
     this.designation = designation;

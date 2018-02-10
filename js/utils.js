@@ -1,6 +1,8 @@
+// TODO: Add comments
+
 function makeDie(sides) {
   var die = function() {
-    return 1 + Math.random() * sides || 0;
+    return Math.floor(1 + Math.random() * sides) || 0;
   };
 
   die.times = function(count) {
@@ -55,7 +57,9 @@ function returnFromRange(rand, ranges, values){
   for(x = 0; x < ranges.length; x++) {
     if(rand >= ranges[x][0] && rand <= ranges[x][1]) return values[x];
   }
-  alert('Out of range!');
+  console.error(rand);
+  console.error(ranges);
+  console.error(values);
   return false;
 }
 

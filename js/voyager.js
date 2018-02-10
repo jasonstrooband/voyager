@@ -2,6 +2,8 @@ var galaxy;
 var hexMap;
 var sector;
 
+// TODO: Add comments
+
 $(document).ready(function() {
   var board = {
     width: 8,
