@@ -145,7 +145,6 @@ class HexMap {
         }
       }
     }
-    console.log(this.Hexes);
   }
 
   drawGrid(drawCoord = false) {
@@ -251,7 +250,7 @@ class HexMap {
       }
 
       this.ctx.beginPath();
-      this.ctx.arc(currentHex.x, currentHex.y, radius, 0, 360);
+      this.ctx.arc(currentHex.x, currentHex.y, radius, 0, 2*Math.PI);
       this.ctx.fill();
       this.ctx.closePath();
     }

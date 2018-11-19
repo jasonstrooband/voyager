@@ -1,0 +1,5223 @@
+{
+  "O0-0": {
+    "Mass": 160,
+    "Luminosity": 34100000,
+    "Radius": 80.2,
+    "Temperature": 50000,
+    "R": 138,
+    "G": 168,
+    "B": 255
+  },
+  "O0-Ia": {
+    "Mass": 150,
+    "Luminosity": 2950000,
+    "Radius": 22.1,
+    "Temperature": 50000,
+    "R": 139,
+    "G": 168,
+    "B": 255
+  },
+  "O0-Ib": {
+    "Mass": 140,
+    "Luminosity": 2150000,
+    "Radius": 20.2,
+    "Temperature": 50000,
+    "R": 140,
+    "G": 168,
+    "B": 255
+  },
+  "O0-II": {
+    "Mass": 130,
+    "Luminosity": 2150000,
+    "Radius": 20.2,
+    "Temperature": 50000,
+    "R": 141,
+    "G": 168,
+    "B": 255
+  },
+  "O0-III": {
+    "Mass": 120,
+    "Luminosity": 2150000,
+    "Radius": 20.2,
+    "Temperature": 50000,
+    "R": 142,
+    "G": 168,
+    "B": 255
+  },
+  "O0-IV": {
+    "Mass": 110,
+    "Luminosity": 1360000,
+    "Radius": 16,
+    "Temperature": 50000,
+    "R": 143,
+    "G": 168,
+    "B": 255
+  },
+  "O0-V": {
+    "Mass": 100,
+    "Luminosity": 1240000,
+    "Radius": 15.3,
+    "Temperature": 50000,
+    "R": 144,
+    "G": 168,
+    "B": 255
+  },
+  "O0-VI": {
+    "Mass": 60,
+    "Luminosity": 940000,
+    "Radius": 13.3,
+    "Temperature": 50000,
+    "R": 145,
+    "G": 168,
+    "B": 255
+  },
+  "O1-0": {
+    "Mass": 159.7,
+    "Luminosity": 27100000,
+    "Radius": 78.8,
+    "Temperature": 47600,
+    "R": 146,
+    "G": 168,
+    "B": 255
+  },
+  "O1-Ia": {
+    "Mass": 149.3,
+    "Luminosity": 2250000,
+    "Radius": 22.7,
+    "Temperature": 47600,
+    "R": 146,
+    "G": 168,
+    "B": 255
+  },
+  "O1-Ib": {
+    "Mass": 139,
+    "Luminosity": 1870000,
+    "Radius": 20.7,
+    "Temperature": 47600,
+    "R": 146,
+    "G": 168,
+    "B": 255
+  },
+  "O1-II": {
+    "Mass": 128.6,
+    "Luminosity": 1730000,
+    "Radius": 19.8,
+    "Temperature": 47800,
+    "R": 146,
+    "G": 168,
+    "B": 255
+  },
+  "O1-III": {
+    "Mass": 118.2,
+    "Luminosity": 1580000,
+    "Radius": 18.9,
+    "Temperature": 47800,
+    "R": 146,
+    "G": 168,
+    "B": 255
+  },
+  "O1-IV": {
+    "Mass": 107.9,
+    "Luminosity": 1090000,
+    "Radius": 15.7,
+    "Temperature": 47800,
+    "R": 145,
+    "G": 167,
+    "B": 255
+  },
+  "O1-V": {
+    "Mass": 97.5,
+    "Luminosity": 994000,
+    "Radius": 15,
+    "Temperature": 47800,
+    "R": 146,
+    "G": 168,
+    "B": 255
+  },
+  "O1-VI": {
+    "Mass": 37,
+    "Luminosity": 754000,
+    "Radius": 13.1,
+    "Temperature": 47800,
+    "R": 146,
+    "G": 168,
+    "B": 255
+  },
+  "O2-0": {
+    "Mass": 159.4,
+    "Luminosity": 21400000,
+    "Radius": 77.7,
+    "Temperature": 45200,
+    "R": 148,
+    "G": 170,
+    "B": 255
+  },
+  "O2-Ia": {
+    "Mass": 148.6,
+    "Luminosity": 2140000,
+    "Radius": 24.6,
+    "Temperature": 45200,
+    "R": 148,
+    "G": 170,
+    "B": 255
+  },
+  "O2-Ib": {
+    "Mass": 137.9,
+    "Luminosity": 1620000,
+    "Radius": 21.4,
+    "Temperature": 45200,
+    "R": 148,
+    "G": 170,
+    "B": 255
+  },
+  "O2-II": {
+    "Mass": 127.2,
+    "Luminosity": 1520000,
+    "Radius": 20.3,
+    "Temperature": 45600,
+    "R": 148,
+    "G": 170,
+    "B": 255
+  },
+  "O2-III": {
+    "Mass": 116.5,
+    "Luminosity": 1260000,
+    "Radius": 18.5,
+    "Temperature": 45600,
+    "R": 148,
+    "G": 169,
+    "B": 255
+  },
+  "O2-IV": {
+    "Mass": 105.7,
+    "Luminosity": 872000,
+    "Radius": 15.4,
+    "Temperature": 45600,
+    "R": 146,
+    "G": 169,
+    "B": 255
+  },
+  "O2-V": {
+    "Mass": 95,
+    "Luminosity": 795000,
+    "Radius": 14.7,
+    "Temperature": 45600,
+    "R": 148,
+    "G": 170,
+    "B": 255
+  },
+  "O2-VI": {
+    "Mass": 30,
+    "Luminosity": 603000,
+    "Radius": 12.8,
+    "Temperature": 45600,
+    "R": 148,
+    "G": 170,
+    "B": 255
+  },
+  "O3-0": {
+    "Mass": 159,
+    "Luminosity": 16800000,
+    "Radius": 76.9,
+    "Temperature": 42800,
+    "R": 151,
+    "G": 172,
+    "B": 255
+  },
+  "O3-Ia": {
+    "Mass": 148,
+    "Luminosity": 1850000,
+    "Radius": 25.5,
+    "Temperature": 42800,
+    "R": 151,
+    "G": 172,
+    "B": 255
+  },
+  "O3-Ib": {
+    "Mass": 136.9,
+    "Luminosity": 1400000,
+    "Radius": 22.2,
+    "Temperature": 42800,
+    "R": 151,
+    "G": 172,
+    "B": 255
+  },
+  "O3-II": {
+    "Mass": 125.8,
+    "Luminosity": 1210000,
+    "Radius": 20,
+    "Temperature": 43400,
+    "R": 149,
+    "G": 173,
+    "B": 255
+  },
+  "O3-III": {
+    "Mass": 114.7,
+    "Luminosity": 917000,
+    "Radius": 17.5,
+    "Temperature": 43400,
+    "R": 150,
+    "G": 171,
+    "B": 255
+  },
+  "O3-IV": {
+    "Mass": 103.6,
+    "Luminosity": 696000,
+    "Radius": 15.2,
+    "Temperature": 43400,
+    "R": 148,
+    "G": 170,
+    "B": 255
+  },
+  "O3-V": {
+    "Mass": 92.5,
+    "Luminosity": 634000,
+    "Radius": 14.5,
+    "Temperature": 43400,
+    "R": 151,
+    "G": 172,
+    "B": 255
+  },
+  "O3-VI": {
+    "Mass": 23,
+    "Luminosity": 481000,
+    "Radius": 12.6,
+    "Temperature": 43400,
+    "R": 151,
+    "G": 172,
+    "B": 255
+  },
+  "O4-0": {
+    "Mass": 158.7,
+    "Luminosity": 13200000,
+    "Radius": 76.4,
+    "Temperature": 40400,
+    "R": 153,
+    "G": 174,
+    "B": 255
+  },
+  "O4-Ia": {
+    "Mass": 147.3,
+    "Luminosity": 1740000,
+    "Radius": 27.7,
+    "Temperature": 40400,
+    "R": 153,
+    "G": 174,
+    "B": 255
+  },
+  "O4-Ib": {
+    "Mass": 135.8,
+    "Luminosity": 1200000,
+    "Radius": 23.1,
+    "Temperature": 40400,
+    "R": 153,
+    "G": 174,
+    "B": 255
+  },
+  "O4-II": {
+    "Mass": 124.4,
+    "Luminosity": 960000,
+    "Radius": 19.8,
+    "Temperature": 41200,
+    "R": 151,
+    "G": 175,
+    "B": 255
+  },
+  "O4-III": {
+    "Mass": 112.9,
+    "Luminosity": 728000,
+    "Radius": 17.3,
+    "Temperature": 41200,
+    "R": 152,
+    "G": 172,
+    "B": 255
+  },
+  "O4-IV": {
+    "Mass": 101.5,
+    "Luminosity": 552000,
+    "Radius": 15,
+    "Temperature": 41200,
+    "R": 149,
+    "G": 171,
+    "B": 255
+  },
+  "O4-V": {
+    "Mass": 90,
+    "Luminosity": 504000,
+    "Radius": 14.4,
+    "Temperature": 41200,
+    "R": 153,
+    "G": 174,
+    "B": 255
+  },
+  "O4-VI": {
+    "Mass": 20,
+    "Luminosity": 382000,
+    "Radius": 12.5,
+    "Temperature": 41200,
+    "R": 153,
+    "G": 174,
+    "B": 255
+  },
+  "O5-0": {
+    "Mass": 158.4,
+    "Luminosity": 10300000,
+    "Radius": 76.2,
+    "Temperature": 38000,
+    "R": 155,
+    "G": 176,
+    "B": 255
+  },
+  "O5-Ia": {
+    "Mass": 142,
+    "Luminosity": 1480000,
+    "Radius": 29,
+    "Temperature": 38000,
+    "R": 155,
+    "G": 176,
+    "B": 255
+  },
+  "O5-Ib": {
+    "Mass": 125.6,
+    "Luminosity": 1030000,
+    "Radius": 24.1,
+    "Temperature": 38000,
+    "R": 155,
+    "G": 176,
+    "B": 255
+  },
+  "O5-II": {
+    "Mass": 109.2,
+    "Luminosity": 759000,
+    "Radius": 19.7,
+    "Temperature": 39000,
+    "R": 153,
+    "G": 177,
+    "B": 255
+  },
+  "O5-III": {
+    "Mass": 92.8,
+    "Luminosity": 525000,
+    "Radius": 16.4,
+    "Temperature": 39000,
+    "R": 154,
+    "G": 174,
+    "B": 255
+  },
+  "O5-IV": {
+    "Mass": 76.4,
+    "Luminosity": 437000,
+    "Radius": 14.9,
+    "Temperature": 39000,
+    "R": 150,
+    "G": 172,
+    "B": 255
+  },
+  "O5-V": {
+    "Mass": 60,
+    "Luminosity": 398000,
+    "Radius": 14.2,
+    "Temperature": 39000,
+    "R": 155,
+    "G": 176,
+    "B": 255
+  },
+  "O5-VI": {
+    "Mass": 17.5,
+    "Luminosity": 302000,
+    "Radius": 12.4,
+    "Temperature": 39000,
+    "R": 155,
+    "G": 176,
+    "B": 255
+  },
+  "O6-0": {
+    "Mass": 136.7,
+    "Luminosity": 7810000,
+    "Radius": 76.6,
+    "Temperature": 35400,
+    "R": 157,
+    "G": 178,
+    "B": 255
+  },
+  "O6-Ia": {
+    "Mass": 120.1,
+    "Luminosity": 1360000,
+    "Radius": 31.9,
+    "Temperature": 35400,
+    "R": 157,
+    "G": 178,
+    "B": 255
+  },
+  "O6-Ib": {
+    "Mass": 103.5,
+    "Luminosity": 781000,
+    "Radius": 24.2,
+    "Temperature": 35400,
+    "R": 157,
+    "G": 178,
+    "B": 255
+  },
+  "O6-II": {
+    "Mass": 86.9,
+    "Luminosity": 654000,
+    "Radius": 20.5,
+    "Temperature": 36800,
+    "R": 155,
+    "G": 179,
+    "B": 255
+  },
+  "O6-III": {
+    "Mass": 70.2,
+    "Luminosity": 376000,
+    "Radius": 15.6,
+    "Temperature": 36800,
+    "R": 156,
+    "G": 175,
+    "B": 255
+  },
+  "O6-IV": {
+    "Mass": 53.6,
+    "Luminosity": 313000,
+    "Radius": 14.2,
+    "Temperature": 36800,
+    "R": 151,
+    "G": 174,
+    "B": 255
+  },
+  "O6-V": {
+    "Mass": 37,
+    "Luminosity": 260000,
+    "Radius": 12.9,
+    "Temperature": 36800,
+    "R": 162,
+    "G": 184,
+    "B": 255
+  },
+  "O6-VI": {
+    "Mass": 14.2,
+    "Luminosity": 180000,
+    "Radius": 10.8,
+    "Temperature": 36800,
+    "R": 162,
+    "G": 184,
+    "B": 255
+  },
+  "O7-0": {
+    "Mass": 115.1,
+    "Luminosity": 5880000,
+    "Radius": 77.4,
+    "Temperature": 32800,
+    "R": 160,
+    "G": 181,
+    "B": 255
+  },
+  "O7-Ia": {
+    "Mass": 100.9,
+    "Luminosity": 1120000,
+    "Radius": 33.8,
+    "Temperature": 32800,
+    "R": 160,
+    "G": 181,
+    "B": 255
+  },
+  "O7-Ib": {
+    "Mass": 86.7,
+    "Luminosity": 588000,
+    "Radius": 24.5,
+    "Temperature": 32800,
+    "R": 160,
+    "G": 181,
+    "B": 255
+  },
+  "O7-II": {
+    "Mass": 72.5,
+    "Luminosity": 510000,
+    "Radius": 20.5,
+    "Temperature": 34600,
+    "R": 156,
+    "G": 181,
+    "B": 255
+  },
+  "O7-III": {
+    "Mass": 58.4,
+    "Luminosity": 294000,
+    "Radius": 15.5,
+    "Temperature": 34600,
+    "R": 158,
+    "G": 177,
+    "B": 255
+  },
+  "O7-IV": {
+    "Mass": 44.2,
+    "Luminosity": 223000,
+    "Radius": 13.5,
+    "Temperature": 34600,
+    "R": 152,
+    "G": 175,
+    "B": 255
+  },
+  "O7-V": {
+    "Mass": 30,
+    "Luminosity": 154000,
+    "Radius": 11.3,
+    "Temperature": 34600,
+    "R": 157,
+    "G": 177,
+    "B": 255
+  },
+  "O7-VI": {
+    "Mass": 10.9,
+    "Luminosity": 107000,
+    "Radius": 9.36,
+    "Temperature": 34600,
+    "R": 157,
+    "G": 177,
+    "B": 255
+  },
+  "O8-0": {
+    "Mass": 93.4,
+    "Luminosity": 4370000,
+    "Radius": 78.7,
+    "Temperature": 30200,
+    "R": 162,
+    "G": 183,
+    "B": 255
+  },
+  "O8-Ia": {
+    "Mass": 81.7,
+    "Luminosity": 913000,
+    "Radius": 36,
+    "Temperature": 30200,
+    "R": 162,
+    "G": 183,
+    "B": 255
+  },
+  "O8-Ib": {
+    "Mass": 69.9,
+    "Luminosity": 437000,
+    "Radius": 24.9,
+    "Temperature": 30200,
+    "R": 162,
+    "G": 183,
+    "B": 255
+  },
+  "O8-II": {
+    "Mass": 58.2,
+    "Luminosity": 360000,
+    "Radius": 19.6,
+    "Temperature": 32400,
+    "R": 158,
+    "G": 183,
+    "B": 255
+  },
+  "O8-III": {
+    "Mass": 46.5,
+    "Luminosity": 207000,
+    "Radius": 14.9,
+    "Temperature": 32400,
+    "R": 157,
+    "G": 178,
+    "B": 255
+  },
+  "O8-IV": {
+    "Mass": 34.7,
+    "Luminosity": 157000,
+    "Radius": 13,
+    "Temperature": 32400,
+    "R": 153,
+    "G": 176,
+    "B": 255
+  },
+  "O8-V": {
+    "Mass": 23,
+    "Luminosity": 99100,
+    "Radius": 10.3,
+    "Temperature": 32400,
+    "R": 157,
+    "G": 177,
+    "B": 255
+  },
+  "O8-VI": {
+    "Mass": 7.6,
+    "Luminosity": 57000,
+    "Radius": 7.81,
+    "Temperature": 32400,
+    "R": 157,
+    "G": 177,
+    "B": 255
+  },
+  "O9-0": {
+    "Mass": 71.8,
+    "Luminosity": 3190000,
+    "Radius": 80.5,
+    "Temperature": 27600,
+    "R": 164,
+    "G": 185,
+    "B": 255
+  },
+  "O9-Ia": {
+    "Mass": 63.1,
+    "Luminosity": 731000,
+    "Radius": 38.5,
+    "Temperature": 27600,
+    "R": 164,
+    "G": 185,
+    "B": 255
+  },
+  "O9-Ib": {
+    "Mass": 54.5,
+    "Luminosity": 319000,
+    "Radius": 25.5,
+    "Temperature": 27600,
+    "R": 164,
+    "G": 185,
+    "B": 255
+  },
+  "O9-II": {
+    "Mass": 45.9,
+    "Luminosity": 276000,
+    "Radius": 19.8,
+    "Temperature": 30200,
+    "R": 160,
+    "G": 186,
+    "B": 255
+  },
+  "O9-III": {
+    "Mass": 37.3,
+    "Luminosity": 159000,
+    "Radius": 15,
+    "Temperature": 30200,
+    "R": 158,
+    "G": 177,
+    "B": 255
+  },
+  "O9-IV": {
+    "Mass": 28.6,
+    "Luminosity": 110000,
+    "Radius": 12.5,
+    "Temperature": 30200,
+    "R": 155,
+    "G": 177,
+    "B": 255
+  },
+  "O9-V": {
+    "Mass": 20,
+    "Luminosity": 57600,
+    "Radius": 9.04,
+    "Temperature": 30200,
+    "R": 154,
+    "G": 178,
+    "B": 255
+  },
+  "O9-VI": {
+    "Mass": 6.7,
+    "Luminosity": 33100,
+    "Radius": 6.85,
+    "Temperature": 30200,
+    "R": 154,
+    "G": 178,
+    "B": 255
+  },
+  "B0-0": {
+    "Mass": 50.1,
+    "Luminosity": 2280000,
+    "Radius": 83,
+    "Temperature": 25000,
+    "R": 161,
+    "G": 189,
+    "B": 255
+  },
+  "B0-Ia": {
+    "Mass": 44.7,
+    "Luminosity": 573000,
+    "Radius": 41.6,
+    "Temperature": 25000,
+    "R": 161,
+    "G": 189,
+    "B": 255
+  },
+  "B0-Ib": {
+    "Mass": 39.2,
+    "Luminosity": 228000,
+    "Radius": 26.2,
+    "Temperature": 25000,
+    "R": 161,
+    "G": 189,
+    "B": 255
+  },
+  "B0-II": {
+    "Mass": 33.8,
+    "Luminosity": 190000,
+    "Radius": 19.1,
+    "Temperature": 28000,
+    "R": 162,
+    "G": 188,
+    "B": 255
+  },
+  "B0-III": {
+    "Mass": 28.4,
+    "Luminosity": 109000,
+    "Radius": 14.5,
+    "Temperature": 28000,
+    "R": 158,
+    "G": 177,
+    "B": 255
+  },
+  "B0-IV": {
+    "Mass": 22.9,
+    "Luminosity": 75700,
+    "Radius": 12.1,
+    "Temperature": 28000,
+    "R": 156,
+    "G": 179,
+    "B": 255
+  },
+  "B0-V": {
+    "Mass": 17.5,
+    "Luminosity": 36200,
+    "Radius": 8.34,
+    "Temperature": 28000,
+    "R": 156,
+    "G": 178,
+    "B": 255
+  },
+  "B0-VI": {
+    "Mass": 5.9,
+    "Luminosity": 19000,
+    "Radius": 6.04,
+    "Temperature": 28000,
+    "R": 156,
+    "G": 178,
+    "B": 255
+  },
+  "B1-0": {
+    "Mass": 45.1,
+    "Luminosity": 2020000,
+    "Radius": 86.2,
+    "Temperature": 23790,
+    "R": 168,
+    "G": 193,
+    "B": 255
+  },
+  "B1-Ia": {
+    "Mass": 40,
+    "Luminosity": 507000,
+    "Radius": 43.2,
+    "Temperature": 23790,
+    "R": 168,
+    "G": 193,
+    "B": 255
+  },
+  "B1-Ib": {
+    "Mass": 34.8,
+    "Luminosity": 184000,
+    "Radius": 26,
+    "Temperature": 23790,
+    "R": 168,
+    "G": 193,
+    "B": 255
+  },
+  "B1-II": {
+    "Mass": 29.7,
+    "Luminosity": 134000,
+    "Radius": 18.3,
+    "Temperature": 26190,
+    "R": 163,
+    "G": 190,
+    "B": 255
+  },
+  "B1-III": {
+    "Mass": 24.5,
+    "Luminosity": 53400,
+    "Radius": 11.6,
+    "Temperature": 26190,
+    "R": 158,
+    "G": 177,
+    "B": 255
+  },
+  "B1-IV": {
+    "Mass": 19.4,
+    "Luminosity": 37000,
+    "Radius": 9.63,
+    "Temperature": 26190,
+    "R": 157,
+    "G": 180,
+    "B": 255
+  },
+  "B1-V": {
+    "Mass": 14.2,
+    "Luminosity": 19400,
+    "Radius": 6.97,
+    "Temperature": 26190,
+    "R": 160,
+    "G": 182,
+    "B": 255
+  },
+  "B1-VI": {
+    "Mass": 5.2,
+    "Luminosity": 10200,
+    "Radius": 5.05,
+    "Temperature": 26190,
+    "R": 160,
+    "G": 182,
+    "B": 255
+  },
+  "B2-0": {
+    "Mass": 40.1,
+    "Luminosity": 1620000,
+    "Radius": 85.7,
+    "Temperature": 22580,
+    "R": 177,
+    "G": 196,
+    "B": 255
+  },
+  "B2-Ia": {
+    "Mass": 35.2,
+    "Luminosity": 446000,
+    "Radius": 45,
+    "Temperature": 22580,
+    "R": 177,
+    "G": 196,
+    "B": 255
+  },
+  "B2-Ib": {
+    "Mass": 30.4,
+    "Luminosity": 162000,
+    "Radius": 27.1,
+    "Temperature": 22580,
+    "R": 177,
+    "G": 196,
+    "B": 255
+  },
+  "B2-II": {
+    "Mass": 25.5,
+    "Luminosity": 93600,
+    "Radius": 17.7,
+    "Temperature": 24380,
+    "R": 165,
+    "G": 192,
+    "B": 255
+  },
+  "B2-III": {
+    "Mass": 20.6,
+    "Luminosity": 28300,
+    "Radius": 9.71,
+    "Temperature": 24380,
+    "R": 159,
+    "G": 180,
+    "B": 255
+  },
+  "B2-IV": {
+    "Mass": 15.8,
+    "Luminosity": 19600,
+    "Radius": 8.08,
+    "Temperature": 24380,
+    "R": 159,
+    "G": 179,
+    "B": 255
+  },
+  "B2-V": {
+    "Mass": 10.9,
+    "Luminosity": 9360,
+    "Radius": 5.59,
+    "Temperature": 24380,
+    "R": 160,
+    "G": 180,
+    "B": 255
+  },
+  "B2-VI": {
+    "Mass": 4.5,
+    "Luminosity": 5390,
+    "Radius": 4.24,
+    "Temperature": 24380,
+    "R": 160,
+    "G": 180,
+    "B": 255
+  },
+  "B3-0": {
+    "Mass": 35.1,
+    "Luminosity": 1420000,
+    "Radius": 89.5,
+    "Temperature": 21370,
+    "R": 175,
+    "G": 194,
+    "B": 255
+  },
+  "B3-Ia": {
+    "Mass": 30.5,
+    "Luminosity": 428000,
+    "Radius": 49.2,
+    "Temperature": 21370,
+    "R": 175,
+    "G": 194,
+    "B": 255
+  },
+  "B3-Ib": {
+    "Mass": 25.9,
+    "Luminosity": 129000,
+    "Radius": 27,
+    "Temperature": 21370,
+    "R": 175,
+    "G": 194,
+    "B": 255
+  },
+  "B3-II": {
+    "Mass": 21.4,
+    "Luminosity": 64500,
+    "Radius": 17.1,
+    "Temperature": 22570,
+    "R": 168,
+    "G": 193,
+    "B": 255
+  },
+  "B3-III": {
+    "Mass": 16.8,
+    "Luminosity": 13500,
+    "Radius": 7.82,
+    "Temperature": 22570,
+    "R": 163,
+    "G": 187,
+    "B": 255
+  },
+  "B3-IV": {
+    "Mass": 12.2,
+    "Luminosity": 9320,
+    "Radius": 6.51,
+    "Temperature": 22570,
+    "R": 166,
+    "G": 188,
+    "B": 255
+  },
+  "B3-V": {
+    "Mass": 7.6,
+    "Luminosity": 4890,
+    "Radius": 4.71,
+    "Temperature": 22570,
+    "R": 165,
+    "G": 185,
+    "B": 255
+  },
+  "B3-VI": {
+    "Mass": 3.8,
+    "Luminosity": 2570,
+    "Radius": 3.41,
+    "Temperature": 22570,
+    "R": 165,
+    "G": 185,
+    "B": 255
+  },
+  "B4-0": {
+    "Mass": 30.1,
+    "Luminosity": 1230000,
+    "Radius": 93.7,
+    "Temperature": 20160,
+    "R": 187,
+    "G": 203,
+    "B": 255
+  },
+  "B4-Ia": {
+    "Mass": 26.2,
+    "Luminosity": 338000,
+    "Radius": 49.2,
+    "Temperature": 20160,
+    "R": 187,
+    "G": 203,
+    "B": 255
+  },
+  "B4-Ib": {
+    "Mass": 22.3,
+    "Luminosity": 112000,
+    "Radius": 28.3,
+    "Temperature": 20160,
+    "R": 187,
+    "G": 203,
+    "B": 255
+  },
+  "B4-II": {
+    "Mass": 18.4,
+    "Luminosity": 43700,
+    "Radius": 16.7,
+    "Temperature": 20760,
+    "R": 172,
+    "G": 194,
+    "B": 255
+  },
+  "B4-III": {
+    "Mass": 14.5,
+    "Luminosity": 6930,
+    "Radius": 6.63,
+    "Temperature": 20760,
+    "R": 166,
+    "G": 188,
+    "B": 255
+  },
+  "B4-IV": {
+    "Mass": 10.6,
+    "Luminosity": 4790,
+    "Radius": 5.52,
+    "Temperature": 20760,
+    "R": 169,
+    "G": 190,
+    "B": 255
+  },
+  "B4-V": {
+    "Mass": 6.7,
+    "Luminosity": 2290,
+    "Radius": 3.82,
+    "Temperature": 20760,
+    "R": 164,
+    "G": 184,
+    "B": 255
+  },
+  "B4-VI": {
+    "Mass": 3.4,
+    "Luminosity": 1320,
+    "Radius": 2.89,
+    "Temperature": 20760,
+    "R": 164,
+    "G": 184,
+    "B": 255
+  },
+  "B5-0": {
+    "Mass": 25.1,
+    "Luminosity": 965000,
+    "Radius": 93.9,
+    "Temperature": 18950,
+    "R": 179,
+    "G": 202,
+    "B": 255
+  },
+  "B5-Ia": {
+    "Mass": 21.9,
+    "Luminosity": 291000,
+    "Radius": 51.6,
+    "Temperature": 18950,
+    "R": 179,
+    "G": 202,
+    "B": 255
+  },
+  "B5-Ib": {
+    "Mass": 18.7,
+    "Luminosity": 88000,
+    "Radius": 28.4,
+    "Temperature": 18950,
+    "R": 179,
+    "G": 202,
+    "B": 255
+  },
+  "B5-II": {
+    "Mass": 15.5,
+    "Luminosity": 29100,
+    "Radius": 16.3,
+    "Temperature": 18950,
+    "R": 175,
+    "G": 195,
+    "B": 255
+  },
+  "B5-III": {
+    "Mass": 12.3,
+    "Luminosity": 3190,
+    "Radius": 5.4,
+    "Temperature": 18950,
+    "R": 168,
+    "G": 189,
+    "B": 255
+  },
+  "B5-IV": {
+    "Mass": 9.1,
+    "Luminosity": 2210,
+    "Radius": 4.5,
+    "Temperature": 18950,
+    "R": 172,
+    "G": 192,
+    "B": 255
+  },
+  "B5-V": {
+    "Mass": 5.9,
+    "Luminosity": 1160,
+    "Radius": 3.26,
+    "Temperature": 18950,
+    "R": 170,
+    "G": 191,
+    "B": 255
+  },
+  "B5-VI": {
+    "Mass": 2.9,
+    "Luminosity": 667,
+    "Radius": 2.47,
+    "Temperature": 18950,
+    "R": 170,
+    "G": 191,
+    "B": 255
+  },
+  "B6-0": {
+    "Mass": 23.2,
+    "Luminosity": 758000,
+    "Radius": 102,
+    "Temperature": 17140,
+    "R": 191,
+    "G": 207,
+    "B": 255
+  },
+  "B6-Ia": {
+    "Mass": 20.2,
+    "Luminosity": 229000,
+    "Radius": 55.9,
+    "Temperature": 17140,
+    "R": 191,
+    "G": 207,
+    "B": 255
+  },
+  "B6-Ib": {
+    "Mass": 17.2,
+    "Luminosity": 63100,
+    "Radius": 29.4,
+    "Temperature": 17140,
+    "R": 191,
+    "G": 207,
+    "B": 255
+  },
+  "B6-II": {
+    "Mass": 14.2,
+    "Luminosity": 17400,
+    "Radius": 15.4,
+    "Temperature": 17140,
+    "R": 177,
+    "G": 196,
+    "B": 255
+  },
+  "B6-III": {
+    "Mass": 11.2,
+    "Luminosity": 1740,
+    "Radius": 4.87,
+    "Temperature": 17140,
+    "R": 170,
+    "G": 190,
+    "B": 255
+  },
+  "B6-IV": {
+    "Mass": 8.2,
+    "Luminosity": 1200,
+    "Radius": 4.05,
+    "Temperature": 17140,
+    "R": 175,
+    "G": 194,
+    "B": 255
+  },
+  "B6-V": {
+    "Mass": 5.2,
+    "Luminosity": 692,
+    "Radius": 3.07,
+    "Temperature": 17140,
+    "R": 172,
+    "G": 189,
+    "B": 255
+  },
+  "B6-VI": {
+    "Mass": 2.7,
+    "Luminosity": 363,
+    "Radius": 2.23,
+    "Temperature": 17140,
+    "R": 172,
+    "G": 189,
+    "B": 255
+  },
+  "B7-0": {
+    "Mass": 21.4,
+    "Luminosity": 533000,
+    "Radius": 107,
+    "Temperature": 15330,
+    "R": 195,
+    "G": 209,
+    "B": 255
+  },
+  "B7-Ia": {
+    "Mass": 18.6,
+    "Luminosity": 193000,
+    "Radius": 64.3,
+    "Temperature": 15330,
+    "R": 195,
+    "G": 209,
+    "B": 255
+  },
+  "B7-Ib": {
+    "Mass": 15.8,
+    "Luminosity": 44300,
+    "Radius": 30.8,
+    "Temperature": 15330,
+    "R": 195,
+    "G": 209,
+    "B": 255
+  },
+  "B7-II": {
+    "Mass": 12.9,
+    "Luminosity": 11100,
+    "Radius": 15.4,
+    "Temperature": 15330,
+    "R": 179,
+    "G": 198,
+    "B": 255
+  },
+  "B7-III": {
+    "Mass": 10.1,
+    "Luminosity": 1010,
+    "Radius": 4.66,
+    "Temperature": 15330,
+    "R": 171,
+    "G": 191,
+    "B": 255
+  },
+  "B7-IV": {
+    "Mass": 7.3,
+    "Luminosity": 640,
+    "Radius": 3.7,
+    "Temperature": 15330,
+    "R": 170,
+    "G": 189,
+    "B": 255
+  },
+  "B7-V": {
+    "Mass": 4.5,
+    "Luminosity": 404,
+    "Radius": 2.94,
+    "Temperature": 15330,
+    "R": 173,
+    "G": 191,
+    "B": 255
+  },
+  "B7-VI": {
+    "Mass": 2.5,
+    "Luminosity": 193,
+    "Radius": 2.03,
+    "Temperature": 15330,
+    "R": 173,
+    "G": 191,
+    "B": 255
+  },
+  "B8-0": {
+    "Mass": 19.5,
+    "Luminosity": 367000,
+    "Radius": 114,
+    "Temperature": 13520,
+    "R": 182,
+    "G": 206,
+    "B": 255
+  },
+  "B8-Ia": {
+    "Mass": 16.9,
+    "Luminosity": 160000,
+    "Radius": 75.2,
+    "Temperature": 13520,
+    "R": 182,
+    "G": 206,
+    "B": 255
+  },
+  "B8-Ib": {
+    "Mass": 14.3,
+    "Luminosity": 33400,
+    "Radius": 34.4,
+    "Temperature": 13520,
+    "R": 182,
+    "G": 206,
+    "B": 255
+  },
+  "B8-II": {
+    "Mass": 11.7,
+    "Luminosity": 6990,
+    "Radius": 15.7,
+    "Temperature": 13520,
+    "R": 181,
+    "G": 199,
+    "B": 255
+  },
+  "B8-III": {
+    "Mass": 9,
+    "Luminosity": 530,
+    "Radius": 4.33,
+    "Temperature": 13520,
+    "R": 175,
+    "G": 193,
+    "B": 255
+  },
+  "B8-IV": {
+    "Mass": 6.4,
+    "Luminosity": 334,
+    "Radius": 3.44,
+    "Temperature": 13520,
+    "R": 175,
+    "G": 193,
+    "B": 255
+  },
+  "B8-V": {
+    "Mass": 3.8,
+    "Luminosity": 211,
+    "Radius": 2.73,
+    "Temperature": 13520,
+    "R": 177,
+    "G": 195,
+    "B": 255
+  },
+  "B8-VI": {
+    "Mass": 2.4,
+    "Luminosity": 101,
+    "Radius": 1.89,
+    "Temperature": 13520,
+    "R": 177,
+    "G": 195,
+    "B": 255
+  },
+  "B9-0": {
+    "Mass": 17.7,
+    "Luminosity": 273000,
+    "Radius": 131,
+    "Temperature": 11710,
+    "R": 204,
+    "G": 216,
+    "B": 255
+  },
+  "B9-Ia": {
+    "Mass": 15.3,
+    "Luminosity": 131000,
+    "Radius": 90.5,
+    "Temperature": 11710,
+    "R": 204,
+    "G": 216,
+    "B": 255
+  },
+  "B9-Ib": {
+    "Mass": 12.9,
+    "Luminosity": 22700,
+    "Radius": 37.7,
+    "Temperature": 11710,
+    "R": 204,
+    "G": 216,
+    "B": 255
+  },
+  "B9-II": {
+    "Mass": 10.5,
+    "Luminosity": 4320,
+    "Radius": 16.5,
+    "Temperature": 11710,
+    "R": 182,
+    "G": 201,
+    "B": 255
+  },
+  "B9-III": {
+    "Mass": 8.1,
+    "Luminosity": 299,
+    "Radius": 4.33,
+    "Temperature": 11710,
+    "R": 178,
+    "G": 195,
+    "B": 255
+  },
+  "B9-IV": {
+    "Mass": 5.7,
+    "Luminosity": 172,
+    "Radius": 3.29,
+    "Temperature": 11710,
+    "R": 180,
+    "G": 197,
+    "B": 255
+  },
+  "B9-V": {
+    "Mass": 3.4,
+    "Luminosity": 119,
+    "Radius": 2.73,
+    "Temperature": 11710,
+    "R": 181,
+    "G": 198,
+    "B": 255
+  },
+  "B9-VI": {
+    "Mass": 2.1,
+    "Luminosity": 52,
+    "Radius": 1.81,
+    "Temperature": 11710,
+    "R": 181,
+    "G": 198,
+    "B": 255
+  },
+  "A0-0": {
+    "Mass": 15.8,
+    "Luminosity": 186000,
+    "Radius": 151,
+    "Temperature": 9900,
+    "R": 187,
+    "G": 206,
+    "B": 255
+  },
+  "A0-Ia": {
+    "Mass": 13.7,
+    "Luminosity": 107000,
+    "Radius": 114,
+    "Temperature": 9900,
+    "R": 187,
+    "G": 206,
+    "B": 255
+  },
+  "A0-Ib": {
+    "Mass": 11.5,
+    "Luminosity": 15400,
+    "Radius": 43.5,
+    "Temperature": 9900,
+    "R": 187,
+    "G": 206,
+    "B": 255
+  },
+  "A0-II": {
+    "Mass": 9.4,
+    "Luminosity": 2680,
+    "Radius": 18.1,
+    "Temperature": 9900,
+    "R": 184,
+    "G": 202,
+    "B": 255
+  },
+  "A0-III": {
+    "Mass": 7.2,
+    "Luminosity": 154,
+    "Radius": 4.35,
+    "Temperature": 9900,
+    "R": 188,
+    "G": 205,
+    "B": 255
+  },
+  "A0-IV": {
+    "Mass": 5.1,
+    "Luminosity": 88.8,
+    "Radius": 3.3,
+    "Temperature": 9900,
+    "R": 179,
+    "G": 197,
+    "B": 255
+  },
+  "A0-V": {
+    "Mass": 2.9,
+    "Luminosity": 67.4,
+    "Radius": 2.88,
+    "Temperature": 9900,
+    "R": 185,
+    "G": 201,
+    "B": 255
+  },
+  "A0-VI": {
+    "Mass": 1.9,
+    "Luminosity": 26.8,
+    "Radius": 1.81,
+    "Temperature": 9900,
+    "R": 185,
+    "G": 201,
+    "B": 255
+  },
+  "A1-0": {
+    "Mass": 15.2,
+    "Luminosity": 198000,
+    "Radius": 162,
+    "Temperature": 9707,
+    "R": 214,
+    "G": 223,
+    "B": 255
+  },
+  "A1-Ia": {
+    "Mass": 13.1,
+    "Luminosity": 114000,
+    "Radius": 123,
+    "Temperature": 9707,
+    "R": 214,
+    "G": 223,
+    "B": 255
+  },
+  "A1-Ib": {
+    "Mass": 11,
+    "Luminosity": 15000,
+    "Radius": 44.6,
+    "Temperature": 9707,
+    "R": 214,
+    "G": 223,
+    "B": 255
+  },
+  "A1-II": {
+    "Mass": 8.9,
+    "Luminosity": 2350,
+    "Radius": 17.9,
+    "Temperature": 9650,
+    "R": 186,
+    "G": 204,
+    "B": 255
+  },
+  "A1-III": {
+    "Mass": 6.9,
+    "Luminosity": 124,
+    "Radius": 4.1,
+    "Temperature": 9650,
+    "R": 188,
+    "G": 204,
+    "B": 255
+  },
+  "A1-IV": {
+    "Mass": 4.8,
+    "Luminosity": 71.1,
+    "Radius": 3.11,
+    "Temperature": 9650,
+    "R": 183,
+    "G": 200,
+    "B": 255
+  },
+  "A1-V": {
+    "Mass": 2.7,
+    "Luminosity": 49.2,
+    "Radius": 2.59,
+    "Temperature": 9650,
+    "R": 181,
+    "G": 199,
+    "B": 255
+  },
+  "A1-VI": {
+    "Mass": 1.8,
+    "Luminosity": 19.6,
+    "Radius": 1.63,
+    "Temperature": 9650,
+    "R": 181,
+    "G": 199,
+    "B": 255
+  },
+  "A2-0": {
+    "Mass": 14.5,
+    "Luminosity": 210000,
+    "Radius": 174,
+    "Temperature": 9513,
+    "R": 199,
+    "G": 214,
+    "B": 255
+  },
+  "A2-Ia": {
+    "Mass": 12.5,
+    "Luminosity": 121000,
+    "Radius": 132,
+    "Temperature": 9513,
+    "R": 199,
+    "G": 214,
+    "B": 255
+  },
+  "A2-Ib": {
+    "Mass": 10.5,
+    "Luminosity": 13300,
+    "Radius": 43.7,
+    "Temperature": 9513,
+    "R": 199,
+    "G": 214,
+    "B": 255
+  },
+  "A2-II": {
+    "Mass": 8.5,
+    "Luminosity": 2070,
+    "Radius": 17.7,
+    "Temperature": 9400,
+    "R": 188,
+    "G": 205,
+    "B": 255
+  },
+  "A2-III": {
+    "Mass": 6.5,
+    "Luminosity": 99,
+    "Radius": 3.87,
+    "Temperature": 9400,
+    "R": 189,
+    "G": 204,
+    "B": 255
+  },
+  "A2-IV": {
+    "Mass": 4.5,
+    "Luminosity": 57,
+    "Radius": 2.93,
+    "Temperature": 9400,
+    "R": 186,
+    "G": 202,
+    "B": 255
+  },
+  "A2-V": {
+    "Mass": 2.5,
+    "Luminosity": 39.4,
+    "Radius": 2.44,
+    "Temperature": 9400,
+    "R": 187,
+    "G": 203,
+    "B": 255
+  },
+  "A2-VI": {
+    "Mass": 1.8,
+    "Luminosity": 15.7,
+    "Radius": 1.54,
+    "Temperature": 9400,
+    "R": 187,
+    "G": 203,
+    "B": 255
+  },
+  "A3-0": {
+    "Mass": 13.9,
+    "Luminosity": 224000,
+    "Radius": 187,
+    "Temperature": 9320,
+    "R": 207,
+    "G": 219,
+    "B": 255
+  },
+  "A3-Ia": {
+    "Mass": 12,
+    "Luminosity": 129000,
+    "Radius": 142,
+    "Temperature": 9320,
+    "R": 207,
+    "G": 219,
+    "B": 255
+  },
+  "A3-Ib": {
+    "Mass": 10,
+    "Luminosity": 12900,
+    "Radius": 44.9,
+    "Temperature": 9320,
+    "R": 207,
+    "G": 219,
+    "B": 255
+  },
+  "A3-II": {
+    "Mass": 8.1,
+    "Luminosity": 1660,
+    "Radius": 16.7,
+    "Temperature": 9150,
+    "R": 190,
+    "G": 207,
+    "B": 255
+  },
+  "A3-III": {
+    "Mass": 6.2,
+    "Luminosity": 87.1,
+    "Radius": 3.83,
+    "Temperature": 9150,
+    "R": 189,
+    "G": 203,
+    "B": 255
+  },
+  "A3-IV": {
+    "Mass": 4.3,
+    "Luminosity": 41.7,
+    "Radius": 2.65,
+    "Temperature": 9150,
+    "R": 190,
+    "G": 205,
+    "B": 255
+  },
+  "A3-V": {
+    "Mass": 2.4,
+    "Luminosity": 28.9,
+    "Radius": 2.2,
+    "Temperature": 9150,
+    "R": 191,
+    "G": 207,
+    "B": 255
+  },
+  "A3-VI": {
+    "Mass": 1.8,
+    "Luminosity": 11.5,
+    "Radius": 1.39,
+    "Temperature": 9150,
+    "R": 191,
+    "G": 207,
+    "B": 255
+  },
+  "A4-0": {
+    "Mass": 13.2,
+    "Luminosity": 239000,
+    "Radius": 202,
+    "Temperature": 9127,
+    "R": 215,
+    "G": 224,
+    "B": 255
+  },
+  "A4-Ia": {
+    "Mass": 11.4,
+    "Luminosity": 138000,
+    "Radius": 153,
+    "Temperature": 9127,
+    "R": 215,
+    "G": 224,
+    "B": 255
+  },
+  "A4-Ib": {
+    "Mass": 9.5,
+    "Luminosity": 11400,
+    "Radius": 44.1,
+    "Temperature": 9127,
+    "R": 215,
+    "G": 224,
+    "B": 255
+  },
+  "A4-II": {
+    "Mass": 7.7,
+    "Luminosity": 1460,
+    "Radius": 16.6,
+    "Temperature": 8900,
+    "R": 192,
+    "G": 208,
+    "B": 255
+  },
+  "A4-III": {
+    "Mass": 5.8,
+    "Luminosity": 70,
+    "Radius": 3.63,
+    "Temperature": 8900,
+    "R": 196,
+    "G": 209,
+    "B": 255
+  },
+  "A4-IV": {
+    "Mass": 4,
+    "Luminosity": 33.5,
+    "Radius": 2.51,
+    "Temperature": 8900,
+    "R": 195,
+    "G": 210,
+    "B": 255
+  },
+  "A4-V": {
+    "Mass": 2.1,
+    "Luminosity": 23.2,
+    "Radius": 2.09,
+    "Temperature": 8900,
+    "R": 197,
+    "G": 211,
+    "B": 255
+  },
+  "A4-VI": {
+    "Mass": 1.7,
+    "Luminosity": 9.23,
+    "Radius": 1.32,
+    "Temperature": 8900,
+    "R": 197,
+    "G": 211,
+    "B": 255
+  },
+  "A5-0": {
+    "Mass": 12.6,
+    "Luminosity": 255000,
+    "Radius": 217,
+    "Temperature": 8933,
+    "R": 223,
+    "G": 229,
+    "B": 255
+  },
+  "A5-Ia": {
+    "Mass": 10.8,
+    "Luminosity": 161000,
+    "Radius": 173,
+    "Temperature": 8933,
+    "R": 223,
+    "G": 229,
+    "B": 255
+  },
+  "A5-Ib": {
+    "Mass": 9,
+    "Luminosity": 11100,
+    "Radius": 45.4,
+    "Temperature": 8933,
+    "R": 223,
+    "G": 229,
+    "B": 255
+  },
+  "A5-II": {
+    "Mass": 7.2,
+    "Luminosity": 1290,
+    "Radius": 16.5,
+    "Temperature": 8650,
+    "R": 194,
+    "G": 210,
+    "B": 255
+  },
+  "A5-III": {
+    "Mass": 5.4,
+    "Luminosity": 56.4,
+    "Radius": 3.45,
+    "Temperature": 8650,
+    "R": 202,
+    "G": 215,
+    "B": 255
+  },
+  "A5-IV": {
+    "Mass": 3.7,
+    "Luminosity": 27,
+    "Radius": 2.38,
+    "Temperature": 8650,
+    "R": 212,
+    "G": 220,
+    "B": 255
+  },
+  "A5-V": {
+    "Mass": 1.9,
+    "Luminosity": 17,
+    "Radius": 1.89,
+    "Temperature": 8650,
+    "R": 202,
+    "G": 215,
+    "B": 255
+  },
+  "A5-VI": {
+    "Mass": 1.6,
+    "Luminosity": 6.78,
+    "Radius": 1.2,
+    "Temperature": 8650,
+    "R": 202,
+    "G": 215,
+    "B": 255
+  },
+  "A6-0": {
+    "Mass": 12.6,
+    "Luminosity": 249000,
+    "Radius": 224,
+    "Temperature": 8740,
+    "R": 219,
+    "G": 226,
+    "B": 255
+  },
+  "A6-Ia": {
+    "Mass": 10.8,
+    "Luminosity": 189000,
+    "Radius": 195,
+    "Temperature": 8740,
+    "R": 219,
+    "G": 226,
+    "B": 255
+  },
+  "A6-Ib": {
+    "Mass": 9,
+    "Luminosity": 10900,
+    "Radius": 46.9,
+    "Temperature": 8740,
+    "R": 219,
+    "G": 226,
+    "B": 255
+  },
+  "A6-II": {
+    "Mass": 7.2,
+    "Luminosity": 1140,
+    "Radius": 16.5,
+    "Temperature": 8400,
+    "R": 196,
+    "G": 211,
+    "B": 255
+  },
+  "A6-III": {
+    "Mass": 5.4,
+    "Luminosity": 45.5,
+    "Radius": 3.28,
+    "Temperature": 8400,
+    "R": 209,
+    "G": 219,
+    "B": 255
+  },
+  "A6-IV": {
+    "Mass": 3.6,
+    "Luminosity": 21.8,
+    "Radius": 2.27,
+    "Temperature": 8400,
+    "R": 202,
+    "G": 214,
+    "B": 255
+  },
+  "A6-V": {
+    "Mass": 1.8,
+    "Luminosity": 15.1,
+    "Radius": 1.89,
+    "Temperature": 8400,
+    "R": 199,
+    "G": 212,
+    "B": 255
+  },
+  "A6-VI": {
+    "Mass": 1.6,
+    "Luminosity": 5.47,
+    "Radius": 1.14,
+    "Temperature": 8400,
+    "R": 199,
+    "G": 212,
+    "B": 255
+  },
+  "A7-0": {
+    "Mass": 12.6,
+    "Luminosity": 267000,
+    "Radius": 243,
+    "Temperature": 8547,
+    "R": 215,
+    "G": 223,
+    "B": 255
+  },
+  "A7-Ia": {
+    "Mass": 10.8,
+    "Luminosity": 222000,
+    "Radius": 221,
+    "Temperature": 8547,
+    "R": 215,
+    "G": 223,
+    "B": 255
+  },
+  "A7-Ib": {
+    "Mass": 9,
+    "Luminosity": 10600,
+    "Radius": 48.4,
+    "Temperature": 8547,
+    "R": 215,
+    "G": 223,
+    "B": 255
+  },
+  "A7-II": {
+    "Mass": 7.2,
+    "Luminosity": 1110,
+    "Radius": 17.2,
+    "Temperature": 8150,
+    "R": 197,
+    "G": 213,
+    "B": 255
+  },
+  "A7-III": {
+    "Mass": 5.4,
+    "Luminosity": 36.8,
+    "Radius": 3.14,
+    "Temperature": 8150,
+    "R": 210,
+    "G": 219,
+    "B": 255
+  },
+  "A7-IV": {
+    "Mass": 3.6,
+    "Luminosity": 19.3,
+    "Radius": 2.27,
+    "Temperature": 8150,
+    "R": 192,
+    "G": 207,
+    "B": 255
+  },
+  "A7-V": {
+    "Mass": 1.8,
+    "Luminosity": 12.2,
+    "Radius": 1.81,
+    "Temperature": 8150,
+    "R": 200,
+    "G": 213,
+    "B": 255
+  },
+  "A7-VI": {
+    "Mass": 1.5,
+    "Luminosity": 4.43,
+    "Radius": 1.09,
+    "Temperature": 8150,
+    "R": 200,
+    "G": 213,
+    "B": 255
+  },
+  "A8-0": {
+    "Mass": 12.6,
+    "Luminosity": 260000,
+    "Radius": 251,
+    "Temperature": 8353,
+    "R": 210,
+    "G": 221,
+    "B": 255
+  },
+  "A8-Ia": {
+    "Mass": 10.8,
+    "Luminosity": 238000,
+    "Radius": 240,
+    "Temperature": 8353,
+    "R": 210,
+    "G": 221,
+    "B": 255
+  },
+  "A8-Ib": {
+    "Mass": 9,
+    "Luminosity": 10400,
+    "Radius": 50.1,
+    "Temperature": 8353,
+    "R": 210,
+    "G": 221,
+    "B": 255
+  },
+  "A8-II": {
+    "Mass": 7.2,
+    "Luminosity": 990,
+    "Radius": 17.3,
+    "Temperature": 7900,
+    "R": 199,
+    "G": 214,
+    "B": 255
+  },
+  "A8-III": {
+    "Mass": 5.4,
+    "Luminosity": 32.8,
+    "Radius": 3.15,
+    "Temperature": 7900,
+    "R": 209,
+    "G": 219,
+    "B": 255
+  },
+  "A8-IV": {
+    "Mass": 3.6,
+    "Luminosity": 15.7,
+    "Radius": 2.18,
+    "Temperature": 7900,
+    "R": 208,
+    "G": 217,
+    "B": 255
+  },
+  "A8-V": {
+    "Mass": 1.8,
+    "Luminosity": 10.9,
+    "Radius": 1.81,
+    "Temperature": 7900,
+    "R": 213,
+    "G": 222,
+    "B": 255
+  },
+  "A8-VI": {
+    "Mass": 1.5,
+    "Luminosity": 3.59,
+    "Radius": 1.04,
+    "Temperature": 7900,
+    "R": 213,
+    "G": 222,
+    "B": 255
+  },
+  "A9-0": {
+    "Mass": 12.6,
+    "Luminosity": 280000,
+    "Radius": 273,
+    "Temperature": 8160,
+    "R": 206,
+    "G": 218,
+    "B": 255
+  },
+  "A9-Ia": {
+    "Mass": 10.8,
+    "Luminosity": 233000,
+    "Radius": 249,
+    "Temperature": 8160,
+    "R": 206,
+    "G": 218,
+    "B": 255
+  },
+  "A9-Ib": {
+    "Mass": 9,
+    "Luminosity": 10200,
+    "Radius": 52,
+    "Temperature": 8160,
+    "R": 206,
+    "G": 218,
+    "B": 255
+  },
+  "A9-II": {
+    "Mass": 7.1,
+    "Luminosity": 970,
+    "Radius": 18.3,
+    "Temperature": 7650,
+    "R": 201,
+    "G": 216,
+    "B": 255
+  },
+  "A9-III": {
+    "Mass": 5.3,
+    "Luminosity": 26.7,
+    "Radius": 3.03,
+    "Temperature": 7650,
+    "R": 209,
+    "G": 219,
+    "B": 255
+  },
+  "A9-IV": {
+    "Mass": 3.5,
+    "Luminosity": 14,
+    "Radius": 2.2,
+    "Temperature": 7650,
+    "R": 224,
+    "G": 227,
+    "B": 255
+  },
+  "A9-V": {
+    "Mass": 1.7,
+    "Luminosity": 8.85,
+    "Radius": 1.75,
+    "Temperature": 7650,
+    "R": 219,
+    "G": 224,
+    "B": 255
+  },
+  "A9-VI": {
+    "Mass": 1.4,
+    "Luminosity": 2.93,
+    "Radius": 1,
+    "Temperature": 7650,
+    "R": 219,
+    "G": 224,
+    "B": 255
+  },
+  "F0-0": {
+    "Mass": 12.6,
+    "Luminosity": 274000,
+    "Radius": 283,
+    "Temperature": 7967,
+    "R": 202,
+    "G": 215,
+    "B": 255
+  },
+  "F0-Ia": {
+    "Mass": 10.8,
+    "Luminosity": 228000,
+    "Radius": 258,
+    "Temperature": 7967,
+    "R": 202,
+    "G": 215,
+    "B": 255
+  },
+  "F0-Ib": {
+    "Mass": 8.9,
+    "Luminosity": 9960,
+    "Radius": 54,
+    "Temperature": 7967,
+    "R": 202,
+    "G": 215,
+    "B": 255
+  },
+  "F0-II": {
+    "Mass": 7.1,
+    "Luminosity": 870,
+    "Radius": 18.5,
+    "Temperature": 7400,
+    "R": 203,
+    "G": 217,
+    "B": 255
+  },
+  "F0-III": {
+    "Mass": 5.3,
+    "Luminosity": 21.9,
+    "Radius": 2.93,
+    "Temperature": 7400,
+    "R": 213,
+    "G": 222,
+    "B": 255
+  },
+  "F0-IV": {
+    "Mass": 3.4,
+    "Luminosity": 11.5,
+    "Radius": 2.12,
+    "Temperature": 7400,
+    "R": 218,
+    "G": 224,
+    "B": 255
+  },
+  "F0-V": {
+    "Mass": 1.6,
+    "Luminosity": 7.94,
+    "Radius": 1.77,
+    "Temperature": 7400,
+    "R": 224,
+    "G": 229,
+    "B": 255
+  },
+  "F0-VI": {
+    "Mass": 1.4,
+    "Luminosity": 2.4,
+    "Radius": 0.971,
+    "Temperature": 7400,
+    "R": 224,
+    "G": 229,
+    "B": 255
+  },
+  "F1-0": {
+    "Mass": 12.1,
+    "Luminosity": 296000,
+    "Radius": 309,
+    "Temperature": 7773,
+    "R": 223,
+    "G": 229,
+    "B": 255
+  },
+  "F1-Ia": {
+    "Mass": 10.3,
+    "Luminosity": 224000,
+    "Radius": 269,
+    "Temperature": 7773,
+    "R": 223,
+    "G": 229,
+    "B": 255
+  },
+  "F1-Ib": {
+    "Mass": 8.6,
+    "Luminosity": 9790,
+    "Radius": 56.2,
+    "Temperature": 7773,
+    "R": 223,
+    "G": 229,
+    "B": 255
+  },
+  "F1-II": {
+    "Mass": 6.8,
+    "Luminosity": 865,
+    "Radius": 19.2,
+    "Temperature": 7260,
+    "R": 216,
+    "G": 225,
+    "B": 255
+  },
+  "F1-III": {
+    "Mass": 5.1,
+    "Luminosity": 21.7,
+    "Radius": 3.04,
+    "Temperature": 7260,
+    "R": 227,
+    "G": 232,
+    "B": 255
+  },
+  "F1-IV": {
+    "Mass": 3.3,
+    "Luminosity": 12.5,
+    "Radius": 2.3,
+    "Temperature": 7260,
+    "R": 223,
+    "G": 227,
+    "B": 255
+  },
+  "F1-V": {
+    "Mass": 1.6,
+    "Luminosity": 6.56,
+    "Radius": 1.67,
+    "Temperature": 7260,
+    "R": 230,
+    "G": 234,
+    "B": 255
+  },
+  "F1-VI": {
+    "Mass": 1.3,
+    "Luminosity": 1.98,
+    "Radius": 0.917,
+    "Temperature": 7260,
+    "R": 230,
+    "G": 234,
+    "B": 255
+  },
+  "F2-0": {
+    "Mass": 11.6,
+    "Luminosity": 291000,
+    "Radius": 323,
+    "Temperature": 7580,
+    "R": 244,
+    "G": 243,
+    "B": 255
+  },
+  "F2-Ia": {
+    "Mass": 9.9,
+    "Luminosity": 202000,
+    "Radius": 268,
+    "Temperature": 7580,
+    "R": 244,
+    "G": 243,
+    "B": 255
+  },
+  "F2-Ib": {
+    "Mass": 8.2,
+    "Luminosity": 8800,
+    "Radius": 56.1,
+    "Temperature": 7580,
+    "R": 244,
+    "G": 243,
+    "B": 255
+  },
+  "F2-II": {
+    "Mass": 6.5,
+    "Luminosity": 860,
+    "Radius": 19.9,
+    "Temperature": 7120,
+    "R": 229,
+    "G": 233,
+    "B": 255
+  },
+  "F2-III": {
+    "Mass": 4.9,
+    "Luminosity": 19.7,
+    "Radius": 3.01,
+    "Temperature": 7120,
+    "R": 241,
+    "G": 241,
+    "B": 255
+  },
+  "F2-IV": {
+    "Mass": 3.2,
+    "Luminosity": 14.9,
+    "Radius": 2.62,
+    "Temperature": 7120,
+    "R": 227,
+    "G": 230,
+    "B": 255
+  },
+  "F2-V": {
+    "Mass": 1.5,
+    "Luminosity": 5.95,
+    "Radius": 1.65,
+    "Temperature": 7120,
+    "R": 236,
+    "G": 239,
+    "B": 255
+  },
+  "F2-VI": {
+    "Mass": 1.3,
+    "Luminosity": 1.64,
+    "Radius": 0.867,
+    "Temperature": 7120,
+    "R": 236,
+    "G": 239,
+    "B": 255
+  },
+  "F3-0": {
+    "Mass": 11,
+    "Luminosity": 316000,
+    "Radius": 354,
+    "Temperature": 7387,
+    "R": 236,
+    "G": 237,
+    "B": 255
+  },
+  "F3-Ia": {
+    "Mass": 9.4,
+    "Luminosity": 199000,
+    "Radius": 281,
+    "Temperature": 7387,
+    "R": 236,
+    "G": 237,
+    "B": 255
+  },
+  "F3-Ib": {
+    "Mass": 7.9,
+    "Luminosity": 8700,
+    "Radius": 58.7,
+    "Temperature": 7387,
+    "R": 236,
+    "G": 237,
+    "B": 255
+  },
+  "F3-II": {
+    "Mass": 6.3,
+    "Luminosity": 782,
+    "Radius": 19.7,
+    "Temperature": 6980,
+    "R": 235,
+    "G": 237,
+    "B": 255
+  },
+  "F3-III": {
+    "Mass": 4.7,
+    "Luminosity": 19.6,
+    "Radius": 3.12,
+    "Temperature": 6980,
+    "R": 241,
+    "G": 241,
+    "B": 255
+  },
+  "F3-IV": {
+    "Mass": 3.1,
+    "Luminosity": 16.3,
+    "Radius": 2.85,
+    "Temperature": 6980,
+    "R": 227,
+    "G": 230,
+    "B": 255
+  },
+  "F3-V": {
+    "Mass": 1.5,
+    "Luminosity": 4.94,
+    "Radius": 1.57,
+    "Temperature": 6980,
+    "R": 230,
+    "G": 233,
+    "B": 255
+  },
+  "F3-VI": {
+    "Mass": 1.2,
+    "Luminosity": 1.49,
+    "Radius": 0.86,
+    "Temperature": 6980,
+    "R": 230,
+    "G": 233,
+    "B": 255
+  },
+  "F4-0": {
+    "Mass": 10.5,
+    "Luminosity": 343000,
+    "Radius": 389,
+    "Temperature": 7193,
+    "R": 227,
+    "G": 231,
+    "B": 255
+  },
+  "F4-Ia": {
+    "Mass": 9,
+    "Luminosity": 180000,
+    "Radius": 282,
+    "Temperature": 7193,
+    "R": 227,
+    "G": 231,
+    "B": 255
+  },
+  "F4-Ib": {
+    "Mass": 7.5,
+    "Luminosity": 7860,
+    "Radius": 58.9,
+    "Temperature": 7193,
+    "R": 227,
+    "G": 231,
+    "B": 255
+  },
+  "F4-II": {
+    "Mass": 6,
+    "Luminosity": 781,
+    "Radius": 20.5,
+    "Temperature": 6840,
+    "R": 241,
+    "G": 241,
+    "B": 255
+  },
+  "F4-III": {
+    "Mass": 4.5,
+    "Luminosity": 19.6,
+    "Radius": 3.25,
+    "Temperature": 6840,
+    "R": 241,
+    "G": 240,
+    "B": 255
+  },
+  "F4-IV": {
+    "Mass": 3,
+    "Luminosity": 19.6,
+    "Radius": 3.25,
+    "Temperature": 6840,
+    "R": 234,
+    "G": 235,
+    "B": 255
+  },
+  "F4-V": {
+    "Mass": 1.4,
+    "Luminosity": 4.5,
+    "Radius": 1.56,
+    "Temperature": 6840,
+    "R": 224,
+    "G": 226,
+    "B": 255
+  },
+  "F4-VI": {
+    "Mass": 1.1,
+    "Luminosity": 1.24,
+    "Radius": 0.817,
+    "Temperature": 6840,
+    "R": 224,
+    "G": 226,
+    "B": 255
+  },
+  "F5-0": {
+    "Mass": 10,
+    "Luminosity": 374000,
+    "Radius": 429,
+    "Temperature": 7000,
+    "R": 219,
+    "G": 225,
+    "B": 255
+  },
+  "F5-Ia": {
+    "Mass": 8.6,
+    "Luminosity": 163000,
+    "Radius": 283,
+    "Temperature": 7000,
+    "R": 219,
+    "G": 225,
+    "B": 255
+  },
+  "F5-Ib": {
+    "Mass": 7.1,
+    "Luminosity": 7820,
+    "Radius": 62,
+    "Temperature": 7000,
+    "R": 219,
+    "G": 225,
+    "B": 255
+  },
+  "F5-II": {
+    "Mass": 5.7,
+    "Luminosity": 783,
+    "Radius": 21.4,
+    "Temperature": 6700,
+    "R": 247,
+    "G": 242,
+    "B": 255
+  },
+  "F5-III": {
+    "Mass": 4.3,
+    "Luminosity": 21.6,
+    "Radius": 3.55,
+    "Temperature": 6700,
+    "R": 242,
+    "G": 240,
+    "B": 255
+  },
+  "F5-IV": {
+    "Mass": 2.8,
+    "Luminosity": 21.6,
+    "Radius": 3.55,
+    "Temperature": 6700,
+    "R": 241,
+    "G": 239,
+    "B": 255
+  },
+  "F5-V": {
+    "Mass": 1.4,
+    "Luminosity": 3.75,
+    "Radius": 1.48,
+    "Temperature": 6700,
+    "R": 248,
+    "G": 247,
+    "B": 255
+  },
+  "F5-VI": {
+    "Mass": 1.1,
+    "Luminosity": 1.03,
+    "Radius": 0.777,
+    "Temperature": 6700,
+    "R": 248,
+    "G": 247,
+    "B": 255
+  },
+  "F6-0": {
+    "Mass": 10,
+    "Luminosity": 374000,
+    "Radius": 460,
+    "Temperature": 6760,
+    "R": 255,
+    "G": 234,
+    "B": 252
+  },
+  "F6-Ia": {
+    "Mass": 8.6,
+    "Luminosity": 149000,
+    "Radius": 290,
+    "Temperature": 6760,
+    "R": 255,
+    "G": 234,
+    "B": 252
+  },
+  "F6-Ib": {
+    "Mass": 7.1,
+    "Luminosity": 7820,
+    "Radius": 66.4,
+    "Temperature": 6760,
+    "R": 255,
+    "G": 234,
+    "B": 252
+  },
+  "F6-II": {
+    "Mass": 5.7,
+    "Luminosity": 786,
+    "Radius": 22.4,
+    "Temperature": 6560,
+    "R": 253,
+    "G": 249,
+    "B": 255
+  },
+  "F6-III": {
+    "Mass": 4.2,
+    "Luminosity": 23.7,
+    "Radius": 3.89,
+    "Temperature": 6560,
+    "R": 241,
+    "G": 240,
+    "B": 255
+  },
+  "F6-IV": {
+    "Mass": 2.8,
+    "Luminosity": 16.4,
+    "Radius": 3.23,
+    "Temperature": 6560,
+    "R": 241,
+    "G": 239,
+    "B": 255
+  },
+  "F6-V": {
+    "Mass": 1.3,
+    "Luminosity": 3.13,
+    "Radius": 1.41,
+    "Temperature": 6560,
+    "R": 244,
+    "G": 241,
+    "B": 255
+  },
+  "F6-VI": {
+    "Mass": 1,
+    "Luminosity": 0.862,
+    "Radius": 0.741,
+    "Temperature": 6560,
+    "R": 244,
+    "G": 241,
+    "B": 255
+  },
+  "F7-0": {
+    "Mass": 10,
+    "Luminosity": 413000,
+    "Radius": 519,
+    "Temperature": 6520,
+    "R": 255,
+    "G": 243,
+    "B": 250
+  },
+  "F7-Ia": {
+    "Mass": 8.5,
+    "Luminosity": 137000,
+    "Radius": 299,
+    "Temperature": 6520,
+    "R": 255,
+    "G": 243,
+    "B": 250
+  },
+  "F7-Ib": {
+    "Mass": 7.1,
+    "Luminosity": 7180,
+    "Radius": 68.4,
+    "Temperature": 6520,
+    "R": 255,
+    "G": 243,
+    "B": 250
+  },
+  "F7-II": {
+    "Mass": 5.6,
+    "Luminosity": 791,
+    "Radius": 23.4,
+    "Temperature": 6420,
+    "R": 255,
+    "G": 250,
+    "B": 251
+  },
+  "F7-III": {
+    "Mass": 4.2,
+    "Luminosity": 26.2,
+    "Radius": 4.26,
+    "Temperature": 6420,
+    "R": 241,
+    "G": 240,
+    "B": 255
+  },
+  "F7-IV": {
+    "Mass": 2.7,
+    "Luminosity": 12.5,
+    "Radius": 2.95,
+    "Temperature": 6420,
+    "R": 240,
+    "G": 239,
+    "B": 255
+  },
+  "F7-V": {
+    "Mass": 1.3,
+    "Luminosity": 2.62,
+    "Radius": 1.35,
+    "Temperature": 6420,
+    "R": 246,
+    "G": 243,
+    "B": 255
+  },
+  "F7-VI": {
+    "Mass": 1,
+    "Luminosity": 0.791,
+    "Radius": 0.741,
+    "Temperature": 6420,
+    "R": 246,
+    "G": 243,
+    "B": 255
+  },
+  "F8-0": {
+    "Mass": 10,
+    "Luminosity": 419000,
+    "Radius": 564,
+    "Temperature": 6280,
+    "R": 255,
+    "G": 252,
+    "B": 247
+  },
+  "F8-Ia": {
+    "Mass": 8.5,
+    "Luminosity": 127000,
+    "Radius": 310,
+    "Temperature": 6280,
+    "R": 255,
+    "G": 252,
+    "B": 247
+  },
+  "F8-Ib": {
+    "Mass": 7.1,
+    "Luminosity": 7290,
+    "Radius": 74.3,
+    "Temperature": 6280,
+    "R": 255,
+    "G": 252,
+    "B": 247
+  },
+  "F8-II": {
+    "Mass": 5.6,
+    "Luminosity": 729,
+    "Radius": 23.5,
+    "Temperature": 6280,
+    "R": 255,
+    "G": 248,
+    "B": 245
+  },
+  "F8-III": {
+    "Mass": 4.1,
+    "Luminosity": 29,
+    "Radius": 4.69,
+    "Temperature": 6280,
+    "R": 252,
+    "G": 248,
+    "B": 255
+  },
+  "F8-IV": {
+    "Mass": 2.7,
+    "Luminosity": 10.5,
+    "Radius": 2.83,
+    "Temperature": 6280,
+    "R": 255,
+    "G": 252,
+    "B": 253
+  },
+  "F8-V": {
+    "Mass": 1.2,
+    "Luminosity": 2.41,
+    "Radius": 1.35,
+    "Temperature": 6280,
+    "R": 255,
+    "G": 247,
+    "B": 252
+  },
+  "F8-VI": {
+    "Mass": 1,
+    "Luminosity": 0.665,
+    "Radius": 0.71,
+    "Temperature": 6280,
+    "R": 255,
+    "G": 247,
+    "B": 252
+  },
+  "F9-0": {
+    "Mass": 10,
+    "Luminosity": 473000,
+    "Radius": 654,
+    "Temperature": 6011,
+    "R": 255,
+    "G": 246,
+    "B": 233
+  },
+  "F9-Ia": {
+    "Mass": 8.5,
+    "Luminosity": 130000,
+    "Radius": 343,
+    "Temperature": 6011,
+    "R": 255,
+    "G": 246,
+    "B": 233
+  },
+  "F9-Ib": {
+    "Mass": 7,
+    "Luminosity": 6840,
+    "Radius": 78.6,
+    "Temperature": 6011,
+    "R": 255,
+    "G": 246,
+    "B": 233
+  },
+  "F9-II": {
+    "Mass": 5.6,
+    "Luminosity": 739,
+    "Radius": 24.8,
+    "Temperature": 6140,
+    "R": 255,
+    "G": 246,
+    "B": 239
+  },
+  "F9-III": {
+    "Mass": 4.1,
+    "Luminosity": 32.2,
+    "Radius": 5.17,
+    "Temperature": 6140,
+    "R": 255,
+    "G": 246,
+    "B": 245
+  },
+  "F9-IV": {
+    "Mass": 2.6,
+    "Luminosity": 8.1,
+    "Radius": 2.59,
+    "Temperature": 6140,
+    "R": 255,
+    "G": 250,
+    "B": 249
+  },
+  "F9-V": {
+    "Mass": 1.1,
+    "Luminosity": 2.03,
+    "Radius": 1.3,
+    "Temperature": 6140,
+    "R": 255,
+    "G": 247,
+    "B": 252
+  },
+  "F9-VI": {
+    "Mass": 0.9,
+    "Luminosity": 0.614,
+    "Radius": 0.714,
+    "Temperature": 6140,
+    "R": 255,
+    "G": 247,
+    "B": 252
+  },
+  "G0-0": {
+    "Mass": 10,
+    "Luminosity": 495000,
+    "Radius": 732,
+    "Temperature": 5743,
+    "R": 255,
+    "G": 239,
+    "B": 219
+  },
+  "G0-Ia": {
+    "Mass": 6.3,
+    "Luminosity": 124000,
+    "Radius": 367,
+    "Temperature": 5743,
+    "R": 255,
+    "G": 239,
+    "B": 219
+  },
+  "G0-Ib": {
+    "Mass": 2.5,
+    "Luminosity": 7150,
+    "Radius": 88.1,
+    "Temperature": 5743,
+    "R": 255,
+    "G": 239,
+    "B": 219
+  },
+  "G0-II": {
+    "Mass": 2.1,
+    "Luminosity": 784,
+    "Radius": 29.2,
+    "Temperature": 5743,
+    "R": 255,
+    "G": 244,
+    "B": 233
+  },
+  "G0-III": {
+    "Mass": 1.8,
+    "Luminosity": 37.5,
+    "Radius": 6.38,
+    "Temperature": 5743,
+    "R": 255,
+    "G": 242,
+    "B": 233
+  },
+  "G0-IV": {
+    "Mass": 1.4,
+    "Luminosity": 6.25,
+    "Radius": 2.38,
+    "Temperature": 6000,
+    "R": 255,
+    "G": 248,
+    "B": 245
+  },
+  "G0-V": {
+    "Mass": 1.1,
+    "Luminosity": 1.72,
+    "Radius": 1.25,
+    "Temperature": 6000,
+    "R": 255,
+    "G": 248,
+    "B": 252
+  },
+  "G0-VI": {
+    "Mass": 0.9,
+    "Luminosity": 0.52,
+    "Radius": 0.688,
+    "Temperature": 6000,
+    "R": 255,
+    "G": 248,
+    "B": 252
+  },
+  "G1-0": {
+    "Mass": 10.5,
+    "Luminosity": 527000,
+    "Radius": 832,
+    "Temperature": 5474,
+    "R": 255,
+    "G": 238,
+    "B": 212
+  },
+  "G1-Ia": {
+    "Mass": 6.6,
+    "Luminosity": 132000,
+    "Radius": 417,
+    "Temperature": 5474,
+    "R": 255,
+    "G": 238,
+    "B": 212
+  },
+  "G1-Ib": {
+    "Mass": 2.6,
+    "Luminosity": 7620,
+    "Radius": 100,
+    "Temperature": 5474,
+    "R": 255,
+    "G": 238,
+    "B": 212
+  },
+  "G1-II": {
+    "Mass": 2.2,
+    "Luminosity": 835,
+    "Radius": 33.1,
+    "Temperature": 5474,
+    "R": 255,
+    "G": 243,
+    "B": 227
+  },
+  "G1-III": {
+    "Mass": 1.8,
+    "Luminosity": 43.8,
+    "Radius": 7.59,
+    "Temperature": 5474,
+    "R": 255,
+    "G": 243,
+    "B": 233
+  },
+  "G1-IV": {
+    "Mass": 1.4,
+    "Luminosity": 6.35,
+    "Radius": 2.5,
+    "Temperature": 5890,
+    "R": 255,
+    "G": 246,
+    "B": 244
+  },
+  "G1-V": {
+    "Mass": 1,
+    "Luminosity": 1.46,
+    "Radius": 1.19,
+    "Temperature": 5890,
+    "R": 255,
+    "G": 247,
+    "B": 248
+  },
+  "G1-VI": {
+    "Mass": 0.9,
+    "Luminosity": 0.44,
+    "Radius": 0.656,
+    "Temperature": 5890,
+    "R": 255,
+    "G": 247,
+    "B": 248
+  },
+  "G2-0": {
+    "Mass": 11,
+    "Luminosity": 573000,
+    "Radius": 959,
+    "Temperature": 5206,
+    "R": 255,
+    "G": 236,
+    "B": 205
+  },
+  "G2-Ia": {
+    "Mass": 6.9,
+    "Luminosity": 131000,
+    "Radius": 459,
+    "Temperature": 5206,
+    "R": 255,
+    "G": 236,
+    "B": 205
+  },
+  "G2-Ib": {
+    "Mass": 2.8,
+    "Luminosity": 8290,
+    "Radius": 115,
+    "Temperature": 5206,
+    "R": 255,
+    "G": 236,
+    "B": 205
+  },
+  "G2-II": {
+    "Mass": 2.3,
+    "Luminosity": 909,
+    "Radius": 38.2,
+    "Temperature": 5206,
+    "R": 255,
+    "G": 241,
+    "B": 221
+  },
+  "G2-III": {
+    "Mass": 1.9,
+    "Luminosity": 52.3,
+    "Radius": 9.16,
+    "Temperature": 5206,
+    "R": 255,
+    "G": 243,
+    "B": 233
+  },
+  "G2-IV": {
+    "Mass": 1.4,
+    "Luminosity": 6.48,
+    "Radius": 2.62,
+    "Temperature": 5780,
+    "R": 255,
+    "G": 244,
+    "B": 242
+  },
+  "G2-V": {
+    "Mass": 1,
+    "Luminosity": 1.23,
+    "Radius": 1.14,
+    "Temperature": 5780,
+    "R": 255,
+    "G": 245,
+    "B": 242
+  },
+  "G2-VI": {
+    "Mass": 0.9,
+    "Luminosity": 0.373,
+    "Radius": 0.628,
+    "Temperature": 5780,
+    "R": 255,
+    "G": 245,
+    "B": 242
+  },
+  "G3-0": {
+    "Mass": 11.5,
+    "Luminosity": 703000,
+    "Radius": 1180,
+    "Temperature": 4937,
+    "R": 255,
+    "G": 231,
+    "B": 203
+  },
+  "G3-Ia": {
+    "Mass": 7.2,
+    "Luminosity": 147000,
+    "Radius": 540,
+    "Temperature": 4937,
+    "R": 255,
+    "G": 231,
+    "B": 203
+  },
+  "G3-Ib": {
+    "Mass": 2.9,
+    "Luminosity": 8460,
+    "Radius": 130,
+    "Temperature": 4937,
+    "R": 255,
+    "G": 231,
+    "B": 203
+  },
+  "G3-II": {
+    "Mass": 2.4,
+    "Luminosity": 1110,
+    "Radius": 47,
+    "Temperature": 4937,
+    "R": 255,
+    "G": 239,
+    "B": 215
+  },
+  "G3-III": {
+    "Mass": 1.9,
+    "Luminosity": 70.3,
+    "Radius": 11.8,
+    "Temperature": 4937,
+    "R": 255,
+    "G": 243,
+    "B": 233
+  },
+  "G3-IV": {
+    "Mass": 1.5,
+    "Luminosity": 6.04,
+    "Radius": 2.63,
+    "Temperature": 5670,
+    "R": 255,
+    "G": 238,
+    "B": 226
+  },
+  "G3-V": {
+    "Mass": 1,
+    "Luminosity": 1.15,
+    "Radius": 1.15,
+    "Temperature": 5670,
+    "R": 255,
+    "G": 243,
+    "B": 236
+  },
+  "G3-VI": {
+    "Mass": 0.8,
+    "Luminosity": 0.348,
+    "Radius": 0.63,
+    "Temperature": 5670,
+    "R": 255,
+    "G": 243,
+    "B": 236
+  },
+  "G4-0": {
+    "Mass": 12,
+    "Luminosity": 813000,
+    "Radius": 1420,
+    "Temperature": 4669,
+    "R": 255,
+    "G": 231,
+    "B": 193
+  },
+  "G4-Ia": {
+    "Mass": 7.5,
+    "Luminosity": 170000,
+    "Radius": 649,
+    "Temperature": 4669,
+    "R": 255,
+    "G": 231,
+    "B": 193
+  },
+  "G4-Ib": {
+    "Mass": 3,
+    "Luminosity": 9770,
+    "Radius": 156,
+    "Temperature": 4669,
+    "R": 255,
+    "G": 231,
+    "B": 193
+  },
+  "G4-II": {
+    "Mass": 2.5,
+    "Luminosity": 1290,
+    "Radius": 56.5,
+    "Temperature": 4669,
+    "R": 255,
+    "G": 237,
+    "B": 209
+  },
+  "G4-III": {
+    "Mass": 2,
+    "Luminosity": 89.1,
+    "Radius": 14.9,
+    "Temperature": 4669,
+    "R": 255,
+    "G": 243,
+    "B": 233
+  },
+  "G4-IV": {
+    "Mass": 1.5,
+    "Luminosity": 6.2,
+    "Radius": 2.76,
+    "Temperature": 5560,
+    "R": 255,
+    "G": 245,
+    "B": 238
+  },
+  "G4-V": {
+    "Mass": 0.9,
+    "Luminosity": 0.982,
+    "Radius": 1.1,
+    "Temperature": 5560,
+    "R": 255,
+    "G": 241,
+    "B": 229
+  },
+  "G4-VI": {
+    "Mass": 0.8,
+    "Luminosity": 0.297,
+    "Radius": 0.605,
+    "Temperature": 5560,
+    "R": 255,
+    "G": 241,
+    "B": 229
+  },
+  "G5-0": {
+    "Mass": 12.5,
+    "Luminosity": 1070000,
+    "Radius": 1840,
+    "Temperature": 4400,
+    "R": 255,
+    "G": 230,
+    "B": 183
+  },
+  "G5-Ia": {
+    "Mass": 7.8,
+    "Luminosity": 186000,
+    "Radius": 766,
+    "Temperature": 4400,
+    "R": 255,
+    "G": 230,
+    "B": 183
+  },
+  "G5-Ib": {
+    "Mass": 3.2,
+    "Luminosity": 11800,
+    "Radius": 192,
+    "Temperature": 4400,
+    "R": 255,
+    "G": 230,
+    "B": 183
+  },
+  "G5-II": {
+    "Mass": 2.6,
+    "Luminosity": 1550,
+    "Radius": 69.9,
+    "Temperature": 4400,
+    "R": 255,
+    "G": 235,
+    "B": 203
+  },
+  "G5-III": {
+    "Mass": 2,
+    "Luminosity": 118,
+    "Radius": 19.2,
+    "Temperature": 4400,
+    "R": 255,
+    "G": 236,
+    "B": 211
+  },
+  "G5-IV": {
+    "Mass": 1.5,
+    "Luminosity": 6.38,
+    "Radius": 2.92,
+    "Temperature": 5450,
+    "R": 255,
+    "G": 235,
+    "B": 213
+  },
+  "G5-V": {
+    "Mass": 0.9,
+    "Luminosity": 0.841,
+    "Radius": 1.06,
+    "Temperature": 5450,
+    "R": 255,
+    "G": 244,
+    "B": 234
+  },
+  "G5-VI": {
+    "Mass": 0.8,
+    "Luminosity": 0.254,
+    "Radius": 0.583,
+    "Temperature": 5450,
+    "R": 255,
+    "G": 244,
+    "B": 234
+  },
+  "G6-0": {
+    "Mass": 12.5,
+    "Luminosity": 1120000,
+    "Radius": 1930,
+    "Temperature": 4343,
+    "R": 255,
+    "G": 227,
+    "B": 178
+  },
+  "G6-Ia": {
+    "Mass": 7.9,
+    "Luminosity": 195000,
+    "Radius": 804,
+    "Temperature": 4343,
+    "R": 255,
+    "G": 227,
+    "B": 178
+  },
+  "G6-Ib": {
+    "Mass": 3.3,
+    "Luminosity": 12300,
+    "Radius": 202,
+    "Temperature": 4343,
+    "R": 255,
+    "G": 227,
+    "B": 178
+  },
+  "G6-II": {
+    "Mass": 2.7,
+    "Luminosity": 1620,
+    "Radius": 73.3,
+    "Temperature": 4343,
+    "R": 255,
+    "G": 233,
+    "B": 198
+  },
+  "G6-III": {
+    "Mass": 2.1,
+    "Luminosity": 123,
+    "Radius": 20.2,
+    "Temperature": 4343,
+    "R": 255,
+    "G": 236,
+    "B": 215
+  },
+  "G6-IV": {
+    "Mass": 1.5,
+    "Luminosity": 6.59,
+    "Radius": 3.09,
+    "Temperature": 5340,
+    "R": 255,
+    "G": 242,
+    "B": 234
+  },
+  "G6-V": {
+    "Mass": 0.9,
+    "Luminosity": 0.792,
+    "Radius": 1.07,
+    "Temperature": 5340,
+    "R": 255,
+    "G": 244,
+    "B": 235
+  },
+  "G6-VI": {
+    "Mass": 0.8,
+    "Luminosity": 0.218,
+    "Radius": 0.562,
+    "Temperature": 5340,
+    "R": 255,
+    "G": 244,
+    "B": 235
+  },
+  "G7-0": {
+    "Mass": 12.5,
+    "Luminosity": 1180000,
+    "Radius": 2030,
+    "Temperature": 4286,
+    "R": 255,
+    "G": 223,
+    "B": 172
+  },
+  "G7-Ia": {
+    "Mass": 8,
+    "Luminosity": 205000,
+    "Radius": 846,
+    "Temperature": 4286,
+    "R": 255,
+    "G": 223,
+    "B": 172
+  },
+  "G7-Ib": {
+    "Mass": 3.5,
+    "Luminosity": 12900,
+    "Radius": 212,
+    "Temperature": 4286,
+    "R": 255,
+    "G": 223,
+    "B": 172
+  },
+  "G7-II": {
+    "Mass": 2.8,
+    "Luminosity": 1700,
+    "Radius": 77.1,
+    "Temperature": 4286,
+    "R": 255,
+    "G": 231,
+    "B": 194
+  },
+  "G7-III": {
+    "Mass": 2.2,
+    "Luminosity": 129,
+    "Radius": 21.2,
+    "Temperature": 4286,
+    "R": 255,
+    "G": 234,
+    "B": 207
+  },
+  "G7-IV": {
+    "Mass": 1.5,
+    "Luminosity": 6.84,
+    "Radius": 3.28,
+    "Temperature": 5230,
+    "R": 255,
+    "G": 231,
+    "B": 205
+  },
+  "G7-V": {
+    "Mass": 0.9,
+    "Luminosity": 0.684,
+    "Radius": 1.04,
+    "Temperature": 5230,
+    "R": 255,
+    "G": 244,
+    "B": 235
+  },
+  "G7-VI": {
+    "Mass": 0.7,
+    "Luminosity": 0.206,
+    "Radius": 0.57,
+    "Temperature": 5230,
+    "R": 255,
+    "G": 244,
+    "B": 235
+  },
+  "G8-0": {
+    "Mass": 12.5,
+    "Luminosity": 1130000,
+    "Radius": 2040,
+    "Temperature": 4229,
+    "R": 255,
+    "G": 220,
+    "B": 167
+  },
+  "G8-Ia": {
+    "Mass": 8.1,
+    "Luminosity": 196000,
+    "Radius": 851,
+    "Temperature": 4229,
+    "R": 255,
+    "G": 220,
+    "B": 167
+  },
+  "G8-Ib": {
+    "Mass": 3.6,
+    "Luminosity": 14900,
+    "Radius": 234,
+    "Temperature": 4229,
+    "R": 255,
+    "G": 220,
+    "B": 167
+  },
+  "G8-II": {
+    "Mass": 2.9,
+    "Luminosity": 1960,
+    "Radius": 85.1,
+    "Temperature": 4229,
+    "R": 255,
+    "G": 229,
+    "B": 189
+  },
+  "G8-III": {
+    "Mass": 2.2,
+    "Luminosity": 124,
+    "Radius": 21.4,
+    "Temperature": 4229,
+    "R": 255,
+    "G": 231,
+    "B": 199
+  },
+  "G8-IV": {
+    "Mass": 1.5,
+    "Luminosity": 6.5,
+    "Radius": 3.34,
+    "Temperature": 5120,
+    "R": 255,
+    "G": 233,
+    "B": 211
+  },
+  "G8-V": {
+    "Mass": 0.8,
+    "Luminosity": 0.65,
+    "Radius": 1.06,
+    "Temperature": 5120,
+    "R": 255,
+    "G": 237,
+    "B": 222
+  },
+  "G8-VI": {
+    "Mass": 0.7,
+    "Luminosity": 0.179,
+    "Radius": 0.554,
+    "Temperature": 5120,
+    "R": 255,
+    "G": 237,
+    "B": 222
+  },
+  "G9-0": {
+    "Mass": 12.5,
+    "Luminosity": 1190000,
+    "Radius": 2160,
+    "Temperature": 4171,
+    "R": 255,
+    "G": 221,
+    "B": 174
+  },
+  "G9-Ia": {
+    "Mass": 8.1,
+    "Luminosity": 207000,
+    "Radius": 898,
+    "Temperature": 4171,
+    "R": 255,
+    "G": 221,
+    "B": 174
+  },
+  "G9-Ib": {
+    "Mass": 3.8,
+    "Luminosity": 15700,
+    "Radius": 247,
+    "Temperature": 4171,
+    "R": 255,
+    "G": 221,
+    "B": 174
+  },
+  "G9-II": {
+    "Mass": 3,
+    "Luminosity": 2070,
+    "Radius": 89.8,
+    "Temperature": 4171,
+    "R": 255,
+    "G": 227,
+    "B": 184
+  },
+  "G9-III": {
+    "Mass": 2.3,
+    "Luminosity": 131,
+    "Radius": 22.6,
+    "Temperature": 4171,
+    "R": 255,
+    "G": 231,
+    "B": 196
+  },
+  "G9-IV": {
+    "Mass": 1.6,
+    "Luminosity": 6.8,
+    "Radius": 3.57,
+    "Temperature": 5010,
+    "R": 255,
+    "G": 229,
+    "B": 200
+  },
+  "G9-V": {
+    "Mass": 0.8,
+    "Luminosity": 0.566,
+    "Radius": 1.03,
+    "Temperature": 5010,
+    "R": 255,
+    "G": 239,
+    "B": 221
+  },
+  "G9-VI": {
+    "Mass": 0.7,
+    "Luminosity": 0.171,
+    "Radius": 0.566,
+    "Temperature": 5010,
+    "R": 255,
+    "G": 239,
+    "B": 221
+  },
+  "K0-0": {
+    "Mass": 12.5,
+    "Luminosity": 1260000,
+    "Radius": 2280,
+    "Temperature": 4114,
+    "R": 255,
+    "G": 221,
+    "B": 181
+  },
+  "K0-Ia": {
+    "Mass": 8.2,
+    "Luminosity": 219000,
+    "Radius": 950,
+    "Temperature": 4114,
+    "R": 255,
+    "G": 221,
+    "B": 181
+  },
+  "K0-Ib": {
+    "Mass": 3.9,
+    "Luminosity": 16600,
+    "Radius": 262,
+    "Temperature": 4114,
+    "R": 255,
+    "G": 221,
+    "B": 181
+  },
+  "K0-II": {
+    "Mass": 3.1,
+    "Luminosity": 2190,
+    "Radius": 95,
+    "Temperature": 4114,
+    "R": 255,
+    "G": 226,
+    "B": 180
+  },
+  "K0-III": {
+    "Mass": 2.3,
+    "Luminosity": 138,
+    "Radius": 23.9,
+    "Temperature": 4114,
+    "R": 255,
+    "G": 227,
+    "B": 190
+  },
+  "K0-IV": {
+    "Mass": 1.6,
+    "Luminosity": 7.16,
+    "Radius": 3.83,
+    "Temperature": 4900,
+    "R": 255,
+    "G": 225,
+    "B": 189
+  },
+  "K0-V": {
+    "Mass": 0.8,
+    "Luminosity": 0.543,
+    "Radius": 1.05,
+    "Temperature": 4900,
+    "R": 255,
+    "G": 238,
+    "B": 221
+  },
+  "K0-VI": {
+    "Mass": 0.7,
+    "Luminosity": 0.15,
+    "Radius": 0.553,
+    "Temperature": 4900,
+    "R": 255,
+    "G": 238,
+    "B": 221
+  },
+  "K1-0": {
+    "Mass": 12.5,
+    "Luminosity": 1220000,
+    "Radius": 2300,
+    "Temperature": 4057,
+    "R": 255,
+    "G": 220,
+    "B": 177
+  },
+  "K1-Ia": {
+    "Mass": 8.3,
+    "Luminosity": 212000,
+    "Radius": 960,
+    "Temperature": 4057,
+    "R": 255,
+    "G": 220,
+    "B": 177
+  },
+  "K1-Ib": {
+    "Mass": 4.1,
+    "Luminosity": 17600,
+    "Radius": 277,
+    "Temperature": 4057,
+    "R": 255,
+    "G": 220,
+    "B": 177
+  },
+  "K1-II": {
+    "Mass": 3.3,
+    "Luminosity": 2320,
+    "Radius": 101,
+    "Temperature": 4057,
+    "R": 255,
+    "G": 224,
+    "B": 175
+  },
+  "K1-III": {
+    "Mass": 2.4,
+    "Luminosity": 161,
+    "Radius": 26.4,
+    "Temperature": 4057,
+    "R": 255,
+    "G": 223,
+    "B": 181
+  },
+  "K1-IV": {
+    "Mass": 1.6,
+    "Luminosity": 7.71,
+    "Radius": 4.21,
+    "Temperature": 4760,
+    "R": 255,
+    "G": 216,
+    "B": 171
+  },
+  "K1-V": {
+    "Mass": 0.8,
+    "Luminosity": 0.443,
+    "Radius": 1.01,
+    "Temperature": 4760,
+    "R": 255,
+    "G": 224,
+    "B": 188
+  },
+  "K1-VI": {
+    "Mass": 0.6,
+    "Luminosity": 0.134,
+    "Radius": 0.555,
+    "Temperature": 4760,
+    "R": 255,
+    "G": 224,
+    "B": 188
+  },
+  "K2-0": {
+    "Mass": 13.3,
+    "Luminosity": 1300000,
+    "Radius": 2440,
+    "Temperature": 4000,
+    "R": 255,
+    "G": 211,
+    "B": 135
+  },
+  "K2-Ia": {
+    "Mass": 8.8,
+    "Luminosity": 225000,
+    "Radius": 1020,
+    "Temperature": 4000,
+    "R": 255,
+    "G": 211,
+    "B": 135
+  },
+  "K2-Ib": {
+    "Mass": 4.3,
+    "Luminosity": 20600,
+    "Radius": 308,
+    "Temperature": 4000,
+    "R": 255,
+    "G": 211,
+    "B": 135
+  },
+  "K2-II": {
+    "Mass": 3.4,
+    "Luminosity": 2470,
+    "Radius": 107,
+    "Temperature": 4000,
+    "R": 255,
+    "G": 222,
+    "B": 170
+  },
+  "K2-III": {
+    "Mass": 2.5,
+    "Luminosity": 206,
+    "Radius": 30.8,
+    "Temperature": 4000,
+    "R": 255,
+    "G": 221,
+    "B": 175
+  },
+  "K2-IV": {
+    "Mass": 1.6,
+    "Luminosity": 8.38,
+    "Radius": 4.66,
+    "Temperature": 4620,
+    "R": 255,
+    "G": 229,
+    "B": 202
+  },
+  "K2-V": {
+    "Mass": 0.7,
+    "Luminosity": 0.401,
+    "Radius": 1.02,
+    "Temperature": 4620,
+    "R": 255,
+    "G": 227,
+    "B": 196
+  },
+  "K2-VI": {
+    "Mass": 0.6,
+    "Luminosity": 0.121,
+    "Radius": 0.56,
+    "Temperature": 4620,
+    "R": 255,
+    "G": 227,
+    "B": 196
+  },
+  "K3-0": {
+    "Mass": 14.2,
+    "Luminosity": 1460000,
+    "Radius": 2720,
+    "Temperature": 3900,
+    "R": 255,
+    "G": 204,
+    "B": 128
+  },
+  "K3-Ia": {
+    "Mass": 9.4,
+    "Luminosity": 253000,
+    "Radius": 1140,
+    "Temperature": 3900,
+    "R": 255,
+    "G": 204,
+    "B": 128
+  },
+  "K3-Ib": {
+    "Mass": 4.6,
+    "Luminosity": 25300,
+    "Radius": 359,
+    "Temperature": 3900,
+    "R": 255,
+    "G": 204,
+    "B": 128
+  },
+  "K3-II": {
+    "Mass": 3.6,
+    "Luminosity": 2770,
+    "Radius": 119,
+    "Temperature": 3900,
+    "R": 255,
+    "G": 220,
+    "B": 166
+  },
+  "K3-III": {
+    "Mass": 2.6,
+    "Luminosity": 253,
+    "Radius": 35.9,
+    "Temperature": 3900,
+    "R": 255,
+    "G": 216,
+    "B": 167
+  },
+  "K3-IV": {
+    "Mass": 1.7,
+    "Luminosity": 9.22,
+    "Radius": 5.19,
+    "Temperature": 4480,
+    "R": 255,
+    "G": 219,
+    "B": 167
+  },
+  "K3-V": {
+    "Mass": 0.7,
+    "Luminosity": 0.335,
+    "Radius": 0.99,
+    "Temperature": 4480,
+    "R": 255,
+    "G": 222,
+    "B": 195
+  },
+  "K3-VI": {
+    "Mass": 0.6,
+    "Luminosity": 0.101,
+    "Radius": 0.544,
+    "Temperature": 4480,
+    "R": 255,
+    "G": 222,
+    "B": 195
+  },
+  "K4-0": {
+    "Mass": 15,
+    "Luminosity": 1650000,
+    "Radius": 3060,
+    "Temperature": 3800,
+    "R": 255,
+    "G": 201,
+    "B": 118
+  },
+  "K4-Ia": {
+    "Mass": 9.9,
+    "Luminosity": 262000,
+    "Radius": 1220,
+    "Temperature": 3800,
+    "R": 255,
+    "G": 201,
+    "B": 118
+  },
+  "K4-Ib": {
+    "Mass": 4.8,
+    "Luminosity": 31500,
+    "Radius": 422,
+    "Temperature": 3800,
+    "R": 255,
+    "G": 201,
+    "B": 118
+  },
+  "K4-II": {
+    "Mass": 3.8,
+    "Luminosity": 3150,
+    "Radius": 133,
+    "Temperature": 3800,
+    "R": 255,
+    "G": 218,
+    "B": 161
+  },
+  "K4-III": {
+    "Mass": 2.7,
+    "Luminosity": 345,
+    "Radius": 44.2,
+    "Temperature": 3800,
+    "R": 255,
+    "G": 211,
+    "B": 146
+  },
+  "K4-IV": {
+    "Mass": 1.7,
+    "Luminosity": 10.3,
+    "Radius": 5.84,
+    "Temperature": 4340,
+    "R": 255,
+    "G": 218,
+    "B": 166
+  },
+  "K4-V": {
+    "Mass": 0.7,
+    "Luminosity": 0.31,
+    "Radius": 1.02,
+    "Temperature": 4340,
+    "R": 255,
+    "G": 216,
+    "B": 181
+  },
+  "K4-VI": {
+    "Mass": 0.5,
+    "Luminosity": 0.0936,
+    "Radius": 0.558,
+    "Temperature": 4340,
+    "R": 255,
+    "G": 216,
+    "B": 181
+  },
+  "K5-0": {
+    "Mass": 15.8,
+    "Luminosity": 1900000,
+    "Radius": 3460,
+    "Temperature": 3700,
+    "R": 255,
+    "G": 209,
+    "B": 154
+  },
+  "K5-Ia": {
+    "Mass": 10.4,
+    "Luminosity": 301000,
+    "Radius": 1380,
+    "Temperature": 3700,
+    "R": 255,
+    "G": 209,
+    "B": 154
+  },
+  "K5-Ib": {
+    "Mass": 5,
+    "Luminosity": 39600,
+    "Radius": 499,
+    "Temperature": 3700,
+    "R": 255,
+    "G": 209,
+    "B": 154
+  },
+  "K5-II": {
+    "Mass": 3.9,
+    "Luminosity": 3620,
+    "Radius": 151,
+    "Temperature": 3700,
+    "R": 255,
+    "G": 216,
+    "B": 156
+  },
+  "K5-III": {
+    "Mass": 2.8,
+    "Luminosity": 435,
+    "Radius": 52.3,
+    "Temperature": 3700,
+    "R": 255,
+    "G": 204,
+    "B": 138
+  },
+  "K5-IV": {
+    "Mass": 1.8,
+    "Luminosity": 10.6,
+    "Radius": 6.33,
+    "Temperature": 4200,
+    "R": 255,
+    "G": 217,
+    "B": 165
+  },
+  "K5-V": {
+    "Mass": 0.7,
+    "Luminosity": 0.266,
+    "Radius": 1,
+    "Temperature": 4200,
+    "R": 255,
+    "G": 210,
+    "B": 161
+  },
+  "K5-VI": {
+    "Mass": 0.5,
+    "Luminosity": 0.088,
+    "Radius": 0.578,
+    "Temperature": 4200,
+    "R": 255,
+    "G": 210,
+    "B": 161
+  },
+  "K6-0": {
+    "Mass": 15.8,
+    "Luminosity": 1850000,
+    "Radius": 3380,
+    "Temperature": 3717,
+    "R": 255,
+    "G": 208,
+    "B": 152
+  },
+  "K6-Ia": {
+    "Mass": 10.6,
+    "Luminosity": 294000,
+    "Radius": 1350,
+    "Temperature": 3717,
+    "R": 255,
+    "G": 208,
+    "B": 152
+  },
+  "K6-Ib": {
+    "Mass": 5.3,
+    "Luminosity": 42400,
+    "Radius": 512,
+    "Temperature": 3717,
+    "R": 255,
+    "G": 208,
+    "B": 152
+  },
+  "K6-II": {
+    "Mass": 4.2,
+    "Luminosity": 3530,
+    "Radius": 148,
+    "Temperature": 3717,
+    "R": 255,
+    "G": 214,
+    "B": 152
+  },
+  "K6-III": {
+    "Mass": 3,
+    "Luminosity": 465,
+    "Radius": 53.6,
+    "Temperature": 3717,
+    "R": 255,
+    "G": 206,
+    "B": 140
+  },
+  "K6-IV": {
+    "Mass": 1.8,
+    "Luminosity": 12.2,
+    "Radius": 7.26,
+    "Temperature": 4060,
+    "R": 255,
+    "G": 216,
+    "B": 164
+  },
+  "K6-V": {
+    "Mass": 0.6,
+    "Luminosity": 0.211,
+    "Radius": 0.957,
+    "Temperature": 4060,
+    "R": 255,
+    "G": 205,
+    "B": 152
+  },
+  "K6-VI": {
+    "Mass": 0.5,
+    "Luminosity": 0.0767,
+    "Radius": 0.577,
+    "Temperature": 4060,
+    "R": 255,
+    "G": 205,
+    "B": 152
+  },
+  "K7-0": {
+    "Mass": 15.8,
+    "Luminosity": 1810000,
+    "Radius": 3320,
+    "Temperature": 3733,
+    "R": 255,
+    "G": 207,
+    "B": 150
+  },
+  "K7-Ia": {
+    "Mass": 10.7,
+    "Luminosity": 262000,
+    "Radius": 1260,
+    "Temperature": 3733,
+    "R": 255,
+    "G": 207,
+    "B": 150
+  },
+  "K7-Ib": {
+    "Mass": 5.7,
+    "Luminosity": 45500,
+    "Radius": 526,
+    "Temperature": 3733,
+    "R": 255,
+    "G": 207,
+    "B": 150
+  },
+  "K7-II": {
+    "Mass": 4.4,
+    "Luminosity": 3450,
+    "Radius": 145,
+    "Temperature": 3733,
+    "R": 255,
+    "G": 212,
+    "B": 147
+  },
+  "K7-III": {
+    "Mass": 3.1,
+    "Luminosity": 499,
+    "Radius": 55,
+    "Temperature": 3733,
+    "R": 255,
+    "G": 208,
+    "B": 142
+  },
+  "K7-IV": {
+    "Mass": 1.9,
+    "Luminosity": 14.2,
+    "Radius": 8.43,
+    "Temperature": 3920,
+    "R": 255,
+    "G": 216,
+    "B": 163
+  },
+  "K7-V": {
+    "Mass": 0.6,
+    "Luminosity": 0.187,
+    "Radius": 0.967,
+    "Temperature": 3920,
+    "R": 255,
+    "G": 199,
+    "B": 142
+  },
+  "K7-VI": {
+    "Mass": 0.4,
+    "Luminosity": 0.068,
+    "Radius": 0.583,
+    "Temperature": 3920,
+    "R": 255,
+    "G": 199,
+    "B": 142
+  },
+  "K8-0": {
+    "Mass": 15.8,
+    "Luminosity": 1770000,
+    "Radius": 3250,
+    "Temperature": 3750,
+    "R": 255,
+    "G": 206,
+    "B": 147
+  },
+  "K8-Ia": {
+    "Mass": 10.9,
+    "Luminosity": 256000,
+    "Radius": 1230,
+    "Temperature": 3750,
+    "R": 255,
+    "G": 206,
+    "B": 147
+  },
+  "K8-Ib": {
+    "Mass": 6,
+    "Luminosity": 44400,
+    "Radius": 515,
+    "Temperature": 3750,
+    "R": 255,
+    "G": 206,
+    "B": 147
+  },
+  "K8-II": {
+    "Mass": 4.6,
+    "Luminosity": 3690,
+    "Radius": 148,
+    "Temperature": 3750,
+    "R": 255,
+    "G": 210,
+    "B": 142
+  },
+  "K8-III": {
+    "Mass": 3.3,
+    "Luminosity": 534,
+    "Radius": 56.4,
+    "Temperature": 3750,
+    "R": 255,
+    "G": 206,
+    "B": 139
+  },
+  "K8-IV": {
+    "Mass": 1.9,
+    "Luminosity": 17,
+    "Radius": 9.9,
+    "Temperature": 3780,
+    "R": 255,
+    "G": 215,
+    "B": 162
+  },
+  "K8-V": {
+    "Mass": 0.6,
+    "Luminosity": 0.155,
+    "Radius": 0.946,
+    "Temperature": 3780,
+    "R": 255,
+    "G": 209,
+    "B": 174
+  },
+  "K8-VI": {
+    "Mass": 0.3,
+    "Luminosity": 0.0562,
+    "Radius": 0.57,
+    "Temperature": 3780,
+    "R": 255,
+    "G": 209,
+    "B": 174
+  },
+  "K9-0": {
+    "Mass": 15.8,
+    "Luminosity": 1830000,
+    "Radius": 3350,
+    "Temperature": 3725,
+    "R": 255,
+    "G": 205,
+    "B": 145
+  },
+  "K9-Ia": {
+    "Mass": 11.1,
+    "Luminosity": 265000,
+    "Radius": 1270,
+    "Temperature": 3725,
+    "R": 255,
+    "G": 205,
+    "B": 145
+  },
+  "K9-Ib": {
+    "Mass": 6.3,
+    "Luminosity": 50400,
+    "Radius": 556,
+    "Temperature": 3725,
+    "R": 255,
+    "G": 205,
+    "B": 145
+  },
+  "K9-II": {
+    "Mass": 4.9,
+    "Luminosity": 3830,
+    "Radius": 153,
+    "Temperature": 3725,
+    "R": 255,
+    "G": 209,
+    "B": 138
+  },
+  "K9-III": {
+    "Mass": 3.4,
+    "Luminosity": 606,
+    "Radius": 60.9,
+    "Temperature": 3725,
+    "R": 255,
+    "G": 205,
+    "B": 135
+  },
+  "K9-IV": {
+    "Mass": 2,
+    "Luminosity": 20.7,
+    "Radius": 11.8,
+    "Temperature": 3640,
+    "R": 255,
+    "G": 214,
+    "B": 161
+  },
+  "K9-V": {
+    "Mass": 0.5,
+    "Luminosity": 0.144,
+    "Radius": 0.982,
+    "Temperature": 3640,
+    "R": 255,
+    "G": 202,
+    "B": 157
+  },
+  "K9-VI": {
+    "Mass": 0.3,
+    "Luminosity": 0.0433,
+    "Radius": 0.54,
+    "Temperature": 3640,
+    "R": 255,
+    "G": 202,
+    "B": 157
+  },
+  "M0": {
+    "Mass": "-0",
+    "Luminosity": 15.8,
+    "Radius": 1900000,
+    "Temperature": 3460,
+    "R": 3700,
+    "G": 255,
+    "B": 204,
+    "FIELD9": 143
+  },
+  "M0-Ia": {
+    "Mass": 13.3,
+    "Luminosity": 274000,
+    "Radius": 1310,
+    "Temperature": 3700,
+    "R": 255,
+    "G": 204,
+    "B": 143
+  },
+  "M0-Ib": {
+    "Mass": 10.7,
+    "Luminosity": 57300,
+    "Radius": 600,
+    "Temperature": 3700,
+    "R": 255,
+    "G": 204,
+    "B": 143
+  },
+  "M0-II": {
+    "Mass": 8.2,
+    "Luminosity": 3960,
+    "Radius": 158,
+    "Temperature": 3700,
+    "R": 255,
+    "G": 207,
+    "B": 133
+  },
+  "M0-III": {
+    "Mass": 5.6,
+    "Luminosity": 689,
+    "Radius": 65.8,
+    "Temperature": 3700,
+    "R": 255,
+    "G": 203,
+    "B": 132
+  },
+  "M0-IV": {
+    "Mass": 3.1,
+    "Luminosity": 26,
+    "Radius": 14.3,
+    "Temperature": 3500,
+    "R": 255,
+    "G": 213,
+    "B": 160
+  },
+  "M0-V": {
+    "Mass": 0.5,
+    "Luminosity": 0.125,
+    "Radius": 0.99,
+    "Temperature": 3500,
+    "R": 255,
+    "G": 195,
+    "B": 139
+  },
+  "M0-VI": {
+    "Mass": 0.2,
+    "Luminosity": 0.0376,
+    "Radius": 0.544,
+    "Temperature": 3500,
+    "R": 255,
+    "G": 195,
+    "B": 139
+  },
+  "M1-0": {
+    "Mass": 15.1,
+    "Luminosity": 2560000,
+    "Radius": 4460,
+    "Temperature": 3510,
+    "R": 255,
+    "G": 202,
+    "B": 138
+  },
+  "M1-Ia": {
+    "Mass": 12.7,
+    "Luminosity": 337000,
+    "Radius": 1620,
+    "Temperature": 3510,
+    "R": 255,
+    "G": 202,
+    "B": 138
+  },
+  "M1-Ib": {
+    "Mass": 10.2,
+    "Luminosity": 77300,
+    "Radius": 775,
+    "Temperature": 3510,
+    "R": 255,
+    "G": 202,
+    "B": 138
+  },
+  "M1-II": {
+    "Mass": 7.8,
+    "Luminosity": 5860,
+    "Radius": 213,
+    "Temperature": 3510,
+    "R": 255,
+    "G": 205,
+    "B": 128
+  },
+  "M1-III": {
+    "Mass": 5.3,
+    "Luminosity": 929,
+    "Radius": 85,
+    "Temperature": 3510,
+    "R": 255,
+    "G": 200,
+    "B": 121
+  },
+  "M1-IV": {
+    "Mass": 2.9,
+    "Luminosity": 35.5,
+    "Radius": 18.4,
+    "Temperature": 3333,
+    "R": 255,
+    "G": 212,
+    "B": 159
+  },
+  "M1-V": {
+    "Mass": 0.5,
+    "Luminosity": 0.0618,
+    "Radius": 0.768,
+    "Temperature": 3333,
+    "R": 255,
+    "G": 204,
+    "B": 142
+  },
+  "M1-VI": {
+    "Mass": 0.2,
+    "Luminosity": 0.0186,
+    "Radius": 0.422,
+    "Temperature": 3333,
+    "R": 255,
+    "G": 204,
+    "B": 142
+  },
+  "M2-0": {
+    "Mass": 14.5,
+    "Luminosity": 3650000,
+    "Radius": 5950,
+    "Temperature": 3320,
+    "R": 255,
+    "G": 193,
+    "B": 104
+  },
+  "M2-Ia": {
+    "Mass": 12.1,
+    "Luminosity": 481000,
+    "Radius": 2160,
+    "Temperature": 3320,
+    "R": 255,
+    "G": 193,
+    "B": 104
+  },
+  "M2-Ib": {
+    "Mass": 9.8,
+    "Luminosity": 110000,
+    "Radius": 1030,
+    "Temperature": 3320,
+    "R": 255,
+    "G": 193,
+    "B": 104
+  },
+  "M2-II": {
+    "Mass": 7.4,
+    "Luminosity": 8360,
+    "Radius": 285,
+    "Temperature": 3320,
+    "R": 255,
+    "G": 203,
+    "B": 124
+  },
+  "M2-III": {
+    "Mass": 5.1,
+    "Luminosity": 1210,
+    "Radius": 108,
+    "Temperature": 3320,
+    "R": 255,
+    "G": 198,
+    "B": 118
+  },
+  "M2-IV": {
+    "Mass": 2.7,
+    "Luminosity": 50.9,
+    "Radius": 24.4,
+    "Temperature": 3167,
+    "R": 255,
+    "G": 211,
+    "B": 157
+  },
+  "M2-V": {
+    "Mass": 0.4,
+    "Luminosity": 0.0321,
+    "Radius": 0.614,
+    "Temperature": 3167,
+    "R": 255,
+    "G": 196,
+    "B": 131
+  },
+  "M2-VI": {
+    "Mass": 0.2,
+    "Luminosity": 0.00885,
+    "Radius": 0.322,
+    "Temperature": 3167,
+    "R": 255,
+    "G": 196,
+    "B": 131
+  },
+  "M3-0": {
+    "Mass": 13.8,
+    "Luminosity": 5070000,
+    "Radius": 7890,
+    "Temperature": 3130,
+    "R": 255,
+    "G": 192,
+    "B": 118
+  },
+  "M3-Ia": {
+    "Mass": 11.6,
+    "Luminosity": 733000,
+    "Radius": 3000,
+    "Temperature": 3130,
+    "R": 255,
+    "G": 192,
+    "B": 118
+  },
+  "M3-Ib": {
+    "Mass": 9.3,
+    "Luminosity": 168000,
+    "Radius": 1440,
+    "Temperature": 3130,
+    "R": 255,
+    "G": 192,
+    "B": 118
+  },
+  "M3-II": {
+    "Mass": 7.1,
+    "Luminosity": 14000,
+    "Radius": 414,
+    "Temperature": 3130,
+    "R": 255,
+    "G": 201,
+    "B": 119
+  },
+  "M3-III": {
+    "Mass": 4.8,
+    "Luminosity": 1840,
+    "Radius": 150,
+    "Temperature": 3130,
+    "R": 255,
+    "G": 200,
+    "B": 119
+  },
+  "M3-IV": {
+    "Mass": 2.6,
+    "Luminosity": 77.6,
+    "Radius": 33.6,
+    "Temperature": 3000,
+    "R": 255,
+    "G": 210,
+    "B": 156
+  },
+  "M3-V": {
+    "Mass": 0.3,
+    "Luminosity": 0.0178,
+    "Radius": 0.509,
+    "Temperature": 3000,
+    "R": 255,
+    "G": 206,
+    "B": 129
+  },
+  "M3-VI": {
+    "Mass": 0.2,
+    "Luminosity": 0.0049,
+    "Radius": 0.267,
+    "Temperature": 3000,
+    "R": 255,
+    "G": 206,
+    "B": 129
+  },
+  "M4-0": {
+    "Mass": 13.2,
+    "Luminosity": 8380000,
+    "Radius": 11500,
+    "Temperature": 2940,
+    "R": 255,
+    "G": 185,
+    "B": 104
+  },
+  "M4-Ia": {
+    "Mass": 11,
+    "Luminosity": 1100000,
+    "Radius": 4180,
+    "Temperature": 2940,
+    "R": 255,
+    "G": 185,
+    "B": 104
+  },
+  "M4-Ib": {
+    "Mass": 8.9,
+    "Luminosity": 277000,
+    "Radius": 2090,
+    "Temperature": 2940,
+    "R": 255,
+    "G": 185,
+    "B": 104
+  },
+  "M4-II": {
+    "Mass": 6.7,
+    "Luminosity": 23100,
+    "Radius": 604,
+    "Temperature": 2940,
+    "R": 255,
+    "G": 199,
+    "B": 114
+  },
+  "M4-III": {
+    "Mass": 4.6,
+    "Luminosity": 2770,
+    "Radius": 209,
+    "Temperature": 2940,
+    "R": 255,
+    "G": 206,
+    "B": 127
+  },
+  "M4-IV": {
+    "Mass": 2.4,
+    "Luminosity": 127,
+    "Radius": 48.3,
+    "Temperature": 2833,
+    "R": 255,
+    "G": 209,
+    "B": 155
+  },
+  "M4-V": {
+    "Mass": 0.3,
+    "Luminosity": 0.0106,
+    "Radius": 0.44,
+    "Temperature": 2833,
+    "R": 255,
+    "G": 201,
+    "B": 127
+  },
+  "M4-VI": {
+    "Mass": 0.1,
+    "Luminosity": 0.00266,
+    "Radius": 0.221,
+    "Temperature": 2833,
+    "R": 255,
+    "G": 201,
+    "B": 127
+  },
+  "M5-0": {
+    "Mass": 12.5,
+    "Luminosity": 15300000,
+    "Radius": 17800,
+    "Temperature": 2750,
+    "R": 255,
+    "G": 178,
+    "B": 78
+  },
+  "M5-Ia": {
+    "Mass": 10.5,
+    "Luminosity": 2020000,
+    "Radius": 6450,
+    "Temperature": 2750,
+    "R": 255,
+    "G": 178,
+    "B": 78
+  },
+  "M5-Ib": {
+    "Mass": 8.4,
+    "Luminosity": 507000,
+    "Radius": 3230,
+    "Temperature": 2750,
+    "R": 255,
+    "G": 178,
+    "B": 78
+  },
+  "M5-II": {
+    "Mass": 6.4,
+    "Luminosity": 46200,
+    "Radius": 976,
+    "Temperature": 2750,
+    "R": 255,
+    "G": 197,
+    "B": 110
+  },
+  "M5-III": {
+    "Mass": 4.3,
+    "Luminosity": 5070,
+    "Radius": 323,
+    "Temperature": 2750,
+    "R": 255,
+    "G": 197,
+    "B": 124
+  },
+  "M5-IV": {
+    "Mass": 2.3,
+    "Luminosity": 207,
+    "Radius": 69.4,
+    "Temperature": 2667,
+    "R": 255,
+    "G": 209,
+    "B": 154
+  },
+  "M5-V": {
+    "Mass": 0.2,
+    "Luminosity": 0.00624,
+    "Radius": 0.381,
+    "Temperature": 2667,
+    "R": 255,
+    "G": 204,
+    "B": 111
+  },
+  "M5-VI": {
+    "Mass": 0.1,
+    "Luminosity": 0.00172,
+    "Radius": 0.2,
+    "Temperature": 2667,
+    "R": 255,
+    "G": 204,
+    "B": 111
+  },
+  "M6-0": {
+    "Mass": 12.4,
+    "Luminosity": 28800000,
+    "Radius": 28100,
+    "Temperature": 2560,
+    "R": 255,
+    "G": 171,
+    "B": 52
+  },
+  "M6-Ia": {
+    "Mass": 10.3,
+    "Luminosity": 4170000,
+    "Radius": 10700,
+    "Temperature": 2560,
+    "R": 255,
+    "G": 171,
+    "B": 52
+  },
+  "M6-Ib": {
+    "Mass": 8.3,
+    "Luminosity": 955000,
+    "Radius": 5120,
+    "Temperature": 2560,
+    "R": 255,
+    "G": 171,
+    "B": 52
+  },
+  "M6-II": {
+    "Mass": 6.3,
+    "Luminosity": 95500,
+    "Radius": 1620,
+    "Temperature": 2560,
+    "R": 255,
+    "G": 195,
+    "B": 105
+  },
+  "M6-III": {
+    "Mass": 4.2,
+    "Luminosity": 9550,
+    "Radius": 512,
+    "Temperature": 2560,
+    "R": 255,
+    "G": 178,
+    "B": 121
+  },
+  "M6-IV": {
+    "Mass": 2.2,
+    "Luminosity": 410,
+    "Radius": 111,
+    "Temperature": 2500,
+    "R": 255,
+    "G": 208,
+    "B": 153
+  },
+  "M6-V": {
+    "Mass": 0.2,
+    "Luminosity": 0.0045,
+    "Radius": 0.368,
+    "Temperature": 2500,
+    "R": 255,
+    "G": 195,
+    "B": 112
+  },
+  "M6-VI": {
+    "Mass": 0.1,
+    "Luminosity": 0.00163,
+    "Radius": 0.222,
+    "Temperature": 2500,
+    "R": 255,
+    "G": 195,
+    "B": 112
+  },
+  "M7-0": {
+    "Mass": 12.3,
+    "Luminosity": 69600000,
+    "Radius": 51000,
+    "Temperature": 2370,
+    "R": 255,
+    "G": 164,
+    "B": 26
+  },
+  "M7-Ia": {
+    "Mass": 10.2,
+    "Luminosity": 9180000,
+    "Radius": 18500,
+    "Temperature": 2370,
+    "R": 255,
+    "G": 164,
+    "B": 26
+  },
+  "M7-Ib": {
+    "Mass": 8.2,
+    "Luminosity": 2100000,
+    "Radius": 8870,
+    "Temperature": 2370,
+    "R": 255,
+    "G": 164,
+    "B": 26
+  },
+  "M7-II": {
+    "Mass": 6.2,
+    "Luminosity": 253000,
+    "Radius": 3070,
+    "Temperature": 2370,
+    "R": 255,
+    "G": 193,
+    "B": 100
+  },
+  "M7-III": {
+    "Mass": 4.2,
+    "Luminosity": 21000,
+    "Radius": 887,
+    "Temperature": 2370,
+    "R": 255,
+    "G": 165,
+    "B": 97
+  },
+  "M7-IV": {
+    "Mass": 2.1,
+    "Luminosity": 926,
+    "Radius": 192,
+    "Temperature": 2333,
+    "R": 255,
+    "G": 207,
+    "B": 152
+  },
+  "M7-V": {
+    "Mass": 0.1,
+    "Luminosity": 0.00369,
+    "Radius": 0.383,
+    "Temperature": 2333,
+    "R": 255,
+    "G": 197,
+    "B": 111
+  },
+  "M7-VI": {
+    "Mass": 0.1,
+    "Luminosity": 0.00194,
+    "Radius": 0.278,
+    "Temperature": 2333,
+    "R": 255,
+    "G": 197,
+    "B": 111
+  },
+  "M8-0": {
+    "Mass": 12.1,
+    "Luminosity": 205000000,
+    "Radius": 103000,
+    "Temperature": 2180,
+    "R": 255,
+    "G": 157,
+    "B": 0
+  },
+  "M8-Ia": {
+    "Mass": 10.1,
+    "Luminosity": 27000000,
+    "Radius": 37600,
+    "Temperature": 2180,
+    "R": 255,
+    "G": 157,
+    "B": 0
+  },
+  "M8-Ib": {
+    "Mass": 8.1,
+    "Luminosity": 5150000,
+    "Radius": 16400,
+    "Temperature": 2180,
+    "R": 255,
+    "G": 157,
+    "B": 0
+  },
+  "M8-II": {
+    "Mass": 6.1,
+    "Luminosity": 744000,
+    "Radius": 6230,
+    "Temperature": 2180,
+    "R": 255,
+    "G": 192,
+    "B": 96
+  },
+  "M8-III": {
+    "Mass": 4.1,
+    "Luminosity": 51500,
+    "Radius": 1640,
+    "Temperature": 2180,
+    "R": 255,
+    "G": 167,
+    "B": 97
+  },
+  "M8-IV": {
+    "Mass": 2.1,
+    "Luminosity": 2440,
+    "Radius": 361,
+    "Temperature": 2167,
+    "R": 255,
+    "G": 206,
+    "B": 151
+  },
+  "M8-V": {
+    "Mass": 0.1,
+    "Luminosity": 0.00353,
+    "Radius": 0.434,
+    "Temperature": 2167,
+    "R": 255,
+    "G": 198,
+    "B": 109
+  },
+  "M8-VI": {
+    "Mass": 0.1,
+    "Luminosity": 0.00244,
+    "Radius": 0.361,
+    "Temperature": 2167,
+    "R": 255,
+    "G": 198,
+    "B": 109
+  },
+  "M9-0": {
+    "Mass": 12,
+    "Luminosity": 711000000,
+    "Radius": 231000,
+    "Temperature": 1990,
+    "R": 255,
+    "G": 157,
+    "B": 0
+  },
+  "M9-Ia": {
+    "Mass": 10,
+    "Luminosity": 103000000,
+    "Radius": 87900,
+    "Temperature": 1990,
+    "R": 255,
+    "G": 157,
+    "B": 0
+  },
+  "M9-Ib": {
+    "Mass": 8,
+    "Luminosity": 17900000,
+    "Radius": 36700,
+    "Temperature": 1990,
+    "R": 255,
+    "G": 157,
+    "B": 0
+  },
+  "M9-II": {
+    "Mass": 6,
+    "Luminosity": 2830000,
+    "Radius": 14600,
+    "Temperature": 1990,
+    "R": 255,
+    "G": 190,
+    "B": 91
+  },
+  "M9-III": {
+    "Mass": 4.1,
+    "Luminosity": 179000,
+    "Radius": 3670,
+    "Temperature": 1990,
+    "R": 255,
+    "G": 233,
+    "B": 154
+  },
+  "M9-IV": {
+    "Mass": 2.1,
+    "Luminosity": 7910,
+    "Radius": 764,
+    "Temperature": 2000,
+    "R": 255,
+    "G": 205,
+    "B": 150
+  },
+  "M9-V": {
+    "Mass": 0.1,
+    "Luminosity": 0.00415,
+    "Radius": 0.553,
+    "Temperature": 2000,
+    "R": 255,
+    "G": 198,
+    "B": 108
+  },
+  "M9-VI": {
+    "Mass": 0.1,
+    "Luminosity": 0.00415,
+    "Radius": 0.553,
+    "Temperature": 2000,
+    "R": 255,
+    "G": 198,
+    "B": 108
+  },
+  "WD1": {
+    "Mass": 1.1,
+    "Luminosity": 6.91,
+    "Radius": 0.009,
+    "Temperature": 100000,
+    "R": 155,
+    "G": 178,
+    "B": 255
+  },
+  "WD2": {
+    "Mass": 0.9,
+    "Luminosity": 0.265,
+    "Radius": 0.007,
+    "Temperature": 50400,
+    "R": 159,
+    "G": 181,
+    "B": 255
+  },
+  "WD3": {
+    "Mass": 0.8,
+    "Luminosity": 0.0255,
+    "Radius": 0.0086,
+    "Temperature": 25200,
+    "R": 168,
+    "G": 189,
+    "B": 255
+  },
+  "WD4": {
+    "Mass": 0.7,
+    "Luminosity": 0.00602,
+    "Radius": 0.0094,
+    "Temperature": 16800,
+    "R": 179,
+    "G": 197,
+    "B": 255
+  },
+  "WD5": {
+    "Mass": 0.6,
+    "Luminosity": 0.00182,
+    "Radius": 0.0092,
+    "Temperature": 12600,
+    "R": 192,
+    "G": 207,
+    "B": 255
+  },
+  "WD6": {
+    "Mass": 0.5,
+    "Luminosity": 0.000693,
+    "Radius": 0.0089,
+    "Temperature": 10080,
+    "R": 207,
+    "G": 218,
+    "B": 255
+  },
+  "WD7": {
+    "Mass": 0.4,
+    "Luminosity": 0.000315,
+    "Radius": 0.0086,
+    "Temperature": 8400,
+    "R": 224,
+    "G": 230,
+    "B": 255
+  },
+  "WD8": {
+    "Mass": 0.3,
+    "Luminosity": 0.00018,
+    "Radius": 0.0089,
+    "Temperature": 7200,
+    "R": 243,
+    "G": 243,
+    "B": 255
+  },
+  "WD9": {
+    "Mass": 0.2,
+    "Luminosity": 0.000105,
+    "Radius": 0.0089,
+    "Temperature": 6300,
+    "R": 255,
+    "G": 247,
+    "B": 245
+  },
+  "WD10": {
+    "Mass": 0.1,
+    "Luminosity": 0.0000673,
+    "Radius": 0.009,
+    "Temperature": 5600,
+    "R": 255,
+    "G": 239,
+    "B": 225
+  },
+  "BD1": {
+    "Mass": 0.07,
+    "Luminosity": 0.0001014319,
+    "Radius": 0.07,
+    "Temperature": 2200,
+    "R": 202,
+    "G": 31,
+    "B": 123
+  },
+  "BD2": {
+    "Mass": 0.064,
+    "Luminosity": 0.0000304873,
+    "Radius": 0.08,
+    "Temperature": 2000,
+    "R": 202,
+    "G": 31,
+    "B": 123
+  },
+  "BD3": {
+    "Mass": 0.058,
+    "Luminosity": 0.0000751385,
+    "Radius": 0.09,
+    "Temperature": 1800,
+    "R": 202,
+    "G": 31,
+    "B": 123
+  },
+  "BD4": {
+    "Mass": 0.052,
+    "Luminosity": 0.0000579119,
+    "Radius": 0.1,
+    "Temperature": 1600,
+    "R": 202,
+    "G": 31,
+    "B": 123
+  },
+  "BD5": {
+    "Mass": 0.046,
+    "Luminosity": 0.0000410757,
+    "Radius": 0.11,
+    "Temperature": 1400,
+    "R": 202,
+    "G": 31,
+    "B": 123
+  },
+  "BD6": {
+    "Mass": 0.04,
+    "Luminosity": 0.0000263861,
+    "Radius": 0.12,
+    "Temperature": 1200,
+    "R": 235,
+    "G": 75,
+    "B": 37
+  },
+  "BD7": {
+    "Mass": 0.034,
+    "Luminosity": 0.0000127247,
+    "Radius": 0.12,
+    "Temperature": 1000,
+    "R": 235,
+    "G": 75,
+    "B": 37
+  },
+  "BD8": {
+    "Mass": 0.026,
+    "Luminosity": 0.0000083487,
+    "Radius": 0.12,
+    "Temperature": 900,
+    "R": 235,
+    "G": 75,
+    "B": 37
+  },
+  "BD9": {
+    "Mass": 0.02,
+    "Luminosity": 0.0000052120,
+    "Radius": 0.12,
+    "Temperature": 800,
+    "R": 235,
+    "G": 75,
+    "B": 37
+  },
+  "BD10": {
+    "Mass": 0.014,
+    "Luminosity": 0.0000030552,
+    "Radius": 0.12,
+    "Temperature": 700,
+    "R": 235,
+    "G": 75,
+    "B": 37
+  }
+}

@@ -1,19 +1,19 @@
 // TODO: Add comments
 class Galaxy {
-  constructor(debug = false) {
-    this.debug_flag = debug;
+  constructor() {
 
     this.generate();
     this.render();
   }
 
   generate(){
+    if(debug_flag) console.log("%cGenerate Galaxy", debug_head_css);
     this.resetGalaxy();
     this.genGalaxyType();
     this.genGalaxyLocation();
     this.genClusterLocation();
 
-    if(this.debug_flag) this.debug();
+    if(debug_flag) this.debug();
   }
 
   resetGalaxy(){
@@ -35,15 +35,18 @@ class Galaxy {
 
     // Get value from range
     this.galaxyType = returnFromRange(dice.d100(), ranges, values);
+    if(debug_flag) console.log("Get Galaxy Type ... " + this.galaxyType.capitalize());
 
     // Go to sub functions and apply mods
     switch(this.galaxyType){
       case 'irregular':
         this.modifiers.age_modifier--;
+        if(debug_flag) console.log("Set Age Modifier -1 ... " + this.modifiers.age_modifier);
         this.genGalaxyClassIrregular();
         break;
       case 'elliptical':
         this.modifiers.age_modifier += 5;
+        if(debug_flag) console.log("Set Age Modifier +5 ... " + this.modifiers.age_modifier);
         this.genGalaxyClassElliptical();
         break;
       case 'lenticular':
@@ -56,6 +59,9 @@ class Galaxy {
         // TODO: Add default
         break;
     }
+
+    if(debug_flag && this.galaxyClass) console.log("Get Galaxy Class ... " + this.galaxyClass.capitalize());
+    if(debug_flag && this.galaxyArms) console.log("Get Galaxy Arms ... " + this.galaxyArms.capitalize());
   }
 
   genGalaxyClassIrregular(){
@@ -68,7 +74,6 @@ class Galaxy {
   }
 
   genGalaxyClassElliptical(){
-    console.log(dice.roll("1d7"));
     this.galaxyClass = 'E' + dice.roll("1d7");
   }
 
@@ -117,14 +122,17 @@ class Galaxy {
     var ranges = [[1,3], [4,10]];
     var values = ['bulge', 'halo'];
     this.galaxyLocation = returnFromRange(dice.d10(), ranges, values);
+    if(debug_flag) console.log("Get Sector Location ... " + this.galaxyLocation.capitalize());
 
     // Apply modifiers
     switch(this.galaxyLocation){
       case 'bulge':
         this.modifiers.age_modifier += 3;
+        if(debug_flag) console.log("Set Age Modifier +3 ... " + this.modifiers.age_modifier);
         break;
       case 'halo':
         this.modifiers.age_modifier += 2;
+        if(debug_flag) console.log("Set Age Modifier +2 ... " + this.modifiers.age_modifier);
         break;
       default:
         // TODO: Add default
@@ -136,6 +144,7 @@ class Galaxy {
     var ranges = [[1,18], [19,86], [87,100]];
     var values = ['bulge', 'disk', 'halo'];
     this.galaxyLocation = returnFromRange(dice.d100(), ranges, values);
+    if(debug_flag) console.log("Get Sector Location ... " + this.galaxyLocation.capitalize());
 
     // Apply modifiers
     switch(this.galaxyLocation){
@@ -144,14 +153,19 @@ class Galaxy {
           case 'Sa':
           case 'SBa':
             this.modifiers.age_modifier += 3;
+            if(debug_flag) console.log("Set Age Modifier +3 ... " + this.modifiers.age_modifier);
             break;
           case 'Sb':
           case 'SBb':
-            if(dice.d4() <= 2) this.modifiers.age_modifier += 3;
+            if(dice.d4() <= 2){
+              this.modifiers.age_modifier += 3;
+              if(debug_flag) console.log("Set Age Modifier +3 ... " + this.modifiers.age_modifier);
+            }
             break;
           case 'Sc':
           case 'SBc':
             this.modifiers.age_modifier--;
+            if(debug_flag) console.log("Set Age Modifier -1 ... " + this.modifiers.age_modifier);
             break;
           default:
             // TODO: Add default
@@ -160,9 +174,11 @@ class Galaxy {
         break;
       case 'disk':
         this.modifiers.age_modifier -= 2;
+        if(debug_flag) console.log("Set Age Modifier -2 ... " + this.modifiers.age_modifier);
         break;
       case 'halo':
         this.modifiers.age_modifier += 3;
+        if(debug_flag) console.log("Set Age Modifier +3 ... " + this.modifiers.age_modifier);
         break;
       default:
         // TODO: Add default
@@ -192,13 +208,17 @@ class Galaxy {
         break;
     }
 
+    if(debug_flag) console.log("Set System Cluster ... " + this.galaxyCluster.capitalize() + " Cluster");
+
     // Apply Modifiers
     switch(this.galaxyCluster){
       case 'open':
         this.modifiers.age_modifier -= 2;
+        if(debug_flag) console.log("Set Age Modifier -2 ... " + this.modifiers.age_modifier);
         break;
       case 'globular':
         this.modifiers.age_modifier += 2;
+        if(debug_flag) console.log("Set Age Modifier +2 ... " + this.modifiers.age_modifier);
         break;
       default:
         // TODO: Add default
@@ -305,6 +325,7 @@ class Galaxy {
       'Galaxy Cluster': this.galaxyCluster,
       'Modifiers': this.modifiers
     };
+    console.log("%cFinal Galaxy", debug_subhead_css);
     console.log(debugObj);
   }
 
@@ -313,8 +334,6 @@ class Galaxy {
     var anyMods = arrayNot(this.modifiers, 0);
     galaxyHTML.push("<table class='table table-condensed'>");
     galaxyHTML.push("<tbody>");
-
-    console.log(typeof this.galaxyType);
 
     galaxyHTML.push(`<tr><th>Galaxy Type</th><td>${this.galaxyType.capitalize()} Galaxy</td></tr>`);
     if(this.galaxyClass && this.galaxyType == 'spiral') galaxyHTML.push(`<tr><th>Galaxy Classification</th><td>${this.galaxyClass.capitalize()} - ${this.galaxyArms}</td></tr>`);

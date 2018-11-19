@@ -79,6 +79,20 @@ function getRandom(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+function rgbToHex(R, G, B) { return '#' + toHex(R) + toHex(G) + toHex(B) }
+
+function toHex(n) {
+  n = parseInt(n,10);
+  if (isNaN(n)) return "00";
+  n = Math.max(0,Math.min(n,255));
+  return "0123456789ABCDEF".charAt((n-n%16)/16)
+    + "0123456789ABCDEF".charAt(n%16);
+}
+
+Math.roundPlaces = function round(value, decimals) {
+  return Number(Math.round(value+'e'+decimals)+'e-'+decimals);
+};
+
 String.prototype.capitalize = function(lower) {
   return (lower ? this.toLowerCase() : this).replace(/(?:^|\s)\S/g, function(a) { return a.toUpperCase(); });
 };

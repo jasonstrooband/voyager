@@ -4,13 +4,22 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [0.1.6] - 2018-11-19
 ### Added
-- Changelog file for recording changes made and version releases
+- Change log file for recording changes made and version releases
+- Added a simple pre-loader back in
+- Added a star data file for storing base information for certain star types
+- Added more in depth star classification and using the base star properties from starData file
+- Added RGBTo Hex function to add in star colours
+
+### Changed
+- Changed the way debug is displayed with styling options
+- Changed debugging to only display if the debug flag is set to true
+- Changed the way star information is added to the ui with full star properties
 
 ### Fixes
 - Changed the names of generation functions to remove clashes with the variables the data is stored in
-- Fixed class method calls for static mnethods
+- Fixed class method calls for static methods
 - Fixed dice roll function to floor the number as it was producing a float and not an integer
 - Fixed system panel tree and details not switching correctly
 

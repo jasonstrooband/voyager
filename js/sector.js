@@ -1,4 +1,6 @@
 // TODO: Add comments
+// TODO: Add in roque systems, that only have a single planetary system
+// TODO: Make density a factor of the galaxy location and the cluster type
 class Sector {
   constructor(density = 20, debug = false) {
     this.debug_flag = debug;

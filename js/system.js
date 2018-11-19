@@ -47,6 +47,7 @@ class System {
       } else {
         if(roll > 24){
           this.starCount++;
+          this.genNewStar();
         } else {
           break;
         }
@@ -68,13 +69,12 @@ class System {
       this.data.push({...this.lastStar});
     } else {
       newStar = new Body('star', this.starCount);
-      //console.log(newStar.type + '-' + this.lastStar.type);
       if(this.starTypeHigher(newStar.type))newStar.convertToBD();
-      //console.log(newStar.class + '-' + this.lastStar.class);
       if(newStar.class && !this.lastStar.class) newStar.convertToBD();
       if(newStar.class && this.starClassHigher(newStar.class)) newStar.convertToBD();
       if(newStar.type == this.lastStar.type && newStar.position < this.lastStar.position) newStar.position = this.lastStar.position;
       this.data.push(newStar);
+      this.lastStar = {...newStar};
     }
   }
 
@@ -145,7 +145,7 @@ class System {
     var systemHTML = [];
 
     var systemNodes = [
-      { "id": "system", "parent": "#", "text": this.name, 'state': { 'opened': true, 'selected': true}, 'li_attr': {'data-tab': 'des-system'} }
+      { "id": "system", "parent": "#", "text": this.name, "icon": 'icon spacon-13-planetary', 'state': { 'opened': true, 'selected': true}, 'li_attr': {'data-tab': 'des-system'} }
     ];
 
     for(x = 0; x < this.data.length; x++){
@@ -153,6 +153,7 @@ class System {
         "id": this.data[x].designation,
         "parent": "system",
         "text": this.name + ' ' + this.data[x].designation + ' - ' + this.data[x].classification,
+        "icon": 'icon spacon-7-sun',
         "li_attr": { "data-tab": 'des-' + this.data[x].designation }
       });
     }
@@ -178,8 +179,9 @@ class System {
     systemHTML.push("<table class='table table-condensed'>");
     systemHTML.push("<tbody>");
 
-    systemHTML.push(`<tr><th>Stars in System</th><td>${this.starCount}</td></tr>`);
     systemHTML.push(`<tr><th>Primary Star Classification</th><td>${this.primary}</td></tr>`);
+    systemHTML.push(`<tr><th>Stars in System</th><td>${this.starCount}</td></tr>`);
+    systemHTML.push(`<tr><th>Planets in System</th><td></td></tr>`);
 
     systemHTML.push("</tbody>");
     systemHTML.push("</table>");
@@ -196,6 +198,20 @@ class System {
       systemHTML = [];
       systemHTML.push(`<div id='des-${this.data[x].designation}' class='tab-pane fade'>`);
       systemHTML.push(`<h3>${this.name + ' ' + this.data[x].designation}</h3>`);
+
+      systemHTML.push("<table class='table table-condensed'>");
+      systemHTML.push("<tbody>");
+
+      systemHTML.push(`<tr><th>Classification</th><td>${this.data[x].classification}</td></tr>`);
+      systemHTML.push(`<tr><th>Mass (M<sub>☉</sub>)</th><td>${this.data[x].mass}</td></tr>`);
+      systemHTML.push(`<tr><th>Luminosity (L<sub>☉</sub>)</th><td>${this.data[x].lum}</td></tr>`);
+      systemHTML.push(`<tr><th>Redius (R<sub>☉</sub>)</th><td>${this.data[x].radius}</td></tr>`);
+      systemHTML.push(`<tr><th>Temperature (T<sub>eff☉</sub>)</th><td>${this.data[x].temp}K</td></tr>`);
+      systemHTML.push(`<tr><th>Colour</th><td><span class="colour-block" style="background-color:${this.data[x].colour};"></span>${this.data[x].colour}</td></tr>`);
+
+      systemHTML.push("</tbody>");
+      systemHTML.push("</table>");
+
       systemHTML.push("</div>");
       systemHTML = systemHTML.join("\n");
       systemDetails.append(systemHTML);
