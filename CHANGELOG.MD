@@ -4,6 +4,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+### Added
+- Added a debug method that checks for a debug flag to be true before debugging - plan to make it a front end setting later on
+- Added an algorithm to calculate the density of the sector based on a few galactic variables
+- Added a notes folder to more closely work out some algorithms
+
+### Changed
+- Changed all debug statements to the new debug method
+
+### Fixes
+- Fixed returnFromRange method with new weightedRandom method - calculates normalised weights on choosing from a range of items based on percentage weights
+
 ## [0.1.6] - 2018-11-19
 ### Added
 - Change log file for recording changes made and version releases

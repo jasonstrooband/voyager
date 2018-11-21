@@ -1,4 +1,3 @@
-// TODO: Add comments
 
 function makeDie(sides) {
   var die = function() {
@@ -48,19 +47,18 @@ var dice = {
   }
 };
 
-function returnFromRange(rand, ranges, values){
-  var x; // Loop var
+function weightedRandom(weightedArray){
+  var key = 0; // The array index
+  var rand = Math.random();
+  var distributedArray = normaliseWeights(weightedArray);
 
-  if(!Array.isArray(ranges) || !Array.isArray(values)) console.log('is not array');
-  if(ranges.length != values.length) console.log('wrong length');
-
-  for(x = 0; x < ranges.length; x++) {
-    if(rand >= ranges[x][0] && rand <= ranges[x][1]) return values[x];
+  while(rand > 0){
+    rand -= distributedArray[key].distribution;
+    key++
   }
-  console.error(rand);
-  console.error(ranges);
-  console.error(values);
-  return false;
+
+  key--; // Last key was incremented before finding it decrement it to get the actual result
+  return distributedArray[key].data;
 }
 
 function arrayNot(arr, val){
@@ -87,6 +85,23 @@ function toHex(n) {
   n = Math.max(0,Math.min(n,255));
   return "0123456789ABCDEF".charAt((n-n%16)/16)
     + "0123456789ABCDEF".charAt(n%16);
+}
+
+function normaliseWeights(weightedArray){
+  // Normalise Weights
+  var i;
+  var weightTotal = 0;
+  for (i = 0; i < weightedArray.length; i++) {
+    weightTotal += weightedArray[i].weight;
+  }
+  for (i = 0; i < weightedArray.length; i++) {
+    weightedArray[i].distribution = weightedArray[i].weight / weightTotal;
+  }
+  return weightedArray;
+}
+
+function debug(msg, style = ""){
+  if(debug_flag) console.log(msg, style);
 }
 
 Math.roundPlaces = function round(value, decimals) {

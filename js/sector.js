@@ -2,12 +2,20 @@
 // TODO: Add in roque systems, that only have a single planetary system
 // TODO: Make density a factor of the galaxy location and the cluster type
 class Sector {
-  constructor(density = 20, debug = false) {
-    this.debug_flag = debug;
+  constructor(density) {
+    debug("%cGenerate Sector", debug_head_css);
 
     this.density = density < 5 ? 5 : density;
     this.density = density > 95 ? 95 : density;
+    // Randomise density with up to an extra 20%
+    this.density += Math.random() * (this.density * 0.2);
     this.systems = [];
+
+    debug("Sector Density Defferential: " + (density / 10));
+    debug("Sector Density: " + Math.round(this.density) + "%");
+
+    // Halve density for a more believable amount
+    this.density /= 2;
 
     this.generate();
     this.render();
@@ -15,10 +23,9 @@ class Sector {
 
   generate(){
     this.resetSector();
-
     this.createSector();
 
-    if(this.debug_flag) this.debug();
+    this.debug();
   }
 
   resetSector(){
@@ -29,7 +36,7 @@ class Sector {
 
   createSector(){
     var x; // Loop var
-    var starRand = '';
+    var starRand;
 
     for(x = 0; x < hexMap.Hexes.length; x++){
       starRand = Math.floor(Math.random() * 100);
@@ -55,6 +62,7 @@ class Sector {
   }
 
   debug(){
+    // TODO: Add debug information
   }
 
   render(){

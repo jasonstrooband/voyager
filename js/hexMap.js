@@ -166,6 +166,7 @@ class HexMap {
   }
 
   drawHexagon(centerX, centerY, id = '', fill = false){
+    // TODO: Hexes look out of shape, correct maths
     var idc;
     if(id){
       idc = HexMap.idStringToCoord(id);

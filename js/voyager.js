@@ -1,14 +1,17 @@
+// TODO: Create a debug function
+// TODO: Convert debugs to new function
+// TODO: Finish adding in debugs for each step
+// TODO: Change the way to render data to templates instead of js
+
 var galaxy;
 var hexMap;
 var sector;
 var starData;
 
-var debug_flag = true;
+const debug_flag = true;
 var debug_title_css = 'background: #222; color: #bada55; padding: 3px 10px';
 var debug_head_css = 'color: #4f7ade; text-decoration: underline';
 var debug_subhead_css = 'text-decoration: underline';
-
-// TODO: Add comments
 
 $(document).ready(function() {
   var genTimerStart;
@@ -19,20 +22,20 @@ $(document).ready(function() {
   };
 
   config();
-  // TODO: BD radius needs to be fixed
+  // TODO: BD radius needs to be fixed -- what is wrong with it?
   starData = loadStarData();
 
   genTimerStart = performance.now();
-  if(debug_flag) console.log("%cBegin Generation", debug_title_css);
+  debug("%cBegin Generation", debug_title_css);
 
   galaxy = new Galaxy();
   hexMap = new HexMap(board, 'hexmap');
-  sector = new Sector();
+  sector = new Sector(galaxy.calculateDensity());
   hexMap.addSystems();
 
-  if(debug_flag) console.log("%cEnd Generation", debug_title_css);
+  debug("%cEnd Generation", debug_title_css);
   genTimerEnd = performance.now();
-  console.log("Generation took " + Math.roundPlaces(((genTimerEnd - genTimerStart) / 1000), 3) + "s");
+  debug("Generation took " + Math.roundPlaces(((genTimerEnd - genTimerStart) / 1000), 3) + "s");
 
   removeLoader();
 });

@@ -1,0 +1,89 @@
+Fundamental Properties of Stars
+
+R = radius of the star in solar units;
+M = mass of the star in solar units;
+T = temperature in solar units;
+V = lifetime in solar lifetimes;
+L = luminosity of the star in solar units
+
+Start with temperature from type and designation
+
+** ALL IN SOLAR EQUIVALANTS **
+Mass equations
+More Accurate
+  M = 3 * sqrt(L)
+  M = 0.9 * sqrt(R)
+  M = V^-0.4
+  M = 0.505 * sqrt(T)
+Less Accurate
+  L < 0.144 Lsol
+    M = 2.3 * sqrt(L)
+    M = R^0.87 * T^1.739
+  L < 16 Lsol
+    M = 4 * sqrt(L)
+    M = T * sqrt(R)
+  L < 53665.63 Lsol
+    M = 3.5 * sqrt(L / 1.5)
+    M = R^0.571 * T^1.143 / 1.123
+  L > 53665.63 Lsol
+    M = sqrt(L / 3200)
+    M = sqrt(R^2 * T^2 / 3200)
+
+Radius Equations
+More Accurate
+  R = M^0.9
+  R = L^0.3
+  R = T^1.8
+  R = V^-0.36
+  R = sqrt(L) / T^2
+
+Temperature Equations
+More Accurate
+  T = M^0.505
+  T = 1.8 * sqrt(R)
+  T = 6 * sqrt(L)
+  T = -5 * sqrt(V)
+  4 * sqrt(L/R^2)
+
+Lifetime Equations
+Total Lifetime
+  V = M^-2.5
+  V = -0.36 * sqrt(R)
+  V = T^-5
+  V = -1.2 * sqrt(L)
+Main Sequence Lifetime
+  Q = 0.925 * M^-2.5
+  Q = 0.925 * V
+
+Luminosity Equations
+More Accurate
+  L = R^2 * T^4
+Less Accurate
+  M < 0.43 Msol
+    L = M^2.3
+  M < 2 Msol
+    L = M^4
+  M < 20 Msol
+    L = 1.5 * M^3.5
+  M > 20 Msol
+    L = 3200 * M
+
+Temperature Ranges for Spectral Types
+Type - Min - Max - constant
+O - 30000 - 60000 - 0.0003300
+B - 10000 - 30000 - 0.0004995
+A - 7500 - 10000 - 0.0039960
+F - 6000 - 7500 - 0.0066600
+G - 5000 - 6000 - 0.0124875
+K - 3500 - 5000 - 0.0045409
+M - 2400 - 3500 - 0.0166511
+
+Numerical Spectral component from temperature(K)
+  Sc = (M -T) * K
+  Sc = Numeric designation for the star
+  M = Max temp in Kelvin
+  T = The stars temp in Kelvin
+  K = a constant value associated with each spectral type​
+
+Temperature(K) from numerical spectral designation
+  T = M - (Sc / K)

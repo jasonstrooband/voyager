@@ -1,11 +1,46 @@
 // TODO: Add comments
 class Body {
   constructor(bodyType, designation) {
+    // TODO: Make rare groups rarer and possibly only have one or two per sector
+    this.star_types = {
+      groups: [
+        {data: "rare", weight: 14},
+        {data: "common", weight: 56},
+        {data: "other", weight: 30}
+      ],
+      rare: [
+        {data: "O", weight: 2},
+        {data: "B", weight: 3},
+        {data: "A", weight: 5}
+      ],
+      common: [
+        {data: "G", weight: 27},
+        {data: "K", weight: 32},
+        {data: "M", weight: 41}
+      ],
+      other: [
+        {data: "WD", weight: 7},
+        {data: "BD", weight: 11},
+        {data: "NS", weight: 1},
+        {data: "BH", weight: 1}
+      ]
+    };
+
+    this.star_class = [
+      {data: "0", weight: 1},
+      {data: "Ia", weight: 2},
+      {data: "Ib", weight: 2},
+      {data: "II", weight: 5},
+      {data: "III", weight: 12},
+      {data: "IV", weight: 18},
+      {data: "V", weight: 50},
+      {data: "VI", weight: 10}
+    ];
+
     this.designation = designation;
     this.bodyType = bodyType;
-    this.generate = true;
 
-    switch(bodyType){
+    switch(this.bodyType){
       case 'star':
         this.makeStar();
         this.getStarDesignation();
@@ -29,7 +64,8 @@ class Body {
     } else {
       this.getStarType();
     }
-    if(this.generate){
+
+    if(this.type != "NS" || this.type != "BH"){
       this.getStarPosition();
       this.getStarClass();
       this.classification = this.type + this.position + ((this.class) ? '-' + this.class : '');
@@ -43,24 +79,17 @@ class Body {
   }
 
   getStarType(){
-    // TODO: Move F type group to common
-    // TODO: Make M type stars more common
-    var ranges = [[1,12], [13,34], [35,72], [73,100]];
-    var values = ['rare', 'f', 'common', 'other'];
-    this.group = returnFromRange(dice.d100(), ranges, values);
+    this.group = weightedRandom(this.star_types.groups);
 
     switch(this.group){
       case 'rare':
-        this.getStarTypeRare();
-        break;
-      case 'f':
-        this.type = 'F';
+        this.type = weightedRandom(this.star_types.rare);
         break;
       case 'common':
-        this.getStarTypeCommon();
+        this.type = weightedRandom(this.star_types.common);
         break;
       case 'other':
-        this.getStarTypeOther();
+        this.type = weightedRandom(this.star_types.other);
         break;
       default:
         // TODO: Add default
@@ -68,44 +97,18 @@ class Body {
     }
   }
 
-  getStarTypeRare(){
-    var ranges = [[1,2], [3,5], [6,10]];
-    var values = ['O', 'B', 'A'];
-    this.type = returnFromRange(dice.d10(), ranges, values);
-  }
-
-  getStarTypeCommon(){
-    var ranges = [[1,27], [28,59], [60,100]];
-    var values = ['G', 'K', 'M'];
-    this.type = returnFromRange(dice.d10(), ranges, values);
-  }
-
-  getStarTypeOther(){
-    var ranges = [[1,7], [8,18], [19,19], [20,20]];
-    var values = ['WD', 'BD', 'NS', 'BH'];
-    this.type = returnFromRange(dice.d20(), ranges, values);
-    if(this.type == "NS" || this.type == "BH"){
-      this.classification = this.type;
-      this.generate = false;
-    }
-  }
-
   getStarPosition(){
-    if(this.group == "rare" || this.group == "common" || this.group == "f"){
+    if(this.group == "rare" || this.group == "common"){
       this.position = dice.roll('1d10')-1;
     }
   }
 
   getStarClass(){
     // TODO: Add in type 0 - Hypergiant
-    var ranges;
-    var values;
     if(this.type == 'WD') this.class = 'VII';
 
-    if(this.group == "rare" || this.group == "common" || this.group == "f"){
-      ranges = [[1,2], [3,4], [5,9], [10,21], [22,39], [40,90], [91,100]];
-      values = ['Ia', 'Ib', 'II', 'III', 'IV', 'V', 'VI'];
-      this.class = returnFromRange(dice.d100(), ranges, values);
+    if(this.group == "rare" || this.group == "common"){
+      this.class = weightedRandom(this.star_class);
     }
   }
 
